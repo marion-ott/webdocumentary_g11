@@ -12,3 +12,11 @@ Réaliser un web-documentaire interactif.
 ## Sujet
 Les algorithmes sur le web
 
+
+# Installation du projet
+
+```shell
+$ cd projectPath
+$ cd client
+$ npm install
+$ npm start
