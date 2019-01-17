@@ -1,0 +1,12 @@
+:local(.component) {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
