@@ -18,5 +18,5 @@ Les algorithmes sur le web
 ```shell
 $ cd projectPath
 $ cd client
-$ npm install
-$ npm start
+$ yarn install
+$ yarn start
