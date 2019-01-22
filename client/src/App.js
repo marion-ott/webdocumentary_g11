@@ -6,6 +6,7 @@ import MapContainer from './components/MapContainer/MapContainer'
 import Media from './components/Media/Media'
 import Text from './components/Text/Text'
 import Profile from './components/Profile/Profile'
+import FormIntro from './components/FormIntro/FormIntro'
 import { getExactLocation } from './api/index'
 
 class App extends Component {
@@ -25,22 +26,23 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Home 
+        <Home
           step={this.state.step}
-          scrollVertical={this.scrollVertical}  
+          scrollVertical={this.scrollVertical}
         />
         <Media />
         <MapContainer lat={33} lng={48} />
-        <Text 
-          title={content.data[1].step[0].title} 
-          paragraph={content.data[1].step[0].text}  
+        <Text
+          title={content.data[1].step[0].title}
+          paragraph={content.data[1].step[0].text}
         />
-        <Text 
-          title={content.data[1].step[1].title} 
+        <Text
+          title={content.data[1].step[1].title}
           paragraph={content.data[1].step[1].text}
           subtitle={content.data[1].step[1].subtitle}
         />
         <Profile />
+        <FormIntro />
       </div>
     );
   }
