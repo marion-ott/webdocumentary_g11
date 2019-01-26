@@ -29,12 +29,12 @@ class App extends Component {
           step={this.state.step}
           scrollVertical={this.scrollVertical}  
         />
-        <Media />
         <MapContainer lat={33} lng={48} />
         <Text 
           title={content.data[1].step[0].title} 
           paragraph={content.data[1].step[0].text}  
         />
+        <Media />
         <Text 
           title={content.data[1].step[1].title} 
           paragraph={content.data[1].step[1].text}

@@ -24,7 +24,9 @@ class UserInfo extends React.Component {
                         </label>
                     </div>
                 </div>
-                <ButtonNext />
+                <ButtonNext
+                    onClick={this.props.nextStep}
+                />
             </div>
         )
     }
