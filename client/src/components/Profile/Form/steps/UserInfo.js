@@ -3,10 +3,6 @@ import './steps.scss'
 import ButtonNext from './ButtonNext'
 
 class UserInfo extends React.Component {
-    constructor() {
-        super()
-    }
-
     render() {
         return(
             <div className="userInfo">

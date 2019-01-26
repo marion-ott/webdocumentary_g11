@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import css from './map.scss'
 
 const mapStyles = {
@@ -11,19 +11,30 @@ export class MapContainer extends React.Component {
   render() {
     const lat = this.props.lat
     const lng = this.props.lng
-    console.log(lat, lng)
+    console.log(this.props);
+    
     return (
       <div className={css.component}>
         <div className="map">
-          <Map
-            google={this.props.google}
-            zoom={14}
-            style={mapStyles}
-            initialCenter={{
-              lat: 44,
-              lng: 2.4432,
-            }}
-          />
+          <div className="mapTitleContainer">
+            <div className="dots">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div className="mapContainer">
+            <p><strong>{this.props.temp}°C à {this.props.city}</strong>, il fait froid chez vous aujourd'hui</p>
+            <Map
+              google={this.props.google}
+              zoom={14}
+              style={mapStyles}
+              initialCenter={{
+                lat: lat,
+                lng: lng,
+              }}
+            />
+          </div>
         </div>
       </div>
     );

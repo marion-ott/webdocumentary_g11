@@ -1,4 +1,48 @@
 :local(.component) {
-    height: 100vh;
-    position: relative;
+    .map {
+        width: 60vw;
+        height: 70vh;
+        position: relative;
+        border: solid 4px black;
+        .mapTitleContainer {
+            display: flex;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            background-color: white;
+            border-bottom: solid 4px black;
+            position: relative;
+            z-index: 10;
+            .dots {
+                display: flex;
+                margin-right: 10px;
+                div {
+                    width: 12px;
+                    height: 12px;
+                    background-color: black;
+                    border-radius: 50px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        .mapContainer {
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+            p {
+                height: 15%;
+                display: flex;
+                align-items: center; 
+                & strong {
+                    font-weight: bold;
+                }
+            }
+            div:first-child {
+                position: absolute;
+                width: 100%;
+                height: 80% !important;
+                bottom: 0;
+            }
+        }
+    }
 }

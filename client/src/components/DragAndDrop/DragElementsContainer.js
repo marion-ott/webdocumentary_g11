@@ -28,7 +28,8 @@ class DragElementsContainer extends React.Component {
         return(
             <div className={css.component}>
                 { this.props.elements.map((elem, i) => (
-                    <DragElement changeIndex={this.changeIndex} key={i} index={i} />
+                    elem === 'map' ? <DragElement changeIndex={this.changeIndex} key={i} index={i} type={elem} lat={this.props.lat && this.props.lat} lng={this.props.lng && this.props.lng} city={this.props.city && this.props.city} temp={this.props.temp && this.props.temp} />
+                     : <DragElement changeIndex={this.changeIndex} key={i} index={i} type={elem} />
                 )) }
             </div>
         )
