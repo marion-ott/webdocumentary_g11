@@ -1,0 +1,9 @@
+:local(.component) {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    .handle {
+        position: absolute;
+        cursor: pointer;
+    }
+}

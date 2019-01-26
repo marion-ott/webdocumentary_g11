@@ -6,6 +6,11 @@ const Video = props => (
     <div className={css.component}>
         <div className="videoContainer">
             <div className="titleContainer">
+                <div className="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <p className="videoTitle"><span>Video :</span> {props.title}</p>
             </div>
             <Player

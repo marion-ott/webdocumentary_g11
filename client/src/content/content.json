@@ -498,6 +498,15 @@
                     ]
                 }
             ]
-        }
+        },
+        {
+            "form": {
+                "images": [
+                    "/assets/media/img/cat1.jpeg",
+                    "/assets/media/img/cat1.jpeg",
+                    "/assets/media/img/cat1.jpeg"
+                ]
+            } 
+        } 
     ]
 }

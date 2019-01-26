@@ -18,6 +18,12 @@ class Form extends React.Component {
         }
     }
 
+    handleChange = input => event => {
+        console.log();
+        
+        this.setState({ [input] : event.target.value }, () => console.log(this.state))
+    }
+
     nextStep = () => {
         const step = this.state.step + 1
         this.setState({
@@ -28,12 +34,13 @@ class Form extends React.Component {
     render() {
         const step = this.state.step
         const cookies = content.data[2].cookies
+        const images = content.data[3].form.images
         
         switch(step) {
             case 1:
                 return <UserInfo 
                             nextStep={this.nextStep} 
-                            //handleChange = {this.handleChange}
+                            handleChange = {this.handleChange}
                             //values={values}
                         />
             case 2:
@@ -47,6 +54,7 @@ class Form extends React.Component {
                 return <ImageChoices 
                             nextStep={this.nextStep}
                             //values={values}
+                            images={images}
                         />
             case 4:
                 return <ImageChoices 

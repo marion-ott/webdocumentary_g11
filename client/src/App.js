@@ -4,9 +4,10 @@ import content from './content/content'
 import Home from './components/Home/Home'
 import MapContainer from './components/MapContainer/MapContainer'
 import Media from './components/Media/Media'
+import DragElementsContainer from './components/DragAndDrop/DragElementsContainer'
 import Text from './components/Text/Text'
 import Profile from './components/Profile/Profile'
-import { getExactLocation } from './api/index'
+import { getUserLocation, getWeather } from './api/index'
 
 class App extends Component {
   constructor(props) {
@@ -17,14 +18,16 @@ class App extends Component {
   }
 
   async componentWillMount() {
-    const info = await getExactLocation()
-    console.log(info)
+    const info = await getUserLocation()
+    const weather = await getWeather(info.location.postalCode, info.location.country.toLowerCase())
+    console.log(info, Math.round(weather.main.temp))
   }
 
   render() {
 
     return (
       <div className="App">
+        <DragElementsContainer elements={['elem1', 'elem2', 'elem3']}/>
         <Home 
           step={this.state.step}
           scrollVertical={this.scrollVertical}  

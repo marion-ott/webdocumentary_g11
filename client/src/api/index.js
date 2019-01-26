@@ -1,22 +1,17 @@
 const locationApiKey = "at_rDZ2sUAIQMUH01oazla7xAPR7ZuoY"
+const weatherApiKey = "b07bf4b63a33687ac037fbb7d40a59d7"
 
-export async function getExactLocation() {
+export async function getUserLocation() {
     const data = await fetch(`https://geoipify.whoisxmlapi.com/api/v1?apiKey=${locationApiKey}`)
         .then(response => response.json())
     return data
 }
 
+export async function getWeather(zip, country) {
+    const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},${country}&appid=${weatherApiKey}&units=metric`)
+        .then(response => response.json())
+    return data
+}
 
-// const browserApiKey = "ba436186ef4dfc58d00c7e064f953370"
-// export function getBrowserData() {
-
-// }
-
-// fetch("https://api.whatismybrowser.com/api/v2/user_agent_parse", {
-//     header: {
-//         "API-Key": `${browserApiKey}`,
-//         "Content-Type": "application/x-www-form-urlencoded"
-//     }
-// })
 
 
