@@ -4,7 +4,7 @@
            "home": {
                "title": "Dans la bulle",
                "start": "Démarrer l'expérience"
-           } 
+           }
         },
         {
             "step": [
@@ -21,7 +21,7 @@
             ]
         },
         {
-            "cookies":  
+            "cookies":
             [
                 {
                     "name": "Google",
@@ -498,6 +498,13 @@
                     ]
                 }
             ]
+        },
+        {
+           "bigData": {
+               "title": "big",
+               "title2": "data",
+               "start": "Démarrer l'expérience"
+           }
         }
     ]
 }
