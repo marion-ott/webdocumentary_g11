@@ -2148,6 +2148,10 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
 
+cctv-everywhere@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/cctv-everywhere/-/cctv-everywhere-1.1.0.tgz#e3bdc4c534876526ee8be901e6a00ff97b35f79a"
+
 chalk@2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"

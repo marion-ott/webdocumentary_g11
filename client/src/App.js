@@ -3,6 +3,7 @@ import './App.css'
 import content from './content/content'
 import Home from './components/Home/Home'
 import BigDataPage from './components/BigDataPage/BigDataPage'
+import TrackingPage from './components/TrackingPage/TrackingPage'
 import MapContainer from './components/MapContainer/MapContainer'
 import Media from './components/Media/Media'
 import DragElementsContainer from './components/DragAndDrop/DragElementsContainer'
@@ -52,6 +53,7 @@ class App extends Component {
             paragraph={content.data[1].step[0].text}
           />
           <BigDataPage/>
+          <TrackingPage />
           <Media />
           <Text
             title={content.data[1].step[1].title}

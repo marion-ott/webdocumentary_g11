@@ -514,6 +514,11 @@
                "title2": "data",
                "start": "Démarrer l'expérience"
            }
+       },
+        {
+           "tracking": {
+               "title": "cliquez, vous êtes tracker"
+           }
         }
     ]
 }
