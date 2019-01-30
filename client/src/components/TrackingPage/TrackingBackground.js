@@ -3,7 +3,7 @@ import React from "react";
 class TrackingBackground extends React.Component {
 
     componentDidMount() {
-        const canvas = document.getElementById('TrackingBackground')
+        const canvas = document.getElementById('trackingBackground')
         let ctx = canvas.getContext('2d')
 
         function resize() {
@@ -41,12 +41,34 @@ class TrackingBackground extends React.Component {
             requestAnimationFrame(loop);
         })();
 
+        // //TEXT QUI DEFILE
+        // function defileText(){
+        //     const title = document.getElementById('titleTracking')
+        //     let position = 0;
+        //     let msg = "VOTRE TEXTE DEFILANT";
+        //     let msg = "     " + msg;
+        //     var longue = msg.length;
+        //     var fois = (70/msg.length) + 1;
+        //
+        //     for( i = 0; i <= fois; i ++) msg += msg;
+        //
+        //     function textdefil() {
+        //         title.value=msg.substring(position,position+70);
+        //         position++;
+        //         if(position == longue) position=0;
+        //         setTimeout("textdefil()",100);
+        //     }
+        //     window.onload = textdefil;
+        // }
+        //
+        // defileText()
+
     }
 
     render() {
         return(
           <div>
-            <canvas id="TrackingBackground"/>
+            <canvas id="trackingBackground"/>
           </div>
         )
     }

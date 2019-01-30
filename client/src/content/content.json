@@ -519,6 +519,11 @@
            "tracking": {
                "title": "cliquez, vous êtes tracker"
            }
-        }
+        },
+         {
+            "algo": {
+                "title": "tout est calculé"
+            }
+         }
     ]
 }
