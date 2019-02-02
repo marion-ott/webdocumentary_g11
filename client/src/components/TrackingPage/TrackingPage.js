@@ -17,7 +17,18 @@ class TrackingPage extends React.Component {
                 <TrackingBackground />
                 <Camera />
                 <div id="titleTracking">
-                  <h1>{data.title}</h1>
+                  <div id="titleTracking--inner">
+                    <span>
+                      <div className= "title-container">
+                          <h1 className= "title">{data.title}</h1>
+                      </div>
+                    </span>
+                    <span>
+                      <div className= "title-container">
+                          <h1 className= "title">{data.title}</h1>
+                      </div>
+                    </span>
+                  </div>
                 </div>
             </section>
         )
