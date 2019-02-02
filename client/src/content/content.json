@@ -39,8 +39,12 @@
                 },
                 {
                     "title": false,
-                    "text": "« Un écureuil qui meurt devant votre porte risque de <span>davantage vous intéresser</span> que des gens qui meurent en Afrique »",
-                    "subtitle": "- Mark Zuckerberg"
+                    "text": "Sur internet, votre monde n’est donc pas exactement le même que celui de votre voisin. La grande majorité du contenu que vous allez y trouver a été préalablement <u>calculé</u>, dans le but annoncé de rendre votre univers numérique le plus pertinent possible. ",
+                    "subtitle": false,
+                    "cta": "Découvrir les algorithmes",
+                    "backgroundColor": "#FFFFFF",
+                    "txtColor": "#000000",
+                    "className": "underlineBlue"
                 }
             ]
         },

@@ -3,6 +3,7 @@ import './steps.scss'
 import ButtonNext from './ButtonNext'
 
 class UserInfo extends React.Component {
+
     render() {
         return(
             <div className="userInfo">
@@ -17,25 +18,26 @@ class UserInfo extends React.Component {
                 <div className="gender">
                     <div className="checkboxContainer">
                         <label className="checkbox">
-                            <input type="radio" value="female" name="gender" required />
+                            <input type="radio" value="male" name="gender" onChange={this.props.handleChange('gender')} required />
                             <span className="checkmark icon-mars"></span>
                         </label>
                     </div>
                     <div className="checkboxContainer">
                         <label className="checkbox">
-                            <input type="radio" value="male" name="gender" />
+                            <input type="radio" value="female" name="gender" onChange={this.props.handleChange('gender')}/>
                             <span className="checkmark icon-venus"></span>
                         </label>
                     </div>
                     <div className="checkboxContainer">
                         <label className="checkbox">
-                            <input type="radio" value="other" name="gender" />
+                            <input type="radio" value="other" name="gender" onChange={this.props.handleChange('gender')}/>
                             <span className="checkmark other">autre</span>
                         </label>
                     </div>
                 </div>
                 <ButtonNext
                     onClick={this.props.nextStep}
+                    buttonState={this.props.buttonState}
                 />
             </div>
         )

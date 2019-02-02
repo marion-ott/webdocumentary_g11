@@ -1,11 +1,10 @@
 import React from 'react'
-import content from '../../content/content'
+import Cta from '../../blocs/Cta/Cta'
 import css from './home.scss'
-import ScrollSymbol from '../../blocs/ScrollSymbol/ScrollSymbol'
 
 class Home extends React.Component {
     render() {
-        const data = content.data[this.props.step].home
+        //const data = content.data[this.props.step].home
         return(
             <section className={css.component}>
                 <div className="center">
@@ -28,9 +27,7 @@ class Home extends React.Component {
                         </h1>
                     </div>
                 </div>
-                <div className="startContainer">
-                    <p>{data.start}</p>
-                </div>
+                <Cta text="Démarrer l'expérience" scrollSection={this.props.scrollSection}/>
                 {/* <ScrollSymbol /> */}
             </section>
         )

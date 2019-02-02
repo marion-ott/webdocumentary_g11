@@ -3,11 +3,15 @@ import css from './text.scss'
 import Title from '../../blocs/Title/Title'
 import Paragraph from '../../blocs/Paragraph/Paragraph'
 import DragElementsContainer from '../DragAndDrop/DragElementsContainer'
-import ScrollSymbol from '../../blocs/ScrollSymbol/ScrollSymbol';
+import Cta from '../../blocs/Cta/Cta'
+import ScrollSymbol from '../../blocs/ScrollSymbol/ScrollSymbol'
 
 class Text extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            blocks: []
+        }
     }
 
     componentWillMount() {
@@ -17,7 +21,7 @@ class Text extends React.Component {
     }
 
     render() {
-        const { title, paragraph, subtitle } = this.props
+        const { title, paragraph, subtitle, cta } = this.props
         return(
             <div className={css.component} style={{backgroundColor: this.props.backgroundColor}}>
                 <div className="txtContent">
@@ -25,7 +29,11 @@ class Text extends React.Component {
                     { paragraph ? <Paragraph paragraph={paragraph} subtitle={subtitle} txtColor={this.props.txtColor} className={this.props.className} /> : false }
                 </div>
                 { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer key={key} index={key} element={block} />)) }
-                <ScrollSymbol />
+                { cta ?
+                    (
+                        <Cta text="Continuer" scrollSection={this.scrollSection} />
+                    )
+                    : <ScrollSymbol scrollSection={this.props.scrollSection} /> }
             </div>
         )
     }

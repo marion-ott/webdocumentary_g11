@@ -5,47 +5,68 @@ import ImageChoices from './steps/ImageChoices'
 import Success from './steps/Success'
 import content from '../../../content/content'
 
+
 class Form extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            step: 1,
             firstName: '',
-            lastName: '',
+            age: null,
             gender: '',
             services: [],
-            images: []
+            images: [],
+            errors: []
         }
     }
 
     handleChange = input => event => {
-        console.log();
-        
-        this.setState({ [input] : event.target.value }, () => console.log(this.state))
+        this.setState({ [input] : event.target.value }, () => this.checkInputs())
+    }
+
+    checkInputs = () => {
+        const emptyInputs = Object.keys(this.state).filter(key => this.state[key] === '' || this.state[key] === null)
+        if(emptyInputs.length === 0) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    updateServices = (array) => {
+        this.setState({
+            services: array
+        }, () => this.nextStep())
     }
 
     nextStep = () => {
-        const step = this.state.step + 1
+        const user = this.state
+        Object.keys(this.state).filter(key => this.state[key] === '' || this.state[key] === null)
+        this.props.scrollSection()
+        this.props.getUserInfo(user)
+    }
+
+    handleErrors = array => {
         this.setState({
-            step
+            errors: array
         })
     }
 
     render() {
-        const step = this.state.step
+        const step = this.props.formStep
         const cookies = content.data[2].cookies
         const images = content.data[3].form.images
-        
+        const buttonState = this.checkInputs()
         switch(step) {
             case 1:
                 return <UserInfo 
                             nextStep={this.nextStep} 
-                            handleChange = {this.handleChange}
-                            //values={values}
+                            handleChange={this.handleChange}
+                            scrollSection={this.props.scrollSection}
+                            buttonState={buttonState}
                         />
             case 2:
                 return <ServicesDetails 
-                            nextStep={this.nextStep}
+                            updateServices={this.updateServices}
                             cookies={cookies}
                             //handleChange = {this.handleChange}
                             //values={values}

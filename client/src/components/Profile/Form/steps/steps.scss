@@ -32,6 +32,7 @@ $inputBorder: solid 2px black;
     }
 }
 
+
 .checkbox {
     position: relative;
     input {
@@ -43,15 +44,26 @@ $inputBorder: solid 2px black;
 
 
 .buttonNext {
+    font-family: 'CircularStd';
     color: white;
-    background: #0000FF;
     border: none;
-    padding: 5px 25px;
-    font-size: 22px;
+    padding: 10px 25px;
+    font-size: 14px;
     position: absolute;
     right: 20px;
     bottom: 25px;
+    text-transform: lowercase;
+    transition: ease .2s all;
     cursor: pointer;
+    &.enabled {
+        background: #0000FF;
+    }
+    &.disabled {
+        background-color: #9E9E9E;
+    }
+    &:focus {
+        outline: none;
+    }
 }
 
 

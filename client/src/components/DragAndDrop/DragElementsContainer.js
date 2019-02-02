@@ -39,7 +39,6 @@ class DragElementsContainer extends React.Component {
     }
 
     render() {
-        console.log(this.props.element.type)
         return(
             <div className={css.component}>
                 {/* { this.props.elements.map((elem, i) => (
