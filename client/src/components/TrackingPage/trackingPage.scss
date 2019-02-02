@@ -1,0 +1,50 @@
+:local(.component) {
+    position: relative;
+    height: 100vh;
+
+    #camera{
+        position:absolute;
+        top: 10%;
+        width: 35%;
+    }
+
+    #titleTracking{
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        margin: 50vh auto;
+        font-family: CircularStd;
+        font-size: 120px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #titleTracking--inner{
+        display: block;
+        width: 200%;
+        position: absolute;
+        animation: titleTracking 20s linear infinite;
+    }
+
+    .title-container{
+        width: 100%;
+        display: inline-block;
+        margin: 0 24.7px;
+        float: left;
+        transition: all .1s ease-out;
+    }
+
+    span {
+      float: left;
+      width: 50%;
+    }
+
+
+    @keyframes titleTracking {
+      0% { left: 0; }
+      100% { left: -100%; }
+    }
+
+}

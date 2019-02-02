@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import './App.css'
 import content from './content/content'
 import Home from './components/Home/Home'
+import BigDataPage from './components/BigDataPage/BigDataPage'
+import TrackingPage from './components/TrackingPage/TrackingPage'
+import AlgoPage from './components/AlgoPage/AlgoPage'
 import MapContainer from './components/MapContainer/MapContainer'
 import Media from './components/Media/Media'
 import DragElementsContainer from './components/DragAndDrop/DragElementsContainer'
@@ -39,9 +42,9 @@ class App extends Component {
       <div className="App">
       { this.state.data && (
         <div>
-          <Home 
+          <Home
             step={this.state.step}
-            scrollVertical={this.scrollVertical}  
+            scrollVertical={this.scrollVertical}
           />
           <Text 
             title={content.data[1].step[0].title} 
@@ -60,6 +63,9 @@ class App extends Component {
             className={content.data[1].step[1].className} 
             blocks={content.data[1].step[1].blocks}
           />
+          <BigDataPage/>
+          <TrackingPage />
+          <AlgoPage />
           {/* <DragElementsContainer 
             elements={content.data[1].step[1].blocks}
           /> */}
