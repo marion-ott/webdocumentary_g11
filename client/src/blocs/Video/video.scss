@@ -6,32 +6,7 @@
     margin: 0 auto;
     font-family: sans-serif;
     .videoContainer {
-        border: solid 1px black;
         width: 100%;
-    }
-    .titleContainer {
-        display: flex;
-        padding: 15px 20px;
-        box-sizing: border-box;
-        background-color: white;
-        .dots {
-            display: flex;
-            margin-right: 10px;
-            div {
-                width: 12px;
-                height: 12px;
-                background-color: black;
-                border-radius: 50px;
-                margin-right: 8px;
-            }
-        }
-        .videoTitle {
-            font-family: 'RobotoMono';
-            font-size: 14px;
-            span {
-                font-weight: bold;
-            }
-        }
     }
     .video-react {
         outline: none !important;

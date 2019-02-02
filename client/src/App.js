@@ -34,8 +34,7 @@ class App extends Component {
     })
   }
 
-  render() {
-
+  render() {    
     return (
       <div className="App">
       { this.state.data && (
@@ -44,20 +43,33 @@ class App extends Component {
             step={this.state.step}
             scrollVertical={this.scrollVertical}  
           />
-          <DragElementsContainer city={this.state.data.city} temp={this.state.data.weather} lat={this.state.data.lat} lng={this.state.data.lng} elements={['map']} />
-          {/* <MapContainer  /> */}
           <Text 
             title={content.data[1].step[0].title} 
             paragraph={content.data[1].step[0].text}  
+            backgroundColor={content.data[1].step[0].backgroundColor} 
+            txtColor={content.data[1].step[0].txtColor} 
+            className={content.data[1].step[0].className}  
           />
-          <Media />
+          <Profile />
           <Text 
             title={content.data[1].step[1].title} 
             paragraph={content.data[1].step[1].text}
             subtitle={content.data[1].step[1].subtitle}
+            backgroundColor={content.data[1].step[1].backgroundColor} 
+            txtColor={content.data[1].step[1].txtColor} 
+            className={content.data[1].step[1].className} 
+            blocks={content.data[1].step[1].blocks}
           />
-          <Profile />
-          <DragElementsContainer elements={['video']}/>
+          {/* <DragElementsContainer 
+            elements={content.data[1].step[1].blocks}
+          /> */}
+          {/* <DragElementsContainer 
+            city={this.state.data.city} 
+            temp={this.state.data.weather} 
+            lat={this.state.data.lat} 
+            lng={this.state.data.lng} 
+            elements={['map']} 
+          /> */}
         </div>
       ) }
       </div>

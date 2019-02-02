@@ -28,8 +28,10 @@ class Home extends React.Component {
                         </h1>
                     </div>
                 </div>
-                <p>{data.start}</p>
-                <ScrollSymbol />
+                <div className="startContainer">
+                    <p>{data.start}</p>
+                </div>
+                {/* <ScrollSymbol /> */}
             </section>
         )
     }

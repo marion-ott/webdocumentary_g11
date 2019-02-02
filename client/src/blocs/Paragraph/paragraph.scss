@@ -1,9 +1,20 @@
 :local(.component) {
+    width: auto;
+    min-width: 50vw;
     .paragraph {
         font-size: 24px;
-        color: black;
     }
     .subtitle {
         margin-top: 15px;
+    }
+    .underlineBlue {
+        u {
+            color: #0000FF;
+        }
+    }
+    .underlineWhite {
+        u {
+            color: white;
+        }
     }
 }

@@ -10,8 +10,32 @@
             "step": [
                 {
                     "title": false,
-                    "text": "De plus en plus c’est internet que nous utilisons pour assouvir notre besoin d’informations. Le web a absorbé les autres médias, les journaux, la radio, la télévision. Une grande partie du contenu que nous voyons en ligne n’est plus sélectionnée à travers les choix éditoriaux traditionnel mais plutôt par nos amis.",
-                    "subtitle": false
+                    "text": "Tout d’abord, afin de <u>personnaliser</u> au mieux votre expérience, nous aimerions en savoir un peu plus sur vous...",
+                    "subtitle": false,
+                    "backgroundColor": "#0000FF",
+                    "txtColor": "#FFFFFF",
+                    "className": "underlineWhite",
+                    "type": "text"
+                },
+                {
+                    "title": false,
+                    "text": "On peut <u>personnaliser</u> son ordinateur ou son téléphone avec des stickers, mais saviez-vous que votre navigation sur Internet elle-même était personnalisée ? Pas par vous évidemment, mais par des <u>algorithmes</u> présents un peu partout sur le web.",
+                    "subtitle": false,
+                    "backgroundColor": "#FFFFFF",
+                    "txtColor": "#000000",
+                    "className": "underlineBlue",
+                    "type": "media",
+                    "blocks": [
+                        {
+                            "type": "text",
+                            "paragraph": "Déjà en 1972, alors que les ordinateurs n’étaient réservés qu’à une élite scientifique, le mathématicien Oskar Morgenstern se questionnait sur ce sujet."
+                        },
+                        {
+                            "type": "video",
+                            "title": "Oskar Morgenstern à propos de l'ordinateur en 1972",
+                            "src": "src"
+                        }
+                    ]
                 },
                 {
                     "title": false,
