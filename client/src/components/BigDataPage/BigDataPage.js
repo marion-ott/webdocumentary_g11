@@ -1,6 +1,7 @@
 import React from 'react'
 
 import css from './bigdataPage.scss'
+import "circular-std";
 
 import content from '../../content/content'
 import ScrollSymbol from '../../blocs/ScrollSymbol/ScrollSymbol'

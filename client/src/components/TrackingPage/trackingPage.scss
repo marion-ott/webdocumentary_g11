@@ -15,11 +15,13 @@
 
     #titleTracking{
         position: absolute;
+        font-family: CircularStd;
         white-space: nowrap;
         top: 0;
         font-size: 120px;
         margin-top: 45vh;
         color: #fff;
+        cursor: pointer;
         // transform: translateX(50%);
     }
 

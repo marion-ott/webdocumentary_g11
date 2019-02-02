@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "cctv-everywhere": "^1.1.0",
+    "circular-std": "^1.0.0",
     "google-maps-react": "^2.0.2",
     "konva": "^2.6.0",
     "next": "^7.0.2",
