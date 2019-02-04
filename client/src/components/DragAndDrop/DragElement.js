@@ -3,7 +3,6 @@ import Draggable from 'react-draggable'; // Both at the same time
 import Media from '../Media/Media';
 import Paragraph from '../../blocs/Paragraph/Paragraph';
 import MapContainer from '../MapContainer/MapContainer'
-import "circular-std";
 
 class DragElement extends React.Component {
 

@@ -1,8 +1,5 @@
 import React from 'react'
-
 import css from './trackingPage.scss'
-import "circular-std";
-
 import content from '../../content/content'
 import Camera from "./Camera";
 import TrackingBackground from "./TrackingBackground";
