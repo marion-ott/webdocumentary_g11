@@ -2,13 +2,9 @@ import React, { Component } from 'react'
 import './App.css'
 import content from './content/content'
 import Home from './components/Home/Home'
-import BigDataPage from './components/BigDataPage/BigDataPage'
-import TrackingPage from './components/TrackingPage/TrackingPage'
-import AlgoPage from './components/AlgoPage/AlgoPage'
 import Text from './components/Text/Text'
 import Profile from './components/Profile/Profile'
 import ReactDOM from 'react-dom'
-//import { getUserLocation, getWeather } from './api/index'
 import { TweenLite, Power4 } from "gsap/TweenMax"
 
 class App extends Component {
@@ -23,25 +19,10 @@ class App extends Component {
     this._blocks = []
   }
 
-  async componentWillMount() {
-    //const info = await getUserLocation()
-    const data = {}
-    // data.city = info.location.city
-    // data.country = info.location.country
-    // data.lat = info.location.lat
-    // data.lng = info.location.lng
-    // data.postalCode = info.location.postalCode
-    // const weather = await getWeather(data.postalCode, data.country.toLowerCase())
-    // data.weather = Math.round(weather.main.temp)
-
-    this.setState({
-      data: data
-    })
-  }
 
   getUserInfo = (data) => {
     let user = Object.assign({}, this.state.user)
-    const formStep = this.state.formStep + 1    
+    //const formStep = this.state.formStep + 1    
     switch(this.state.formStep) {
       case 1:
         user.firstName = data.firstName
@@ -66,9 +47,9 @@ class App extends Component {
       default:
         return(null)
     }
-    this.setState({
-      formStep
-    }, () => console.log('current user in state : ', this.state))
+    // this.setState({
+    //   formStep
+    // }, () => console.log('current user in state : ', this.state))
   }
 
   scrollSection = () => {
@@ -95,7 +76,6 @@ class App extends Component {
   render() {   
     return (
       <div className="App">
-      { this.state.data && (
         <div>
           <Home
             ref={(el) => el && this._blocks.push(el)}
@@ -142,28 +122,10 @@ class App extends Component {
             className={content.data[1].step[2].className} 
             blocks={content.data[1].step[2].blocks}
             scrollSection={this.scrollSection}
-          />
-          <BigDataPage
-            ref={(el) => el && this._blocks.push(el)}
-          />
-          <TrackingPage
-            ref={(el) => el && this._blocks.push(el)}
-          />
-          <AlgoPage
-            ref={(el) => el && this._blocks.push(el)}
-          />
-          {/* <DragElementsContainer 
-            elements={content.data[1].step[1].blocks}
-          /> */}
-          {/* <DragElementsContainer 
-            city={this.state.data.city} 
-            temp={this.state.data.weather} 
-            lat={this.state.data.lat} 
-            lng={this.state.data.lng} 
-            elements={['map']} 
-          /> */}
+            redirect={this.props.history.push}
+            redirectTo="/algorithms"
+          /> 
         </div>
-      ) }
       </div>
     );
   }

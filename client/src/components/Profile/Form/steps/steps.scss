@@ -179,7 +179,9 @@ label {
 .cookies {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    width: 80%;
     margin: 0 auto;
     .checkboxContainer {
         width: 50px;

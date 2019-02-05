@@ -12,9 +12,8 @@ class Profile extends React.Component {
     }
 
     updateStep = (user) => {
-        const index = this.state.index + 1
+       // const index = this.state.index + 1
         this.setState({
-            index,
             user
         })
     }
@@ -22,8 +21,8 @@ class Profile extends React.Component {
     render() {
         return(
             <div className={css.component}>
-                <div className="layer" style={{backgroundColor: this.props.layerColor}}></div>
-                <div className="formContainer">
+                {this.props.layerColor && (<div className="layer" style={{backgroundColor: this.props.layerColor}}></div>)}
+                <div className="formContainer" style={{backgroundColor: this.props.backgroundColor}}>
                     <div className="formContainer__title">
                         <h3>Dites-nous en plus</h3>
                     </div>

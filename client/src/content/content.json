@@ -45,12 +45,75 @@
                     "backgroundColor": "#FFFFFF",
                     "txtColor": "#000000",
                     "className": "underlineBlue"
+                },
+                {
+                    "blocks": [
+                        {
+                            "type": "map"
+                        },
+                        {
+                            "type": "text",
+                            "text": "Les réponses que vous nous avez donné nous ont aidé à définir un profil plus détaillé de vous, mais nous avion déjà une petite idée de qui vous êtes"
+                        },
+                        {
+                            "type": "text"
+                        }
+                    ]
+                }
+                {
+                    "blocks": [
+                        {
+                            "type": "image",
+                            "src": ""
+                        },
+                        {
+                            "type": "text",
+                            "text": "Les algorithmes sont partout. Ces petits bouts de formules mathématiques invisibles sont des éléments clés de nos vies au quotidien. "
+                        },
+                        {
+                            "type": "text",
+                            "text": "Algorithme (nom masculin) : Ensemble de règles opératoires dont l'application permet de résoudre un problème énoncé au moyen d'un nombre fini d'opérations. Un algorithme peut être traduit, grâce à un langage de programmation, en un programme exécutable par un ordinateur."
+                        },
+                        {
+                            "type": "video",
+                            "src": ""
+                        },
+                        {
+                            "type": "image",
+                            "src": ""
+                        }
+                    ]
                 }
             ]
         },
         {
             "cookies":
             [
+                {
+                    "name": "LinkedIn",
+                    "cookies": [
+                        {
+                            "title": "Strictly Necessary Cookies",
+                            "amount": 15
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 30
+                        },
+                        {
+                            "title": "Functionality Cookies",
+                            "amount": 276
+                        },
+                        {
+                            "title": "Targeting Cookies",
+                            "amount": 1207
+                        },
+                        {
+                            "title": "Unknown Cookies",
+                            "amount": 2265
+                        }
+                    ]
+                },
                 {
                     "name": "Google",
                     "cookies": [
@@ -73,6 +136,81 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 20708
+                        }
+                    ]
+                },
+                {
+                    "name": "Spotify",
+                    "cookies": [
+                        {
+                            "title": "Strictly Necessary Cookies",
+                            "amount": 2
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 13
+                        },
+                        {
+                            "title": "Functionality Cookies",
+                            "amount": 19
+                        },
+                        {
+                            "title": "Targeting Cookies",
+                            "amount": 52
+                        },
+                        {
+                            "title": "Unknown Cookies",
+                            "amount": 53
+                        }
+                    ]
+                },
+                {
+                    "name": "Youtube",
+                    "cookies": [
+                        {
+                            "title": "Strictly Necessary Cookies",
+                            "amount": 12
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 41
+                        },
+                        {
+                            "title": "Functionality Cookies",
+                            "amount": 114
+                        },
+                        {
+                            "title": "Targeting Cookies",
+                            "amount": 93760
+                        },
+                        {
+                            "title": "Unknown Cookies",
+                            "amount": 156096
+                        }
+                    ]
+                },
+                {
+                    "name": "Netflix",
+                    "cookies": [
+                        {
+                            "title": "Strictly Necessary Cookies",
+                            "amount": 1
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 0
+                        },
+                        {
+                            "title": "Functionality Cookies",
+                            "amount": 1
+                        },
+                        {
+                            "title": "Targeting Cookies",
+                            "amount": 16
+                        },
+                        {
+                            "title": "Unknown Cookies",
+                            "amount": 36
                         }
                     ]
                 },
@@ -127,106 +265,6 @@
                     ]
                 },
                 {
-                    "name": "Yahoo",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 0
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 1
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 11
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 1182
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 293
-                        }
-                    ]
-                },
-                {
-                    "name": "Netflix",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 1
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 0
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 1
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 16
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 36
-                        }
-                    ]
-                },
-                {
-                    "name": "Yahoo",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 0
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 1
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 11
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 1182
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 293
-                        }
-                    ]
-                },
-                {
-                    "name": "Youtube",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 12
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 41
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 114
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 93760
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 156096
-                        }
-                    ]
-                },
-                {
                     "name": "Twitter",
                     "cookies": [
                         {
@@ -277,176 +315,27 @@
                     ]
                 },
                 {
-                    "name": "Asos",
+                    "name": "Le Monde",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
+                            "amount": 0
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 14
+                        },
+                        {
+                            "title": "Functionality Cookies",
                             "amount": 7
                         },
                         {
-                            "title": "Performance Cookies",
-                            "amount": 15
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 25
-                        },
-                        {
                             "title": "Targeting Cookies",
-                            "amount": 891
+                            "amount": 311
                         },
                         {
                             "title": "Unknown Cookies",
-                            "amount": 319
-                        }
-                    ]
-                },
-                {
-                    "name": "Pinterest",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 3
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 12
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 33
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 70
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 187
-                        }
-                    ]
-                },
-                {
-                    "name": "Ebay",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 7
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 7
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 24
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 2753
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 1463
-                        }
-                    ]
-                },
-                {
-                    "name": "Apple",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 1
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 9
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 22
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 79
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 117
-                        }
-                    ]
-                },{
-                    "name": "Paypal",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 2
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 3
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 10
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 63
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 1152
-                        }
-                    ]
-                },
-                {
-                    "name": "Dailymotion",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 4
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 16
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 55
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 3968
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 11398
-                        }
-                    ]
-                },
-                {
-                    "name": "Bing",
-                    "cookies": [
-                        {
-                            "title": "Strictly Necessary Cookies",
-                            "amount": 4
-                        },
-                        {
-                            "title": "Performance Cookies",
-                            "amount": 41
-                        },
-                        {
-                            "title": "Functionality Cookies",
-                            "amount": 53
-                        },
-                        {
-                            "title": "Targeting Cookies",
-                            "amount": 485
-                        },
-                        {
-                            "title": "Unknown Cookies",
-                            "amount": 767
+                            "amount": 301
                         }
                     ]
                 },
@@ -501,27 +390,152 @@
                     ]
                 },
                 {
-                    "name": "Airbnb",
+                    "name": "Asos",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
-                            "amount": 1
+                            "amount": 7
                         },
                         {
                             "title": "Performance Cookies",
-                            "amount": 4
+                            "amount": 15
                         },
                         {
                             "title": "Functionality Cookies",
-                            "amount": 6
+                            "amount": 25
                         },
                         {
                             "title": "Targeting Cookies",
-                            "amount": 10
+                            "amount": 891
                         },
                         {
                             "title": "Unknown Cookies",
-                            "amount": 35
+                            "amount": 319
+                        }
+                    ]
+                },
+                {
+                    "name": "Pinterest",
+                    "cookies": [
+                        {
+                            "title": "Strictly Necessary Cookies",
+                            "amount": 3
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 12
+                        },
+                        {
+                            "title": "Functionality Cookies",
+                            "amount": 33
+                        },
+                        {
+                            "title": "Targeting Cookies",
+                            "amount": 70
+                        },
+                        {
+                            "title": "Unknown Cookies",
+                            "amount": 187
+                        }
+                    ]
+                },
+                {
+                    "name": "Le bon coin",
+                    "cookies": [
+                        {
+                            "title": "Strictly Necessary Cookies",
+                            "amount": 0
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 0
+                        },
+                        {
+                            "title": "Functionality Cookies",
+                            "amount": 2
+                        },
+                        {
+                            "title": "Targeting Cookies",
+                            "amount": 303
+                        },
+                        {
+                            "title": "Unknown Cookies",
+                            "amount": 361
+                        }
+                    ]
+                },
+                {
+                    "name": "Ebay",
+                    "cookies": [
+                        {
+                            "title": "Strictly Necessary Cookies",
+                            "amount": 7
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 7
+                        },
+                        {
+                            "title": "Functionality Cookies",
+                            "amount": 24
+                        },
+                        {
+                            "title": "Targeting Cookies",
+                            "amount": 2753
+                        },
+                        {
+                            "title": "Unknown Cookies",
+                            "amount": 1463
+                        }
+                    ]
+                },
+                {
+                    "name": "Reddit",
+                    "cookies": [
+                        {
+                            "title": "Strictly Necessary Cookies",
+                            "amount": 5
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 9
+                        },
+                        {
+                            "title": "Functionality Cookies",
+                            "amount": 23
+                        },
+                        {
+                            "title": "Targeting Cookies",
+                            "amount": 260
+                        },
+                        {
+                            "title": "Unknown Cookies",
+                            "amount": 441
+                        }
+                    ]
+                },
+                {
+                    "name": "Paypal",
+                    "cookies": [
+                        {
+                            "title": "Strictly Necessary Cookies",
+                            "amount": 2
+                        },
+                        {
+                            "title": "Performance Cookies",
+                            "amount": 3
+                        },
+                        {
+                            "title": "Functionality Cookies",
+                            "amount": 10
+                        },
+                        {
+                            "title": "Targeting Cookies",
+                            "amount": 63
+                        },
+                        {
+                            "title": "Unknown Cookies",
+                            "amount": 1152
                         }
                     ]
                 }

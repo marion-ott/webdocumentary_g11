@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 class TrackingBackground extends React.Component {
 
@@ -45,7 +45,7 @@ class TrackingBackground extends React.Component {
 
     render() {
         return(
-          <div>
+          <div className="trackingAnimBg">
             <canvas id="trackingBackground"/>
           </div>
         )

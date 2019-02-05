@@ -13,7 +13,6 @@ class DragElementsContainer extends React.Component {
     changeIndex = (event) => {
         event.persist()
         const index = this.state.index + 1
-        console.log(event.target)
         this.setState({
             index: index
         }, () => this.changePosition(this.state.index, event))   
@@ -30,23 +29,24 @@ class DragElementsContainer extends React.Component {
             case 'video':
                 return(<DragElement changeIndex={this.changeIndex} key={index} index={index} type={type} title={this.props.element.title} src={this.props.element.src} />)
             case 'text':
-                return(<DragElement changeIndex={this.changeIndex} key={index} index={index} type={type} text={this.props.element.paragraph} />)
+                return(<DragElement changeIndex={this.changeIndex} key={index} index={index} type={type} text={this.props.element.paragraph ? this.props.element.paragraph : this.props.element.text} />)
             case 'map':
-                return(<DragElement changeIndex={this.changeIndex} key={index} index={index} type={type} lat={this.props.lat && this.props.lat} lng={this.props.lng && this.props.lng} city={this.props.city && this.props.city} temp={this.props.temp && this.props.temp} />)
-
+                return(<DragElement changeIndex={this.changeIndex} key={index} index={index} type={type} lat={this.props.data.lat && this.props.data.lat} lng={this.props.data.lng && this.props.data.lng} city={this.props.data.city && this.props.data.city} postalCode={this.props.data.postalCode && this.props.data.postalCode} temp={this.props.data.weather && this.props.data.weather} />)
             default:
         }
     }
 
-    render() {
+    render() { 
+
         return(
             <div className={css.component}>
-                {/* { this.props.elements.map((elem, i) => (
-                    elem === 'map' ? <DragElement changeIndex={this.changeIndex} key={i} index={i} type={elem} lat={this.props.lat && this.props.lat} lng={this.props.lng && this.props.lng} city={this.props.city && this.props.city} temp={this.props.temp && this.props.temp} />
-                     : <DragElement changeIndex={this.changeIndex} key={i} index={i} type={elem} />
-                )) } */}
-                {
-                    this.renderElements(this.props.element.type, this.props.index)
+                { this.props.element.type ?
+                    (
+                        this.renderElements(this.props.element.type, this.props.index)
+                    ) 
+                    : (
+                        this.props.blocks.map((block, key) => this.renderElements(block.type, key))
+                    )
                 }
             </div>
         )

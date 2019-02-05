@@ -15,13 +15,6 @@ export class MapContainer extends React.Component {
     return (
       <div className={css.component}>
         <div className="map">
-          <div className="mapTitleContainer">
-            <div className="dots">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
           <div className="mapContainer">
             <p><strong>{this.props.temp}°C à {this.props.city} ({this.props.postalCode})</strong>, il fait froid chez vous aujourd'hui</p>
             <Map

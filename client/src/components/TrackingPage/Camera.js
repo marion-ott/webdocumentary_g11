@@ -12,8 +12,6 @@ class Camera extends React.Component {
 
         var BigBrother = ( function() {
 
-          "use strict";
-
         	var CCTVCam = {
             viewPoint : {},
         		angle : 0,

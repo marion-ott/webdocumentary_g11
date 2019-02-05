@@ -6,7 +6,7 @@ import TrackingBackground from "./TrackingBackground";
 
 
 
-class TrackingPage extends React.Component {
+class TrackingIntro extends React.Component {
     render() {
         const data = content.data[5].tracking
         return(
@@ -32,4 +32,4 @@ class TrackingPage extends React.Component {
     }
 }
 
-export default TrackingPage
+export default TrackingIntro

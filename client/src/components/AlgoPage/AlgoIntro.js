@@ -7,7 +7,7 @@ import AlgoBackground from "./AlgoBackground";
 
 
 
-class TrackingPage extends React.Component {
+class AlgoIntro extends React.Component {
     render() {
         const data = content.data[6].algo
         return(
@@ -21,4 +21,4 @@ class TrackingPage extends React.Component {
     }
 }
 
-export default TrackingPage
+export default AlgoIntro

@@ -12,12 +12,13 @@ class Cta extends React.Component {
     }
 
     render() {
+
         return(
             <div className={css.component}>
                 <p 
                     onMouseEnter={this.hoverAnimation} 
                     onMouseLeave={this.hoverUnanimate} 
-                    onClick={this.props.scrollSection}
+                    onClick={this.props.redirect ? () => this.props.redirect(this.props.redirectTo) : this.props.scrollSection}
                     >
                         {this.props.text}
                     </p>

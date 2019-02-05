@@ -1,4 +1,4 @@
-const locationApiKey = "at_rDZ2sUAIQMUH01oazla7xAPR7ZuoY"
+const locationApiKey = "at_t9hOcTzIIzlmcPRPeDQwllva8WWsC"
 const weatherApiKey = "b07bf4b63a33687ac037fbb7d40a59d7"
 
 export async function getUserLocation() {
