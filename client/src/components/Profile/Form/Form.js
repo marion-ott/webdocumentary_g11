@@ -15,7 +15,8 @@ class Form extends React.Component {
             gender: '',
             services: [],
             images: [],
-            errors: []
+            errors: [],
+            choiceAmount: 0
         }
     }
 
@@ -42,7 +43,7 @@ class Form extends React.Component {
         const user = this.state
         Object.keys(this.state).filter(key => this.state[key] === '' || this.state[key] === null)
         this.props.scrollSection()
-        this.props.getUserInfo(user)
+        //this.props.getUserInfo(user)
     }
 
     handleErrors = array => {
@@ -56,6 +57,7 @@ class Form extends React.Component {
         const cookies = content.data[2].cookies
         const images = content.data[3].form.images
         const buttonState = this.checkInputs()
+        
         switch(step) {
             case 1:
                 return <UserInfo 
@@ -68,6 +70,7 @@ class Form extends React.Component {
                 return <ServicesDetails 
                             updateServices={this.updateServices}
                             cookies={cookies}
+                            choiceAmount={this.state.choiceAmount}
                             //handleChange = {this.handleChange}
                             //values={values}
                         />

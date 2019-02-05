@@ -99,6 +99,7 @@ class App extends Component {
             getUserInfo={this.getUserInfo} 
             formStep={this.state.formStep}
             scrollSection={this.scrollSection}
+            title="Dites-nous tout..."
           />
           <Text 
             ref={(el) => el && this._blocks.push(el)}

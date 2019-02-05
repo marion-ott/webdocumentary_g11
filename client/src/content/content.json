@@ -91,6 +91,7 @@
             [
                 {
                     "name": "LinkedIn",
+                    "src": "/assets/media/img/logos/linkedin-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -116,6 +117,7 @@
                 },
                 {
                     "name": "Google",
+                    "src": "/assets/media/img/logos/google-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -141,6 +143,7 @@
                 },
                 {
                     "name": "Spotify",
+                    "src": "/assets/media/img/logos/spotify-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -166,6 +169,7 @@
                 },
                 {
                     "name": "Youtube",
+                    "src": "/assets/media/img/logos/youtube-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -191,6 +195,7 @@
                 },
                 {
                     "name": "Netflix",
+                    "src": "/assets/media/img/logos/netflix-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -216,6 +221,7 @@
                 },
                 {
                     "name": "Facebook",
+                    "src": "/assets/media/img/logos/facebook-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -241,6 +247,7 @@
                 },
                 {
                     "name": "Amazon",
+                    "src": "/assets/media/img/logos/amazon-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -266,6 +273,7 @@
                 },
                 {
                     "name": "Twitter",
+                    "src": "/assets/media/img/logos/twitter-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -291,6 +299,7 @@
                 },
                 {
                     "name": "Instagram",
+                    "src": "/assets/media/img/logos/instagram-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -316,6 +325,7 @@
                 },
                 {
                     "name": "Le Monde",
+                    "src": "/assets/media/img/logos/lemonde-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -341,6 +351,7 @@
                 },
                 {
                     "name": "Twitch",
+                    "src": "/assets/media/img/logos/twitch-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -366,6 +377,7 @@
                 },
                 {
                     "name": "Wikipedia",
+                    "src": "/assets/media/img/logos/wikipedia-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -391,6 +403,7 @@
                 },
                 {
                     "name": "Asos",
+                    "src": "/assets/media/img/logos/asos-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -416,6 +429,7 @@
                 },
                 {
                     "name": "Pinterest",
+                    "src": "/assets/media/img/logos/pinterest-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -441,6 +455,7 @@
                 },
                 {
                     "name": "Le bon coin",
+                    "src": "/assets/media/img/logos/leboncoin-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -466,6 +481,7 @@
                 },
                 {
                     "name": "Ebay",
+                    "src": "/assets/media/img/logos/ebay-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -491,6 +507,7 @@
                 },
                 {
                     "name": "Reddit",
+                    "src": "/assets/media/img/logos/reddit-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",
@@ -516,6 +533,7 @@
                 },
                 {
                     "name": "Paypal",
+                    "src": "/assets/media/img/logos/paypal-logo.svg",
                     "cookies": [
                         {
                             "title": "Strictly Necessary Cookies",

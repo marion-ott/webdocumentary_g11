@@ -27,14 +27,24 @@ class BigData extends React.Component {
         })
     }
 
+    scrollSection = () => {
+        window.scrollBy({
+          left: 0,
+          top: window.innerHeight,
+          behavior: "smooth"
+        })
+      }
+
     render() {
         return(
             this.state.data && (
                 <section>
                         <TrackingIntro />
                         <Profile
+                            title="Quelles sont vos habitudes de navigation ?"
                             formStep={2}
                             backgroundColor="#FFFFFF"
+                            scrollSection={this.scrollSection}
                         />
                         <MixElements
                             blocks={content.data[1].step[3].blocks}

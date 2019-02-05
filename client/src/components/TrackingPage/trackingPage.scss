@@ -23,33 +23,29 @@
         font-family: CircularStd;
         font-size: 120px;
         color: #fff;
-        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+            white-space: nowrap;
+        }
     }
 
     #titleTracking--inner{
         display: block;
         width: 200%;
         position: absolute;
-        animation: titleTracking 20s linear infinite;
+        animation: titleTracking 15s linear infinite;
     }
 
     .title-container{
         width: 100%;
         display: inline-block;
-        margin: 0 24.7px;
-        float: left;
-        transition: all .1s ease-out;
     }
-
-    span {
-      float: left;
-      width: 50%;
-    }
-
 
     @keyframes titleTracking {
-      0% { left: 0; }
-      100% { left: -100%; }
+      0% { left: 100%; }
+      100% { left: -340%; }
     }
 
 }
