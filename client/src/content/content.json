@@ -564,7 +564,7 @@
                "title": "big",
                "title2": "data"
            }
-       },
+        },
         {
            "tracking": {
                "title": "cliquez, vous êtes tracké"
@@ -574,25 +574,60 @@
             "algo": {
                 "title": "tout est calculé"
             }
-        },
-        {
-            "formImages": [
-                [
-                    "https://media.giphy.com/media/RmLghTZWcwT3G/giphy.mp4",
-                    "https://media.giphy.com/media/blSTtZehjAZ8I/giphy.mp4",
-                    "https://media.giphy.com/media/l3q2t2KAyvxy9xBe0/giphy.mp4"
-                ],
-                [
-                    "https://media.giphy.com/media/l0MYDoN32puQXNmx2/giphy.mp4",
-                    "https://media.giphy.com/media/3o7TKSx0g7RqRniGFG/giphy.mp4",
-                    "https://media.giphy.com/media/11vsrRFqhjOcKI/giphy.mp4"
-                ],
-                [
-                    "https://media.giphy.com/media/3o6ZthWzyoIzSknltu/giphy.mp4",
-                    "https://media.giphy.com/media/JF7GvrdV0oHD2/giphy.mp4",
-                    "https://media.giphy.com/media/26ufhOydy5WbYG2c0/giphy.mp4"
-                ]
-            ]
-        }
+         },
+         {
+             "formImages": [
+                 [
+                     "https://media.giphy.com/media/RmLghTZWcwT3G/giphy.mp4",
+                     "https://media.giphy.com/media/blSTtZehjAZ8I/giphy.mp4",
+                     "https://media.giphy.com/media/l3q2t2KAyvxy9xBe0/giphy.mp4"
+                 ],
+                 [
+                     "https://media.giphy.com/media/l0MYDoN32puQXNmx2/giphy.mp4",
+                     "https://media.giphy.com/media/3o7TKSx0g7RqRniGFG/giphy.mp4",
+                     "https://media.giphy.com/media/11vsrRFqhjOcKI/giphy.mp4"
+                 ],
+                 [
+                     "https://media.giphy.com/media/3o6ZthWzyoIzSknltu/giphy.mp4",
+                     "https://media.giphy.com/media/JF7GvrdV0oHD2/giphy.mp4",
+                     "https://media.giphy.com/media/26ufhOydy5WbYG2c0/giphy.mp4"
+                 ]
+             ]
+         },
+         {
+            "FilterBubble": [
+                 {
+                     "title": "la bulle de filtre",
+                     "backgroundColor": "#000",
+                     "txtColor": "#fff",
+                     "className": "FilterBubble_title",
+                     "type": "text"
+                 },
+                 {
+                     "title": false,
+                     "text": "Sur le web, vous avez sûrement déjà eu l’impression que le contenu qui vous est proposé a été conçu pour vous plaire, que l’information qui vous est diffusée a été filtrée.",
+                     "subtitle": false,
+                     "backgroundColor": "#000",
+                     "txtColor": "#fff",
+                     "className": "FilterBubblr_textBack",
+                     "type": "media",
+                     "blocks": [
+                         {
+                             "type": "text",
+                             "paragraph": "C’est de cette impression que le concept de “Filter Bubble”, qui peut être littéralement traduit par “Bulle de filtre”, a été théorisé en 2011 par Eli Pariser."
+                         },
+                         {
+                             "type": "text",
+                             "paragraph": "À travers son livre “The Filter Bubble: What the Internet Is Hiding from You”, et dans une conférence TED Talk, visionnée plus d’un million de fois sur Internet, il explique les fondements de cette idée, qui dit que chaque internaute accéderait à une version significativement différente du web. Ainsi, selon cette théorie, les contenus visibles par chaque internaute sont séléctionnés “discrètement” par des algorithmes, en s'appuyant sur différentes données collectées sur lui."
+                         },
+                         {
+                             "type": "video",
+                             "title": "The Secret Rules of Modern Living Algorithms ",
+                             "src": "src"
+                         }
+                     ]
+                 }
+              ]
+          }
     ]
 }

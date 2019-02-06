@@ -5,7 +5,7 @@ import content from '../../content/content'
 
 class AlgoIntro extends React.Component {
     render() {
-        const data = content.data[6].algo
+        const data = content.data[5].algo
         return(
             <section className={css.component}>
                 <div className="title">
