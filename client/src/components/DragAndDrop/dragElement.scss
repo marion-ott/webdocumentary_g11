@@ -1,10 +1,12 @@
 :local(.component) {
     position: absolute;
+    transform-origin: 50% 50%;
     .handle {
         background-color: white;
         border: solid 2px black;
         position: absolute;
         cursor: pointer;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         .titleContainer {
             display: flex;
             padding: 15px 20px;

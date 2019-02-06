@@ -4,6 +4,7 @@ import TrackingIntro from '../components/TrackingPage/TrackingIntro'
 import MixElements from '../components/MixElements/MixElements'
 import content from '../content/content'
 import Profile from '../components/Profile/Profile'
+import Tube from '../components/Tube/Tube'
 
 class BigData extends React.Component {
     constructor(props) {
@@ -39,6 +40,7 @@ class BigData extends React.Component {
         return(
             this.state.data && (
                 <section>
+                        <Tube />
                         <TrackingIntro />
                         <Profile
                             title="Quelles sont vos habitudes de navigation ?"

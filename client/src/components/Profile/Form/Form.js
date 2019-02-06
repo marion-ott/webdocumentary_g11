@@ -16,7 +16,8 @@ class Form extends React.Component {
             services: [],
             images: [],
             errors: [],
-            choiceAmount: 0
+            choiceAmount: 0,
+            imageIndex: 0
         }
     }
 
@@ -39,8 +40,14 @@ class Form extends React.Component {
         }, () => this.nextStep())
     }
 
+    updateImageIndex = () => {
+        this.setState({
+            imageIndex: this.state.imageIndex + 1
+        })
+    }
+
     nextStep = () => {
-        const user = this.state
+        //const user = this.state
         Object.keys(this.state).filter(key => this.state[key] === '' || this.state[key] === null)
         this.props.scrollSection()
         //this.props.getUserInfo(user)
@@ -55,9 +62,9 @@ class Form extends React.Component {
     render() {
         const step = this.props.formStep
         const cookies = content.data[2].cookies
-        const images = content.data[3].form.images
+        const images = content.data[6].formImages
         const buttonState = this.checkInputs()
-        
+
         switch(step) {
             case 1:
                 return <UserInfo 
@@ -76,9 +83,9 @@ class Form extends React.Component {
                         />
             case 3:
                 return <ImageChoices 
-                            nextStep={this.nextStep}
-                            //values={values}
-                            images={images}
+                            //nextStep={this.nextStep}
+                            updateImageIndex={this.updateImageIndex}
+                            images={images[this.state.imageIndex]}
                         />
             case 4:
                 return <ImageChoices 

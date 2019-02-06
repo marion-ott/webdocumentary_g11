@@ -5,13 +5,18 @@ import Paragraph from '../../blocs/Paragraph/Paragraph'
 import DragElementsContainer from '../DragAndDrop/DragElementsContainer'
 import Cta from '../../blocs/Cta/Cta'
 import ScrollSymbol from '../../blocs/ScrollSymbol/ScrollSymbol'
+import ReactDOM from 'react-dom'
+import { TweenLite, Power4 } from "gsap"
+import MoreSymbol from '../../blocs/MoreSymbol.js/MoreSymbol';
 
 class Text extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            blocks: []
+            blocks: [],
+            cta: false
         }
+        this._blocks = []
     }
 
     componentWillMount() {
@@ -20,7 +25,35 @@ class Text extends React.Component {
         })
     }
 
+    componentDidMount() {
+        if(this.state.blocks && this.state.blocks.length > 0) { 
+            this._blocks.map(block => {
+                let left = Math.random() * (400 - 20) + 20
+                let top = Math.random() * (440 - 20) + 20
+                ReactDOM.findDOMNode(block).style.left = `${left}px`
+                ReactDOM.findDOMNode(block).style.top = `${top}px`
+                TweenLite.to(ReactDOM.findDOMNode(block), 0.2,{ ease: Power4.ease, opacity: 0, scale: 0.5, transformOrigin: '50% 50%' })
+                return true
+            })
+        }
+    }
+
+    componendWillUnmount() {}
+
+    renderDraggableBlocks = () => {
+        this._blocks.map(block => {
+            const blockItem = ReactDOM.findDOMNode(block)
+            TweenLite.to(blockItem, 0.1,{ ease: Power4.ease, opacity: 1})
+            TweenLite.to(blockItem, 0.2,{ ease: Power4.ease, scale: 1, transformOrigin: '50% 50%' }) 
+            return true
+        })
+        this.setState({
+            cta: true
+        })
+    }
+
     render() {
+        
         const { title, paragraph, subtitle, cta } = this.props
         return(
             <div className={css.component} style={{backgroundColor: this.props.backgroundColor}}>
@@ -28,12 +61,14 @@ class Text extends React.Component {
                     { title ? <Title title={title} txtColor={this.props.txtColor} /> : false }
                     { paragraph ? <Paragraph paragraph={paragraph} subtitle={subtitle} txtColor={this.props.txtColor} className={this.props.className} /> : false }
                 </div>
-                { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer key={key} index={key} element={block} />)) }
-                { cta ?
+                { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer key={key} index={key} element={block}  ref={el => el && this._blocks.push(el)}/>)) }
+
+                { cta && this.state.cta ?
                     (
                         <Cta text="Continuer" scrollSection={this.scrollSection} redirect={this.props.redirect} redirectTo={this.props.redirectTo} />
                     )
-                    : <ScrollSymbol scrollSection={this.props.scrollSection} /> }
+                    : !cta ? <ScrollSymbol scrollSection={this.props.scrollSection} />
+                    : !this.state.cta ? <MoreSymbol renderBlocks={this.renderDraggableBlocks} /> : null}
             </div>
         )
     }

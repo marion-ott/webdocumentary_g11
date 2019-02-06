@@ -560,19 +560,9 @@
             ]
         },
         {
-            "form": {
-                "images": [
-                    "/assets/media/img/cat1.jpeg",
-                    "/assets/media/img/cat1.jpeg",
-                    "/assets/media/img/cat1.jpeg"
-                ]
-            }
-        },
-        {
            "bigData": {
                "title": "big",
-               "title2": "data",
-               "start": "Démarrer l'expérience"
+               "title2": "data"
            }
        },
         {
@@ -580,10 +570,29 @@
                "title": "cliquez, vous êtes tracké"
            }
         },
-         {
+        {
             "algo": {
                 "title": "tout est calculé"
             }
-         }
+        },
+        {
+            "formImages": [
+                [
+                    "https://media.giphy.com/media/RmLghTZWcwT3G/giphy.mp4",
+                    "https://media.giphy.com/media/blSTtZehjAZ8I/giphy.mp4",
+                    "https://media.giphy.com/media/l3q2t2KAyvxy9xBe0/giphy.mp4"
+                ],
+                [
+                    "https://media.giphy.com/media/l0MYDoN32puQXNmx2/giphy.mp4",
+                    "https://media.giphy.com/media/3o7TKSx0g7RqRniGFG/giphy.mp4",
+                    "https://media.giphy.com/media/11vsrRFqhjOcKI/giphy.mp4"
+                ],
+                [
+                    "https://media.giphy.com/media/3o6ZthWzyoIzSknltu/giphy.mp4",
+                    "https://media.giphy.com/media/JF7GvrdV0oHD2/giphy.mp4",
+                    "https://media.giphy.com/media/26ufhOydy5WbYG2c0/giphy.mp4"
+                ]
+            ]
+        }
     ]
 }

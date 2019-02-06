@@ -1,21 +1,41 @@
 import React from 'react'
 import { scrollVertical } from '../../helpers'
+import anime from 'animejs';
 
-const svgPosition = {
-    position: "absolute",
-    bottom: "20px",
-    left: "50%",
-    transform: "translate(-50%, 0)",
-    cursor: "pointer"
-}
 
-const ScrollSymbol = (props) => (
-    <div style={svgPosition} onClick={scrollVertical}>
-        <svg onClick={props.scrollSection} width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="21.5" cy="21.5" r="21.5" fill="black"/>
-            <path d="M20.6464 31.3536C20.8417 31.5488 21.1583 31.5488 21.3536 31.3536L24.5355 28.1716C24.7308 27.9763 24.7308 27.6597 24.5355 27.4645C24.3403 27.2692 24.0237 27.2692 23.8284 27.4645L21 30.2929L18.1716 27.4645C17.9763 27.2692 17.6597 27.2692 17.4645 27.4645C17.2692 27.6597 17.2692 27.9763 17.4645 28.1716L20.6464 31.3536ZM20.5 11L20.5 31L21.5 31L21.5 11L20.5 11Z" fill="white"/>
-        </svg>
-    </div>
-)
+
+
+
+class ScrollSymbol extends React.Component {
+    componentDidMount() {
+        anime({
+            targets: this.refs.icon,            
+            translateY: [-5, 0],            
+            loop: true,
+            duration: 650,
+            direction: 'alternate',            
+            easing: 'easeInOutSine'
+        })
+    }
+
+    render() {
+        const svgPosition = {
+            position: "absolute",
+            bottom: "20px",
+            left: "50%",
+            transform: "translate(-50%, 0)",
+            cursor: "pointer"
+        }
+
+        return(
+            <div style={svgPosition} onClick={scrollVertical} ref='icon'>
+                <svg onClick={this.props.scrollSection} width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="32" fill="#0000FF"/>
+                    <path d="M31.2929 47.7071C31.6834 48.0976 32.3166 48.0976 32.7071 47.7071L39.0711 41.3431C39.4616 40.9526 39.4616 40.3195 39.0711 39.9289C38.6805 39.5384 38.0474 39.5384 37.6569 39.9289L32 45.5858L26.3431 39.9289C25.9526 39.5384 25.3195 39.5384 24.9289 39.9289C24.5384 40.3195 24.5384 40.9526 24.9289 41.3431L31.2929 47.7071ZM31 17L31 47L33 47L33 17L31 17Z" fill="white"/>
+                </svg>
+            </div>
+        )
+    }
+} 
 
 export default ScrollSymbol

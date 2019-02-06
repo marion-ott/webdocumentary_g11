@@ -2,6 +2,7 @@ import React from 'react'
 import BigDataIntro from '../components/BigDataPage/BigDataIntro'
 import ParticleComponent from "../components/BigDataPage/ParticleComponent"
 import Tube from '../components/Tube/Tube'
+import Profile from '../components/Profile/Profile'
 
 class BigData extends React.Component {
     render() {
@@ -11,7 +12,13 @@ class BigData extends React.Component {
                 <Tube />
                 <ParticleComponent />
                 <BigDataIntro />
-                <BigDataIntro />
+                <Profile 
+                    formStep={3}
+                    //layerColor="#0000FF"
+                    //getUserInfo={this.getUserInfo} 
+                    scrollSection={this.scrollSection}
+                    title="Quel internaute êtes-vous ?"
+                />
             </section>
         )
     }

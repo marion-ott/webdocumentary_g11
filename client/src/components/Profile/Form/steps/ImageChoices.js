@@ -1,21 +1,26 @@
 import React from 'react'
 import ButtonNext from './ButtonNext'
 
-
 class ImageChoices extends React.Component {
     render() {
-        
+        const images = this.props.images
+        console.log(images)
         return(
             <div>
                 <div className="images">
-                    <div className="left" style={{"backgroundImage": `url(${this.props.images[0]})`}}></div>
-                    <div className="right">
-                        <div style={{"backgroundImage": `url(${this.props.images[0]})`}}></div>
-                        <div style={{"backgroundImage": `url(${this.props.images[0]})`}}></div>
-                    </div>
+                    {
+                        images.map((image, key) => (
+                            <div key={key}>
+                                <video autoPlay="autoplay" loop="loop" width="100%" height="100%">
+                                    <source src={image} type="video/mp4" />
+                                </video>
+                            </div>
+                        ))
+                    }
                 </div>
                 <ButtonNext 
-                    onClick={this.props.nextStep}
+                    buttonState={true}
+                    onClick={this.props.updateImageIndex}
                 />
             </div>
         )

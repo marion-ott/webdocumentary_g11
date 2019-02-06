@@ -92,6 +92,7 @@ class App extends Component {
             txtColor={content.data[1].step[0].txtColor} 
             className={content.data[1].step[0].className}  
             scrollSection={this.scrollSection}
+            autoTransition={true}
           />
           <Profile 
             ref={(el) => el && this._blocks.push(el)}
@@ -100,17 +101,6 @@ class App extends Component {
             formStep={this.state.formStep}
             scrollSection={this.scrollSection}
             title="Dites-nous tout..."
-          />
-          <Text 
-            ref={(el) => el && this._blocks.push(el)}
-            title={content.data[1].step[1].title} 
-            paragraph={content.data[1].step[1].text}
-            subtitle={content.data[1].step[1].subtitle}
-            backgroundColor={content.data[1].step[1].backgroundColor} 
-            txtColor={content.data[1].step[1].txtColor} 
-            className={content.data[1].step[1].className} 
-            blocks={content.data[1].step[1].blocks}
-            scrollSection={this.scrollSection}
           />
           <Text
             ref={(el) => el && this._blocks.push(el)}
@@ -121,7 +111,7 @@ class App extends Component {
             backgroundColor={content.data[1].step[2].backgroundColor} 
             txtColor={content.data[1].step[2].txtColor} 
             className={content.data[1].step[2].className} 
-            blocks={content.data[1].step[2].blocks}
+            blocks={content.data[1].step[1].blocks}
             scrollSection={this.scrollSection}
             redirect={this.props.history.push}
             redirectTo="/algorithms"
