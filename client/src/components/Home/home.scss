@@ -1,73 +1,25 @@
 :local(.component) {
     position: relative;
     height: 100vh;
-    .center {
-        position: relative;
-        .bubbles {
-            .filledBubble {
-                border-radius: 100%;
+    .divGeneral {
+        width: 99vw;
+        height: 99vh;
+        margin: auto;
+        .divTwo {
+          margin: auto;
+          border: 3px solid #000;
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          transform:translate(0,0);
+          animation-name:glissement;
+          animation-duration:5s;
+          animation-iteration-count:infinite;
+          animation-direction:alternate;
+          margin-left: 40%;
+          border-radius: 50%;
+            .canvaTwo {
                 position: absolute;
-                background: #0000FF;
-            }
-            .filledBubble:nth-child(1) {
-                width: 217px;
-                height: 217px;
-                left: 114px;
-                top: 43px;
-            }
-            .filledBubble:nth-child(2) {
-                width: 117px;
-                height: 117px;
-                left: 905px;
-                top: 64px;
-            }
-            .filledBubble:nth-child(3) {
-                width: 117px;
-                height: 117px;
-                left: 340px;
-                top: 535px;
-            }
-            .filledBubble:nth-child(4) {
-                width: 178px;
-                height: 178px;
-                left: 602px;
-                top: 467px;
-            }
-            .borderBubble {
-                position: absolute;
-                border-radius: 100%;
-                border: 5px solid #0000FF;
-                box-sizing: border-box;
-            }
-            .borderBubble:nth-child(5) {
-                width: 179px;
-                height: 179px;
-                left: -44px;
-                top: 456px;
-            }
-            .borderBubble:nth-child(6) {
-                width: 135px;
-                height: 135px;
-                left: 247px;
-                top: 379px;
-            }
-            .borderBubble:nth-child(7) {
-                width: 217px;
-                height: 217px;
-                left: 844px;
-                top: 377px;
-            }
-            .borderBubble:nth-child(8) {
-                width: 242px;
-                height: 242px;
-                left: 1052px;
-                top: 151px;
-            }
-            .borderBubble:nth-child(9) {
-                width: 121px;
-                height: 121px;
-                left: 1133px;
-                top: 494px;
             }
         }
         .titleBubble {
@@ -104,7 +56,35 @@
                 left: 91px;
                 transform: rotate(3deg);
             }
+        .canvaOne{
+          width: 99vw;
+          height: 99vh;
         }
     }
 }
-
+@media (max-width: 380px) {
+    :local(.component) {
+        position: relative;
+        height: 100vh;
+        .divGeneral {
+            width: 99vw;
+            height: 99vh;
+            margin: auto;
+            // .divTwo {
+            //   margin: auto;
+            //   border: 3px solid #000;
+            //   width: 150px;
+            //   height: 150px;
+            //   margin-left: 20%;
+            //   border-radius: 50%;
+            //     .canvaTwo {
+            //         position: absolute;
+            //     }
+            // }
+            .canvaOne{
+              width: 99vw;
+              height: 99vh;
+            }
+        }
+    }  
+}

@@ -2,3 +2,9 @@
    width: auto;
    min-width: 50vw;
 }
+@media (max-width: 380px) {
+   :local(.component) {
+      width: auto;
+      min-width: 80vw;
+   }
+}

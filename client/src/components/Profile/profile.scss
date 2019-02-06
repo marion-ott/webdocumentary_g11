@@ -28,3 +28,11 @@
         }
     }
 }
+@media (max-width: 380px) {
+    :local(.component) {
+        position: relative;
+        .formContainer {
+            width: 95%;
+        }
+    }
+}
