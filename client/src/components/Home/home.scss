@@ -63,9 +63,6 @@
     }
 }
 @media (max-width: 380px) {
-    :local(.component) {
-        position: relative;
-        height: 100vh;
         .divGeneral {
             width: 99vw;
             height: 99vh;
@@ -86,5 +83,5 @@
               height: 99vh;
             }
         }
-    }  
+    }
 }
