@@ -15,7 +15,7 @@ class FilterBubble extends React.Component {
               <Text
                 title={data.FilterBubble[0].title}
                 backgroundColor={data.FilterBubble[0].backgroundColor}
-                txtColor={data.FilterBubble[0].textColor}
+                txtColor={data.FilterBubble[0].txtColor}
                 className={data.FilterBubble[0].className}
                 scrollSection={this.scrollSection}
               />
@@ -23,6 +23,18 @@ class FilterBubble extends React.Component {
                   backgroundColor={data.FilterBubble[1].backgroundColor}
                   blocks={data.FilterBubble[1].blocks}
                   paragraph={data.FilterBubble[1].text}
+              />
+              <Text
+                  paragraph={data.FilterBubble[2].text}
+                  backgroundColor={data.FilterBubble[0].backgroundColor}
+                  txtColor={data.FilterBubble[0].txtColor}
+                  className={data.FilterBubble[0].className}
+              />
+              <Text
+                  paragraph={data.FilterBubble[3].text}
+                  backgroundColor={data.FilterBubble[0].backgroundColor}
+                  txtColor={data.FilterBubble[0].txtColor}
+                  className={data.FilterBubble[0].className}
               />
             </section>
         )
