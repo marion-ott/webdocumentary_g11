@@ -11,7 +11,7 @@ class BubbleCanvas extends React.Component {
     componentDidMount() {
         const canvas = this.canvas
         const c = canvas.getContext('2d');
-
+        const colorProp = this.props.color 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
@@ -167,7 +167,7 @@ class BubbleCanvas extends React.Component {
                 let x = randomIntFromRange(radius, canvas.width - radius);
                 let y = randomIntFromRange(radius, canvas.height - radius);
                 //let y = Math.random () * innerHeight;
-                const color = '#0000FF';
+                const color = colorProp
 
                 if (i !== 0) {
                     for (let j = 0; j < particles.length; j++) {
@@ -201,11 +201,8 @@ class BubbleCanvas extends React.Component {
 
     render() {
         return (
-            <section className={css.component}>
+            <section className={css.component} style={this.props.position && this.props.position}>
                 <div className="divGeneral">
-                    {/* <div className="divTwo">
-                        <canvas className="canvaTwo" ref={el => this.canvas2 = el}></canvas>
-                    </div> */}
                     <canvas className="canvaOne" ref={el => this.canvas = el}></canvas>
                 </div>
             </section>
