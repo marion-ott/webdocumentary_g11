@@ -10,6 +10,7 @@ import MixElements from '../components/MixElements/MixElements'
 class FilterBubble extends React.Component {
     render() {
         const data = content.data[7]
+        console.log(data.FilterBubble[0].title)
         return(
             <section>
               <Text

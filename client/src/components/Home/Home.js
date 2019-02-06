@@ -28,7 +28,6 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <Cta text="Démarrer l'expérience" scrollSection={this.props.scrollSection}/>
-                {/* <ScrollSymbol /> */}
             </section>
         )
     }
