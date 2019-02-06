@@ -14,25 +14,41 @@
     }
 
     .big {
-      position: absolute;
-      left: 388px;
-      top: 132.41px;
-      font-family: CircularStd;
-      line-height: normal;
-      font-size: 360px;
-      color: #000;
-      transform: rotate(-9deg);
+        position: absolute;
+        left: 25%;
+        top: -8vh;
+        font-family: CircularStd;
+        line-height: normal;
+        // font-size: 360px;
+        font-size: 32vw;
+        color: #000;
+        transform: rotate(-9deg);
     }
 
     .data {
-      position: absolute;
-      left: 749.78px;
-      top: 466.68px;
-      font-family: CircularStd;
-      line-height: normal;
-      font-size: 120px;
-      color: #000;
-      transform: rotate(9deg);
+        position: absolute;
+        left: 60%;
+        top: 66vh;
+        font-family: CircularStd;
+        line-height: normal;
+        font-size: 120px;
+        font-size: 10vw;
+        color: #000;
+        transform: rotate(9deg);
     }
+
+    //MOBILE
+    @media (max-width: 640px) {
+      .big {
+          left: 35%;
+          top: 25vh;
+      }
+
+      .data {
+          left: 65%;
+          top: 50vh;
+      }
+    }
+
 
 }

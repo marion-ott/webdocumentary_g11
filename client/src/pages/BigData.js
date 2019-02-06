@@ -11,7 +11,6 @@ class BigData extends React.Component {
                 <Tube />
                 <ParticleComponent />
                 <BigDataIntro />
-                <BigDataIntro />
             </section>
         )
     }
