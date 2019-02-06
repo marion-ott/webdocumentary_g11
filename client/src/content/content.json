@@ -597,6 +597,7 @@
          {
             "FilterBubble": [
                  {
+                    "title": true,
                      "title": "la bulle de filtre",
                      "backgroundColor": "#000",
                      "txtColor": "#fff",
@@ -626,6 +627,20 @@
                              "src": "src"
                          }
                      ]
+                 },
+                 {
+                     "title": false,
+                     "text": "Les bulles de filtre sont donc le résultat d’une recherche personnalisée dans laquelle des algorithmes vont définir un profil et déterminer de manière sélective les contenus qu’un utilisateur aimerait voir en fonction des informations personnelles récoltées sur ce dernier.",
+                     "subtitle": false,
+                     "backgroundColor": "#000",
+                     "txtColor": "#fff"
+                 },
+                 {
+                     "title": false,
+                     "text": "En nous appuyant sur les données que nous avons récolté tout au long de l’expérience, et à l’aide de nos propres algorithmes, nous sommes parvenus à définir votre profil type d’utilisateur du web.",
+                     "subtitle": false,
+                     "backgroundColor": "#000",
+                     "txtColor": "#fff"
                  }
               ]
           }

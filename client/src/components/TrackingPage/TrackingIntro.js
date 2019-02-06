@@ -24,8 +24,8 @@ class TrackingIntro extends React.Component {
         // var interval = setInterval(containerTranslation, 10)
     }
     render() {
-        const data = content.data[5].tracking
-        
+        const data = content.data[4].tracking
+
         return(
             <section className={css.component}>
                 <TrackingBackground />
