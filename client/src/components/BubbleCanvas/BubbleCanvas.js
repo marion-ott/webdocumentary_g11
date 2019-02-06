@@ -201,9 +201,9 @@ class BubbleCanvas extends React.Component {
 
     render() {
         return (
-            <section className={css.component} style={this.props.position && this.props.position}>
+            <section className={css.component} style={this.props.style && this.props.style}>
                 <div className="divGeneral">
-                    <canvas className="canvaOne" ref={el => this.canvas = el}></canvas>
+                    <canvas className="canvaOne" ref={el => this.canvas = el} ></canvas>
                 </div>
             </section>
 
