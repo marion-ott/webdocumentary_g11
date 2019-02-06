@@ -1,0 +1,43 @@
+:local(.component) {
+    .divGeneral {
+        width: 99vw;
+        height: 99vh;
+        margin: auto;
+        .divTwo {
+          margin: auto;
+          border: 3px solid #000;
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          transform:translate(0,0);
+          animation-name:glissement;
+          animation-duration:5s;
+          animation-iteration-count:infinite;
+          animation-direction:alternate;
+          margin-left: 40%;
+          border-radius: 50%;
+            .canvaTwo {
+                position: absolute;
+            }
+        }
+        .canvaOne{
+          width: 99vw;
+          height: 99vh;
+        }
+    }
+}
+@media (max-width: 380px) {
+    :local(.component) {
+        position: relative;
+        height: 100vh;
+        .divGeneral {
+            width: 100vw;
+            height: 100vh;
+            margin: auto;
+            .canvaOne{
+              width: 100vw;
+              height: 100vh;
+            }
+        }
+    }  
+}

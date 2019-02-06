@@ -18,3 +18,12 @@
         }
     }
 }
+@media (max-width: 380px) {
+    :local(.component) {
+        width: auto;
+        .paragraph {
+            font-size: 17px;
+            line-height: 32px;
+        }
+    }
+}

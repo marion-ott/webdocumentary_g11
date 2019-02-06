@@ -1,24 +1,13 @@
-import React from 'react'
+import React from 'react';
 import Cta from '../../blocs/Cta/Cta'
+import BubbleCanvas from '../BubbleCanvas/BubbleCanvas'
 import css from './home.scss'
 
 class Home extends React.Component {
     render() {
-        //const data = content.data[this.props.step].home
         return(
             <section className={css.component}>
                 <div className="center">
-                    <div className="bubbles">
-                        <div className="filledBubble"></div>
-                        <div className="filledBubble"></div>
-                        <div className="filledBubble"></div>
-                        <div className="filledBubble"></div>
-                        <div className="borderBubble"></div>
-                        <div className="borderBubble"></div>
-                        <div className="borderBubble"></div>
-                        <div className="borderBubble"></div>
-                        <div className="borderBubble"></div>
-                    </div>
                     <div className="titleBubble">
                         <h1>
                             <span className="dans">dans</span>
@@ -27,10 +16,12 @@ class Home extends React.Component {
                         </h1>
                     </div>
                 </div>
+                <BubbleCanvas />
                 <Cta text="Démarrer l'expérience" scrollSection={this.props.scrollSection}/>
             </section>
         )
     }
 }
-
 export default Home
+
+

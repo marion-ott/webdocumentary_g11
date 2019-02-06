@@ -85,6 +85,7 @@ class Form extends React.Component {
                 return <ImageChoices 
                             //nextStep={this.nextStep}
                             updateImageIndex={this.updateImageIndex}
+                            imageIndex={this.state.imageIndex}
                             images={images[this.state.imageIndex]}
                         />
             case 4:

@@ -41,3 +41,13 @@
         }
     }
 }
+@media (max-width: 380px) {
+    :local(.component) {
+        position: absolute;
+        .handle {
+            position: absolute;
+            cursor: pointer;
+            width: 80vw;
+        }
+    }
+}
