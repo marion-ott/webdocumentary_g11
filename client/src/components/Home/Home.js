@@ -8,12 +8,12 @@ class Home extends React.Component {
 
     componentDidMount() {
         anime({
-            targets: this.refs.title,            
-            translateY: [100, 0],            
-            translateX: [60, 0],            
+            targets: this.refs.title,
+            translateY: [100, 0],
+            translateX: [60, 0],
             loop: true,
             duration: 10000,
-            direction: 'alternate',            
+            direction: 'alternate',
             easing: 'easeInOutSine'
         })
     }
@@ -31,11 +31,9 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <BubbleCanvas color="#0000FF" />
-                <Cta text="Démarrer l'expérience" scrollSection={this.props.scrollSection}/>
+                <Cta text="démarrer l'expérience" scrollSection={this.props.scrollSection}/>
             </section>
         )
     }
 }
 export default Home
-
-
