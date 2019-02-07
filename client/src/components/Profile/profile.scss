@@ -27,12 +27,18 @@
             align-items: center;
         }
     }
-}
-@media (max-width: 380px) {
-    :local(.component) {
-        position: relative;
-        .formContainer {
-            width: 95%;
+    // MOBILE
+    @media (max-width: 640px) {
+            position: relative;
+            .formContainer {
+                width: 86%;
+                height: 90vh;
+                .form {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
-    }
 }
+
+
