@@ -5,11 +5,12 @@ import MixElements from '../components/MixElements/MixElements'
 import content from '../content/content'
 import Profile from '../components/Profile/Profile'
 import Choices from '../components/Choices/Choices'
+
 import Tube from '../components/TubeStraightLeft/Tube'
 import TubeSmall from '../components/TubeSmall/Tube'
 import TubeForm from '../components/TubeForm2/Tube'
 
-class BigData extends React.Component {
+class Tracking extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -71,4 +72,4 @@ class BigData extends React.Component {
     }
 }
 
-export default BigData
+export default Tracking

@@ -3,6 +3,11 @@
     min-width: 50vw;
     .paragraph {
         font-size: 24px;
+        line-height: 43px;
+
+        u {
+          font-style: italic;
+        }
     }
     .subtitle {
         margin-top: 15px;
@@ -10,11 +15,13 @@
     .underlineBlue {
         u {
             color: #0000FF;
+            font-style: italic;
         }
     }
     .underlineWhite {
         u {
             color: white;
+            font-style: italic;
         }
     }
     @media (max-width: 640px) {
