@@ -4,11 +4,11 @@ import TrackingIntro from '../components/TrackingPage/TrackingIntro'
 import MixElements from '../components/MixElements/MixElements'
 import content from '../content/content'
 import Profile from '../components/Profile/Profile'
-import Tube from '../components/Tube/Tube'
+import Tube from '../components/TubeStraightLeft/Tube'
 
 class BigData extends React.Component {
     constructor(props) {
-        super(props) 
+        super(props)
         this.state = {
             data: null
         }
@@ -39,19 +39,19 @@ class BigData extends React.Component {
     render() {
         return(
             this.state.data && (
-                <section>
-                        <Tube />
-                        <TrackingIntro />
-                        <Profile
-                            title="Quelles sont vos habitudes de navigation ?"
-                            formStep={2}
-                            backgroundColor="#FFFFFF"
-                            scrollSection={this.scrollSection}
-                        />
-                        <MixElements
-                            blocks={content.data[1].step[3].blocks}
-                            data={this.state.data}
-                        />
+                <section className="tracking">
+                    <Tube />
+                    <TrackingIntro />
+                    <Profile
+                        title="Quelles sont vos habitudes de navigation ?"
+                        formStep={2}
+                        backgroundColor="#FFFFFF"
+                        scrollSection={this.scrollSection}
+                    />
+                    <MixElements
+                        blocks={content.data[1].step[3].blocks}
+                        data={this.state.data}
+                    />
                 </section>
             )
         )
