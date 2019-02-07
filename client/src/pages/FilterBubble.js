@@ -1,6 +1,6 @@
 import React from 'react'
 
-//import Tube from '../components/OurBubble/OurBubble'
+import Tube from '../components/OurBubble/OurBubble'
 import content from '../content/content'
 import BubbleCanvas from '../components/BubbleCanvas/BubbleCanvas'
 import Text from '../components/Text/Text'

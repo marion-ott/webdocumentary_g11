@@ -27,16 +27,32 @@
         transform: rotate(-19deg);
     }
     @media (max-width: 640px) {
-        h2 {
-            font-family: 'CircularStd';
-            font-size: 63px;
-            -webkit-transform: rotate(-9deg);
-            transform: rotate(-9deg);
-            font-weight: bold;
-            height: 341px;
-            width: 180px;
-            margin-left: 46px;
-            line-height: 82px;
+        // h2 {
+        //     font-family: 'CircularStd';
+        //     font-size: 63px;
+        //     height: 341px;
+        //     width: 180px;
+        //     margin-left: 46px;
+        //     line-height: 82px;
+        // }
+        span {
+            font-size: 55px;
+        }
+        .la {
+            top: 108px;
+            left: 32px;
+        }
+        .bulle {
+            top: 191px;
+            left: 73px;
+        }
+        .de {
+            top: 295px;
+            left: 153px;
+        }
+        .filtres {
+            top: 393px;
+            left: 185px;
         }
         
     }
