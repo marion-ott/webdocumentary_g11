@@ -40,14 +40,15 @@
             line-height: 30px;
         }
     }
-}
-@media (max-width: 380px) {
-    :local(.component) {
-        position: absolute;
-        .handle {
+    // MOBILE
+    @media (max-width: 640px) {
             position: absolute;
-            cursor: pointer;
-            width: 80vw;
+            .handle {
+                position: absolute;
+                cursor: pointer;
+                width: 80vw;
+            }
         }
-    }
 }
+
+

@@ -48,5 +48,11 @@
       0% { left: 100%; }
       100% { left: -340%; }
     }
+    @media (max-width: 640px) {
+        .title{
+            font-size: 40px;
+            margin-top: -20%;    
+        }
+    }
 
 }
