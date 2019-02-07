@@ -137,8 +137,6 @@ class BubbleCanvas extends React.Component {
                 c.closePath();
             };
         }
-
-
         // Implementation
         let particles;
         // particles = [];

@@ -28,13 +28,17 @@
     @media (max-width: 640px) {
             .map {
                 position: relative;
+                width: 73vw;
+                height: 70vh;
+                margin: auto;
+
                 .mapContainer {
                     width: 90%;
                     height: 100%;
                     margin: 0 auto;
                     position: relative;
                     p {
-                        height: 15%;
+                        height: 19%;
                         display: flex;
                         align-items: center; 
                         & strong {
@@ -51,3 +55,4 @@
             }
         }
 }
+

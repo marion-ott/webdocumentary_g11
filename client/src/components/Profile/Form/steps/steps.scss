@@ -267,4 +267,12 @@ label {
     
 }
 
-
+@media (max-width: 380px) {
+    .cookies {
+        padding-bottom: 71px;
+        .checkboxContainer {
+            margin: 8px;
+        }
+    }
+    }
+    
