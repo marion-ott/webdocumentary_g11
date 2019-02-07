@@ -6,7 +6,7 @@ import Profile from '../components/Profile/Profile'
 
 class BigData extends React.Component {
     render() {
-       // const data = content.data[4].bigData
+        console.log(this.props.routerProps)
         return(
             <section className="bigData">
                 <Tube />

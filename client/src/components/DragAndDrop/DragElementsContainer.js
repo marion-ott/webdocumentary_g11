@@ -1,6 +1,7 @@
 import React from 'react'
-import DragElement from './DragElement';
+import DragElement from './DragElement'
 import css from "./dragElement.scss"
+
 
 class DragElementsContainer extends React.Component {
     constructor() {

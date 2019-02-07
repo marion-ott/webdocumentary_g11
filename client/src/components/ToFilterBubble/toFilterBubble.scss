@@ -1,0 +1,54 @@
+:local(.component) {
+    .blackCircle2 {
+        height: 500px;
+        width: 500px;
+        background-color: black;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    .blackCircle {
+        height: 500px;
+        width: 500px;
+        background-color: black;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        .text {
+            width: 60%;
+            p {
+                line-height: normal;
+                font-size: 24px;
+                color: white;
+                font-weight: bold;
+                font-family: 'CircularStd';
+                text-align: center;
+            }
+            div {
+                margin: 0 auto;
+                a {
+                    font-size: 14px;
+                    color: black;
+                    background-color: white;
+                    padding: 10px 15px;
+                    font-weight: bold;
+                    font-family: 'CircularStd';
+                    text-align: center;
+                    text-decoration: none;
+                    margin-top: 20px;
+                    display: block;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

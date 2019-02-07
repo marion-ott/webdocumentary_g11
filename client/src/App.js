@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import './App.scss'
-
 import content from './content/content'
 import Tube from './components/TubeForm1/Tube'
-
 import Home from './components/Home/Home'
 import Text from './components/Text/Text'
 import Profile from './components/Profile/Profile'
 import ReactDOM from 'react-dom'
 import { TweenLite, Power4 } from "gsap/TweenMax"
+
 
 class App extends Component {
   constructor(props) {

@@ -29,6 +29,7 @@ class BigData extends React.Component {
     }
 
     render() {
+        console.log(this.props.routerProps)
         return(
             this.state.data && (
                 <section className="tracking">
