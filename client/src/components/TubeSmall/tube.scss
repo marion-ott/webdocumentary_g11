@@ -1,0 +1,22 @@
+.tracking, .bigData{
+    .form {
+        height: 100vh;
+        overflow: hidden;
+        div:first-child{
+            text-align: center;
+            height: auto !important;
+            svg {
+                width: 2% !important;
+                position: relative;
+                // margin: 0 auto;
+                z-index: 4;
+            }
+        }
+        ._1Zf_A2dkX7gleFmf9oMy8o{
+          justify-content: flex-start;
+          height: auto;
+          margin-top: -2%;
+          z-index: 6;
+        }
+    }
+}

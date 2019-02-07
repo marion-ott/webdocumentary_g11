@@ -19,7 +19,9 @@ class FilterBubble extends React.Component {
 
         return(
             <section className="filterBubble">
-                {/* <Tube /> */}
+                <div className="bubble">
+                    <Tube />
+                </div>
                 <Text
                     title={data.FilterBubble[0].title}
                     hasBlocks={false}

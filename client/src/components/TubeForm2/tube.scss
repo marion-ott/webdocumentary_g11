@@ -1,0 +1,12 @@
+.tracking{
+    .form {
+      div:nth-child(3){
+        height: auto !important;
+          svg{
+              width: 54.5% !important;
+              position: relative;
+              z-index: 4;
+          }
+      }
+    }
+}
