@@ -40,4 +40,30 @@
             transform: rotate(3deg);
         }
     }
+    @media (max-width: 640px) {
+        .titleBubble {
+            width: 43.5vw;
+            height: 43.5vw;
+            left: 20vw;
+            top: 211px;
+            span {
+                font-size: 27px;
+            }
+            .dans {
+                left: 34px;
+                top: 13px;
+            }
+            .la {
+                top: 56px;
+                left: 104px;
+            }
+            .bulle {
+                top: 101px;
+                left: 48px;
+            }
+        }
+    }
+}
+body {
+    cursor: url ("../public/assets/media/img/arrow.png"), auto;
 }

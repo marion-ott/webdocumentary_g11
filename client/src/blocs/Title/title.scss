@@ -5,4 +5,17 @@
         transform: rotate(-9deg);
         font-weight: bold;
     }
+    @media (max-width: 640px) {
+        h2 {
+            font-family: 'CircularStd';
+        font-size: 63px;
+        -webkit-transform: rotate(-9deg);
+        transform: rotate(-9deg);
+        font-weight: bold;
+        height: 341px;
+        width: 180px;
+        margin-left: 46px;
+        }
+        
+    }
 }

@@ -16,4 +16,32 @@
             }
         }
     }
+    @media (max-width: 640px) {
+        .formHome{
+            .formContainer {
+                width: 85%;
+                z-index: 4;
+            }
+            div[role=button]{
+                overflow: initial !important;
+                margin-top: -16% !important;
+    
+                svg {
+                  width: 60% !important;
+                  margin-left: 35% !important
+                }
+            }
+        }
+    }
 }
+
+// h2
+// font-family: 'CircularStd';
+// font-size: 63px;
+// -webkit-transform: rotate(-9deg);
+// transform: rotate(-9deg);
+// font-weight: bold;
+// border: 3px solid;
+// height: 341px;
+// width: 180px;
+// margin-left: 46px;
