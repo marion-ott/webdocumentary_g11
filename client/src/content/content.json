@@ -595,6 +595,20 @@
              ]
          },
          {
+            "choices": [
+                {
+                "type": "choice",
+                "text": "big data",
+                "redirect": "/big-data"
+               },
+               {
+                   "type": "choice",
+                   "text": "tracking",
+                   "redirect": "/tracking"
+               }
+           ]
+        },
+         {
             "FilterBubble": [
                  {
                     "title": true,

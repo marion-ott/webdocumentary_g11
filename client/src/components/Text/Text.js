@@ -55,7 +55,7 @@ class Text extends React.Component {
     render() {
         
         const { title, paragraph, subtitle, cta } = this.props
-
+        //console.log(this.props.hasBlocks)
         return(
             <div className={css.component} style={{backgroundColor: this.props.backgroundColor}}>
                 <div className="txtContent">
@@ -64,12 +64,12 @@ class Text extends React.Component {
                 </div>
                 { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer color={this.props.color && this.props.color} key={key} index={key} element={block}  ref={el => el && this._blocks.push(el)}/>)) }
 
-                { cta ?
+                { cta && !this.state.hasBlocks ?
                     (
                         <Cta text="Continuer" scrollSection={!this.props.redirect && this.scrollSection} redirect={this.props.redirect} redirectTo={this.props.redirectTo} />
                     )
                     : !this.state.hasBlocks ? <ScrollSymbol scrollSection={this.props.scrollSection} /> 
-                    : this.props.hasBlocks && !this.state.cta ? <MoreSymbol renderBlocks={this.renderDraggableBlocks} /> : null}
+                    : this.props.hasBlocks ? <MoreSymbol renderBlocks={this.renderDraggableBlocks} /> : null}
             </div>
         )
     }

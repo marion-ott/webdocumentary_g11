@@ -30,7 +30,7 @@ class Home extends React.Component {
                         </h1>
                     </div>
                 </div>
-                <BubbleCanvas color="#0000FF" />
+                {/* <BubbleCanvas color="#0000FF" /> */}
                 <Cta text="Démarrer l'expérience" scrollSection={this.props.scrollSection}/>
             </section>
         )

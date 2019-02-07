@@ -6,14 +6,12 @@ import content from '../content/content'
 import BubbleCanvas from '../components/BubbleCanvas/BubbleCanvas'
 import Text from '../components/Text/Text'
 import MixElements from '../components/MixElements/MixElements'
-
-
+import ScrollSymbol from '../blocs/ScrollSymbol/ScrollSymbol';
 
 
 class FilterBubble extends React.Component {
     render() {
-        const data = content.data[7]
-        console.log(data.FilterBubble[0].title)
+        const data = content.data[8]
         const style = {
             backgroundColor: "#000000",
             position: "fixed"
@@ -24,6 +22,7 @@ class FilterBubble extends React.Component {
                 {/* <Tube /> */}
                 <Text
                     title={data.FilterBubble[0].title}
+                    hasBlocks={false}
                     txtColor={data.FilterBubble[0].txtColor}
                     className={data.FilterBubble[0].className}
                     scrollSection={this.scrollSection}

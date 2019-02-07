@@ -18,11 +18,7 @@
     "react-dom": "^16.7.0",
     "react-draggable": "^3.1.1",
     "react-konva": "^16.7.1",
-<<<<<<< HEAD
-    "react-p5-wrapper": "^0.0.4",
-=======
     "react-lottie": "^1.2.3",
->>>>>>> 77aab0bda0390c4def879932489cb1a6bcd596fc
     "react-particles-js": "^2.4.2",
     "react-router-dom": "^4.3.1",
     "react-router-transition": "^1.2.1",

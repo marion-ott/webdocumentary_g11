@@ -3,6 +3,7 @@ import AlgoIntro from '../components/AlgoPage/AlgoIntro'
 import MixElements from '../components/MixElements/MixElements'
 import content from '../content/content'
 import Tube from '../components/TubeStraightLeft/Tube'
+import DragElementContainer from '../components/DragAndDrop/DragElementsContainer';
 
 class Algorithms extends React.Component {
     constructor() {
@@ -10,7 +11,8 @@ class Algorithms extends React.Component {
         this._blocks = []
     }
     render() {
-        //const data = content.data[5].bigData
+        const choices = content.data[7].choices
+        //console.log(choices)
         return(
             <section className="algorithms">
                 <Tube />
@@ -19,7 +21,10 @@ class Algorithms extends React.Component {
                     ref={(el) => el && this._blocks.push(el)}
                     blocks={content.data[1].step[4].blocks}
                 />
-                {/** CREER DEUX FENETRES POUR CHOIX  BIG DATA OU TRACKING */}
+                <section style={{width: "100%", height: "100vh", backgroundColor: "red"}}>
+                    { choices.map((choice, key) => <DragElementContainer element={choice} key={key} />) }
+                    {/* <DragElementContainer element={test} index={0} /> */}
+                </section>
             </section>
         )
     }

@@ -30,6 +30,8 @@ class DragElementsContainer extends React.Component {
                 return(<DragElement color={this.props.color} changeIndex={this.changeIndex} key={index} index={index} type={type} title={this.props.element.title} src={this.props.element.src} />)
             case 'text':
                 return(<DragElement color={this.props.color} changeIndex={this.changeIndex} key={index} index={index} type={type} text={this.props.element.paragraph ? this.props.element.paragraph : this.props.element.text} />)
+            case 'choice':
+                return(<DragElement changeIndex={this.changeIndex} key={index} index={index} type={type} text={this.props.element.text} redirect={this.props.element.redirect} />)
             case 'map':
                 return(<DragElement color={this.props.color} changeIndex={this.changeIndex} key={index} index={index} type={type} lat={this.props.data.lat && this.props.data.lat} lng={this.props.data.lng && this.props.data.lng} city={this.props.data.city && this.props.data.city} postalCode={this.props.data.postalCode && this.props.data.postalCode} temp={this.props.data.weather && this.props.data.weather} />)
             default:

@@ -29,6 +29,7 @@ class DragElement extends React.Component {
                     { this.props.type === 'video' ? <Media mediaType={this.props.mediaType} />
                         : this.props.type === 'text' ? <Paragraph paragraph={this.props.text} />
                         : this.props.type === 'map' ? <MapContainer lat={this.props.lat && this.props.lat} lng={this.props.lng && this.props.lng} city={this.props.city && this.props.city} postalCode={this.props.postalCode && this.props.postalCode} temp={this.props.temp && this.props.temp}/>
+                        : this.props.type === 'choice' ? <Paragraph redirect={this.props.redirect} paragraph={this.props.text} />
                         : null
                     }
                     

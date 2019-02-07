@@ -25,10 +25,6 @@ class App extends Component {
 
   getUserInfo = (data) => {
     let user = Object.assign({}, this.state.user)
-<<<<<<< HEAD
-=======
-    //const formStep = this.state.formStep + 1
->>>>>>> 77aab0bda0390c4def879932489cb1a6bcd596fc
     switch(this.state.formStep) {
       case 1:
         user.firstName = data.firstName
@@ -82,12 +78,7 @@ class App extends Component {
     })
   }
 
-<<<<<<< HEAD
-  render() {  
-    console.log(this.props)
-=======
   render() {
->>>>>>> 77aab0bda0390c4def879932489cb1a6bcd596fc
     return (
       <div className="App">
         <div>
@@ -98,8 +89,8 @@ class App extends Component {
           />
           <Text
             ref={(el) => el && this._blocks.push(el)}
-<<<<<<< HEAD
             //layerColor={false}
+            hasBlocks={false}
             title={content.data[1].step[0].title} 
             paragraph={content.data[1].step[0].text}  
             backgroundColor={content.data[1].step[0].backgroundColor} 
@@ -108,52 +99,27 @@ class App extends Component {
             scrollSection={this.props.scrollSection}
             autoTransition={true}
           />
-          <Profile 
-            ref={(el) => el && this._blocks.push(el)}
-            layerColor="#0000FF"
-            getUserInfo={this.props.getUserInfo} 
-            formStep={this.state.formStep}
-            scrollSection={this.props.scrollSection}
-            title="Dites-nous tout..."
-          />
-=======
-            layerColor={false}
-            title={content.data[1].step[0].title}
-            paragraph={content.data[1].step[0].text}
-            backgroundColor={content.data[1].step[0].backgroundColor}
-            txtColor={content.data[1].step[0].txtColor}
-            className={content.data[1].step[0].className}
-            scrollSection={this.scrollSection}
-            autoTransition={true}
-          />
           <div className="formHome">
-              <Profile
-                ref={(el) => el && this._blocks.push(el)}
-                layerColor="#0000FF"
-                getUserInfo={this.getUserInfo}
-                formStep={this.state.formStep}
-                scrollSection={this.scrollSection}
-                title="Dites-nous tout..."
-              />
-              <Tube />
+            <Profile 
+              ref={(el) => el && this._blocks.push(el)}
+              layerColor="#0000FF"
+              getUserInfo={this.props.getUserInfo} 
+              formStep={this.state.formStep}
+              scrollSection={this.props.scrollSection}
+              title="Dites-nous tout..."
+            />
+            <Tube />
           </div>
->>>>>>> 77aab0bda0390c4def879932489cb1a6bcd596fc
           <Text
             ref={(el) => el && this._blocks.push(el)}
             title={content.data[1].step[2].title}
             paragraph={content.data[1].step[2].text}
             subtitle={content.data[1].step[2].subtitle}
             cta={content.data[1].step[2].cta}
-<<<<<<< HEAD
             hasBlocks={true}
             backgroundColor={content.data[1].step[2].backgroundColor} 
             txtColor={content.data[1].step[2].txtColor} 
             className={content.data[1].step[2].className} 
-=======
-            backgroundColor={content.data[1].step[2].backgroundColor}
-            txtColor={content.data[1].step[2].txtColor}
-            className={content.data[1].step[2].className}
->>>>>>> 77aab0bda0390c4def879932489cb1a6bcd596fc
             blocks={content.data[1].step[1].blocks}
             scrollSection={this.props.scrollSection}
             redirect={this.props.routerProps.history.push}
