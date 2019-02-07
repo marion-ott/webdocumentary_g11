@@ -6,7 +6,6 @@ import content from '../content/content'
 import Profile from '../components/Profile/Profile'
 
 import Tube from '../components/TubeStraightLeft/Tube'
-import TubeTransition from '../components/TrackingTubeTransition/Tube'
 import TubeSmall from '../components/TubeSmall/Tube'
 import TubeForm from '../components/TubeForm2/Tube'
 
@@ -39,9 +38,6 @@ class BigData extends React.Component {
                     <div className="straight">
                         <Tube />
                         <TrackingIntro />
-                    </div>
-                    <div className="transition">
-                        <TubeTransition />
                     </div>
                     <div className="form">
                         <TubeSmall />
