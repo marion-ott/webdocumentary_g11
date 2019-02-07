@@ -12,7 +12,7 @@ class BigData extends React.Component {
                 <Tube />
                 <ParticleComponent />
                 <BigDataIntro />
-                <Profile 
+                <Profile
                     formStep={3}
                     //layerColor="#0000FF"
                     //getUserInfo={this.getUserInfo} 
