@@ -10,6 +10,7 @@ class Form extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            formStep: 1,
             firstName: '',
             age: null,
             gender: '',
@@ -21,8 +22,15 @@ class Form extends React.Component {
         }
     }
 
+    componentWillMount() {
+        this.setState({
+            formStep: this.props.formStep
+        })
+    }
+
     handleChange = input => event => {
         this.setState({ [input] : event.target.value }, () => this.checkInputs())
+        //console.log(this.state)
     }
 
     checkInputs = () => {
@@ -39,6 +47,17 @@ class Form extends React.Component {
             services: array
         }, () => this.nextStep())
     }
+    
+    updateImageChoice = (el) => {
+        const images = this.state.images
+        if(this.state.imageIndex < 2) {
+            this.updateImageIndex()
+        }
+        images.push(el)
+        this.setState({
+            images
+        })
+    }
 
     updateImageIndex = () => {
         this.setState({
@@ -48,7 +67,10 @@ class Form extends React.Component {
 
     nextStep = () => {
         //const user = this.state
-        Object.keys(this.state).filter(key => this.state[key] === '' || this.state[key] === null)
+        //let user;
+        //const test = Object.keys(this.state).filter(key => this.state[key] === '' || this.state[key] === null)
+        //console.log(this.state)
+        this.props.getUserInfo(this.state, this.props.formStep)
         this.props.scrollSection()
         //this.props.getUserInfo(user)
     }
@@ -78,15 +100,15 @@ class Form extends React.Component {
                             updateServices={this.updateServices}
                             cookies={cookies}
                             choiceAmount={this.state.choiceAmount}
-                            //handleChange = {this.handleChange}
-                            //values={values}
+                            scrollSection={this.props.scrollSection}
                         />
             case 3:
                 return <ImageChoices 
-                            //nextStep={this.nextStep}
                             updateImageIndex={this.updateImageIndex}
+                            updateImageChoice={this.updateImageChoice}
                             imageIndex={this.state.imageIndex}
                             images={images[this.state.imageIndex]}
+                            scrollSection={this.props.scrollSection}
                         />
             case 4:
                 return <ImageChoices 

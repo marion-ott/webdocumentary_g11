@@ -150,6 +150,7 @@ class BubbleCanvas extends React.Component {
                 c.fill();
                 c.restore();
                 c.strokeStyle = this.color;
+                c.lineWidth = 5;
                 c.stroke();
                 c.closePath();
             };
@@ -163,7 +164,7 @@ class BubbleCanvas extends React.Component {
             particles = [];
 
             for (let i = 0; i < 20; i++) {
-                const radius = Math.floor(Math.random() * 100);
+                const radius = Math.floor(Math.random() * (50 - 10) + 10);
                 let x = randomIntFromRange(radius, canvas.width - radius);
                 let y = randomIntFromRange(radius, canvas.height - radius);
                 //let y = Math.random () * innerHeight;

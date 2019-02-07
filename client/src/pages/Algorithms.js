@@ -17,6 +17,7 @@ class Algorithms extends React.Component {
                     ref={(el) => el && this._blocks.push(el)}
                     blocks={content.data[1].step[4].blocks}
                 />
+                {/** CREER DEUX FENETRES POUR CHOIX  BIG DATA OU TRACKING */}
             </section>
         )
     }

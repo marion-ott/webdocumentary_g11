@@ -17,10 +17,12 @@ class Profile extends React.Component {
         })
     }
 
+    
+
     render() {
         return(
             <div className={css.component}>
-                {this.props.layerColor && (<div className="layer" style={{backgroundColor: this.props.layerColor}}></div>)}
+                {/* {this.props.layerColor && (<div className="layer" style={{backgroundColor: this.props.layerColor}}></div>)} */}
                 <div className="formContainer" style={{backgroundColor: this.props.backgroundColor}}>
                     <div className="formContainer__title">
                         <h3>{this.props.title}</h3>

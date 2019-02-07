@@ -9,16 +9,17 @@ class BigData extends React.Component {
        // const data = content.data[4].bigData
         return(
             <section>
-                <Tube />
+                {/* <Tube /> */}
                 <ParticleComponent />
                 <BigDataIntro />
                 <Profile 
                     formStep={3}
                     //layerColor="#0000FF"
                     //getUserInfo={this.getUserInfo} 
-                    scrollSection={this.scrollSection}
+                    scrollSection={this.props.scrollSection}
                     title="Quel internaute êtes-vous ?"
                 />
+                <BigDataIntro />
             </section>
         )
     }

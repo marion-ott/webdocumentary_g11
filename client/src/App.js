@@ -22,7 +22,6 @@ class App extends Component {
 
   getUserInfo = (data) => {
     let user = Object.assign({}, this.state.user)
-    //const formStep = this.state.formStep + 1    
     switch(this.state.formStep) {
       case 1:
         user.firstName = data.firstName
@@ -53,6 +52,7 @@ class App extends Component {
   }
 
   scrollSection = () => {
+    //console.log("scroll")    
     window.scrollBy({
       left: 0,
       top: window.innerHeight,
@@ -64,6 +64,8 @@ class App extends Component {
   }
 
   animateLayer = (id) => {
+    console.log(this._blocks[id]);
+    
     const layer = ReactDOM.findDOMNode(this._blocks[id]).querySelector('.layer')
     if(layer) {
       TweenLite.to(layer, 1,{ ease: Power4.ease, height: 0})
@@ -73,33 +75,33 @@ class App extends Component {
     })
   }
 
-  render() {   
+  render() {  
+    console.log(this.props)
     return (
       <div className="App">
         <div>
           <Home
             ref={(el) => el && this._blocks.push(el)}
             step={this.state.step}
-            scrollVertical={this.scrollVertical}
-            scrollSection={this.scrollSection}
+            scrollSection={this.props.scrollSection}
           />
           <Text 
             ref={(el) => el && this._blocks.push(el)}
-            layerColor={false}
+            //layerColor={false}
             title={content.data[1].step[0].title} 
             paragraph={content.data[1].step[0].text}  
             backgroundColor={content.data[1].step[0].backgroundColor} 
             txtColor={content.data[1].step[0].txtColor} 
             className={content.data[1].step[0].className}  
-            scrollSection={this.scrollSection}
+            scrollSection={this.props.scrollSection}
             autoTransition={true}
           />
           <Profile 
             ref={(el) => el && this._blocks.push(el)}
             layerColor="#0000FF"
-            getUserInfo={this.getUserInfo} 
+            getUserInfo={this.props.getUserInfo} 
             formStep={this.state.formStep}
-            scrollSection={this.scrollSection}
+            scrollSection={this.props.scrollSection}
             title="Dites-nous tout..."
           />
           <Text
@@ -108,12 +110,13 @@ class App extends Component {
             paragraph={content.data[1].step[2].text}
             subtitle={content.data[1].step[2].subtitle}
             cta={content.data[1].step[2].cta}
+            hasBlocks={true}
             backgroundColor={content.data[1].step[2].backgroundColor} 
             txtColor={content.data[1].step[2].txtColor} 
             className={content.data[1].step[2].className} 
             blocks={content.data[1].step[1].blocks}
-            scrollSection={this.scrollSection}
-            redirect={this.props.history.push}
+            scrollSection={this.props.scrollSection}
+            redirect={this.props.routerProps.history.push}
             redirectTo="/algorithms"
           /> 
         </div>

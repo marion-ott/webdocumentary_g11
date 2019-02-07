@@ -17,7 +17,7 @@ class DragElement extends React.Component {
                 onStart={this.handleStart}
                 onDrag={this.handleDrag}
                 onStop={this.handleStop}>
-                <div id={this.props.index} className="handle" onClick={(event) => this.props.changeIndex(event)}>
+                <div id={this.props.index} className={`handle ${this.props.color && this.props.color}`} onClick={(event) => this.props.changeIndex(event)}>
                     <div className="titleContainer">
                         <div className="dots">
                             <div></div>

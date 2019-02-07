@@ -1,14 +1,28 @@
 import React from 'react';
 import Cta from '../../blocs/Cta/Cta'
 import BubbleCanvas from '../BubbleCanvas/BubbleCanvas'
+import anime from 'animejs';
 import css from './home.scss'
 
 class Home extends React.Component {
+
+    componentDidMount() {
+        anime({
+            targets: this.refs.title,            
+            translateY: [100, 0],            
+            translateX: [60, 0],            
+            loop: true,
+            duration: 10000,
+            direction: 'alternate',            
+            easing: 'easeInOutSine'
+        })
+    }
+
     render() {
         return(
             <section className={css.component}>
                 <div className="center">
-                    <div className="titleBubble">
+                    <div className="titleBubble" ref="title">
                         <h1>
                             <span className="dans">dans</span>
                             <span className="la">la</span>

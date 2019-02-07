@@ -630,7 +630,7 @@
                  },
                  {
                      "title": false,
-                     "text": "Les bulles de filtre sont donc le résultat d’une recherche personnalisée dans laquelle des algorithmes vont définir un profil et déterminer de manière sélective les contenus qu’un utilisateur aimerait voir en fonction des informations personnelles récoltées sur ce dernier.",
+                     "text": "Les bulles de filtre sont donc le résultat d’une recherche <u>personnalisée</u> dans laquelle des <u>algorithmes</u> vont définir un profil et déterminer de manière sélective les contenus qu’un utilisateur aimerait voir en fonction des <u>informations personnelles récoltées</u> sur ce dernier.",
                      "subtitle": false,
                      "backgroundColor": "#000",
                      "txtColor": "#fff"

@@ -3,7 +3,7 @@ import { scrollVertical } from '../../helpers'
 import anime from 'animejs';
 
 
-class ScrollSymbol extends React.Component {
+class ScrollSymbolWhite extends React.Component {
     componentDidMount() {
         anime({
             targets: this.refs.icon,            
@@ -27,12 +27,15 @@ class ScrollSymbol extends React.Component {
         return(
             <div style={svgPosition} onClick={scrollVertical} ref='icon'>
                 <svg onClick={this.props.scrollSection} width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="32" cy="32" r="32" fill="#0000FF"/>
-                    <path d="M31.2929 47.7071C31.6834 48.0976 32.3166 48.0976 32.7071 47.7071L39.0711 41.3431C39.4616 40.9526 39.4616 40.3195 39.0711 39.9289C38.6805 39.5384 38.0474 39.5384 37.6569 39.9289L32 45.5858L26.3431 39.9289C25.9526 39.5384 25.3195 39.5384 24.9289 39.9289C24.5384 40.3195 24.5384 40.9526 24.9289 41.3431L31.2929 47.7071ZM31 17L31 47L33 47L33 17L31 17Z" fill="white"/>
+                    <circle cx="32" cy="32" r="32" fill="white"/>
+                    <path d="M30.9004 46.4931C31.0956 46.6884 31.4122 46.6884 31.6075 46.4931L34.7894 43.3111C34.9847 43.1159 34.9847 42.7993 34.7894 42.604C34.5942 42.4087 34.2776 42.4087 34.0823 42.604L31.2539 45.4324L28.4255 42.604C28.2302 42.4087 27.9136 42.4087 27.7184 42.604C27.5231 42.7993 27.5231 43.1159 27.7184 43.3111L30.9004 46.4931ZM30.7539 16.3721L30.7539 46.1395L31.7539 46.1395L31.7539 16.3721L30.7539 16.3721Z" fill="black"/>
                 </svg>
             </div>
         )
     }
 } 
 
-export default ScrollSymbol
+export default ScrollSymbolWhite
+
+
+

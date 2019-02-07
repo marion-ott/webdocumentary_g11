@@ -1,3 +1,8 @@
 :local(.component) {
-    
+    h2 {
+        font-family: 'CircularStd';
+        font-size: 120px;
+        transform: rotate(-9deg);
+        font-weight: bold;
+    }
 }

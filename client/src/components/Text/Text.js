@@ -14,7 +14,7 @@ class Text extends React.Component {
         super(props)
         this.state = {
             blocks: [],
-            cta: false
+            hasBlocks: this.props.hasBlocks
         }
         this._blocks = []
     }
@@ -48,28 +48,28 @@ class Text extends React.Component {
             return true
         })
         this.setState({
-            cta: true
+            hasBlocks: false
         })
     }
 
     render() {
         
         const { title, paragraph, subtitle, cta } = this.props
-        console.log(title)
+
         return(
             <div className={css.component} style={{backgroundColor: this.props.backgroundColor}}>
                 <div className="txtContent">
                     { title ? <Title title={title} txtColor={this.props.txtColor} /> : false }
                     { paragraph ? <Paragraph paragraph={paragraph} subtitle={subtitle} txtColor={this.props.txtColor} className={this.props.className} /> : false }
                 </div>
-                { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer key={key} index={key} element={block}  ref={el => el && this._blocks.push(el)}/>)) }
+                { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer color={this.props.color && this.props.color} key={key} index={key} element={block}  ref={el => el && this._blocks.push(el)}/>)) }
 
-                { cta && this.state.cta ?
+                { cta ?
                     (
-                        <Cta text="Continuer" scrollSection={this.scrollSection} redirect={this.props.redirect} redirectTo={this.props.redirectTo} />
+                        <Cta text="Continuer" scrollSection={!this.props.redirect && this.scrollSection} redirect={this.props.redirect} redirectTo={this.props.redirectTo} />
                     )
-                    : !cta ? <ScrollSymbol scrollSection={this.props.scrollSection} />
-                    : !this.state.cta ? <MoreSymbol renderBlocks={this.renderDraggableBlocks} /> : null}
+                    : !this.state.hasBlocks ? <ScrollSymbol scrollSection={this.props.scrollSection} /> 
+                    : this.props.hasBlocks && !this.state.cta ? <MoreSymbol renderBlocks={this.renderDraggableBlocks} /> : null}
             </div>
         )
     }
