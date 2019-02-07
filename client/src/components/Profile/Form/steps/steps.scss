@@ -124,7 +124,7 @@ label {
     -ms-user-select: none;
     user-select: none;
 }
-    
+
 .checkbox input {
     position: absolute;
     opacity: 0;
@@ -169,12 +169,12 @@ label {
     width: auto;
     font-size: 14px;
     padding: 0 10px;
-}   
+}
 .checkbox:hover input ~ .checkmark {
     border: solid 2px #0000FF;
     color: #0000FF;
 }
-    
+
 .checkbox input:checked ~ .checkmark {
     border: solid 2px #0000FF;
     color: #0000FF;
@@ -218,6 +218,8 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 10%;
     .images {
         width: 95%;
         height: 80%;
@@ -240,6 +242,7 @@ label {
         width: 190px;
         height: 210px;
         overflow: hidden;
+        position: relative;
     }
     input[type="checkbox"]:disabled ~ span {
         opacity: 0.5;
@@ -248,6 +251,7 @@ label {
             border: solid 2px black;
         }
     }
+
 }
 // MOBILE
 @media (max-width: 640px) {
@@ -274,9 +278,9 @@ label {
                 height: 50px;
             }
         }
-       
+
     }
-    
+
 }
 
 @media (max-width: 380px) {
@@ -287,4 +291,3 @@ label {
         }
     }
     }
-    

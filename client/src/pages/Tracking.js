@@ -4,7 +4,10 @@ import TrackingIntro from '../components/TrackingPage/TrackingIntro'
 import MixElements from '../components/MixElements/MixElements'
 import content from '../content/content'
 import Profile from '../components/Profile/Profile'
+
 import Tube from '../components/TubeStraightLeft/Tube'
+import TubeSmall from '../components/TubeSmall/Tube'
+import TubeForm from '../components/TubeForm2/Tube'
 
 class BigData extends React.Component {
     constructor(props) {
@@ -33,8 +36,12 @@ class BigData extends React.Component {
         return(
             this.state.data && (
                 <section className="tracking">
+                    <div className="straight">
                         <Tube />
                         <TrackingIntro />
+                    </div>
+                    <div className="form">
+                        <TubeSmall />
                         <Profile
                             title="Quelles sont vos habitudes de navigation ?"
                             getUserInfo={this.props.getUserInfo}
@@ -42,13 +49,18 @@ class BigData extends React.Component {
                             backgroundColor="#FFFFFF"
                             scrollSection={this.props.scrollSection}
                         />
-                        <MixElements
-                            blocks={content.data[1].step[3].blocks}
-                            data={this.state.data}
-                            redirect={this.props.routerProps.history.push}
-                            redirectTo="/big-data"
-                            cta="Continuer"
-                        />
+                      <TubeForm />
+                    </div>
+                    <div className="straight">
+                        <Tube />
+                          <MixElements
+                              blocks={content.data[1].step[3].blocks}
+                              data={this.state.data}
+                              redirect={this.props.routerProps.history.push}
+                              redirectTo="/big-data"
+                              cta="Continuer"
+                          />
+                    </div>
                 </section>
             )
         )
