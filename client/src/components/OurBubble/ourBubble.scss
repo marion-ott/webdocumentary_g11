@@ -1,9 +1,11 @@
-// .filterBubble{
-//   svg {
-//       width: 25% !important;
-//       height: auto !important;
-//       position: fixed;
-//       right: 5%;
-//       top: 0%;
-//   }
-// }
+.filterBubble{
+    .bubble{
+        svg {
+            width: 25% !important;
+            height: auto !important;
+            position: fixed;
+            right: 5%;
+            top: 0%;
+        }
+    }
+}

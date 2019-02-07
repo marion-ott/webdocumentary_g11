@@ -5,14 +5,14 @@ import anime from 'animejs';
 
 class ScrollSymbol extends React.Component {
     componentDidMount() {
-        // anime({
-        //     targets: this.refs.icon,            
-        //     translateY: [-5, 0],            
-        //     loop: true,
-        //     duration: 650,
-        //     direction: 'alternate',            
-        //     easing: 'easeInOutSine'
-        // })
+        anime({
+            targets: this.refs.icon,            
+            translateY: [-5, 0],            
+            loop: true,
+            duration: 650,
+            direction: 'alternate',            
+            easing: 'easeInOutSine'
+        })
     }
 
     render() {

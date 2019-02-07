@@ -13,11 +13,11 @@ class Router extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            user: {}
+            user: {} 
         }
     }
 
-   
+
 
     getUserInfo = (data, formStep) => {
         let user = Object.assign({}, this.state.user)
@@ -66,8 +66,7 @@ class Router extends React.Component {
     }
 
     render() {
-        console.log(this.state);
-        
+
         return(
             <BrowserRouter>
                 <Switch>
@@ -77,10 +76,10 @@ class Router extends React.Component {
                         atActive={{ opacity: 1 }}
                         className="switch-wrapper"
                     >
-                        <Route exact path="/" component={(props) => <App getUserInfo={this.getUserInfo} scrollSection={this.scrollSection} routerProps={props} />} />
-                        <Route path="/algorithms" component={(props) => <Algorithms scrollSection={this.scrollSection} routerProps={props} />} />
-                        <Route path="/tracking" component={(props) => <Tracking getUserInfo={this.getUserInfo} scrollSection={this.scrollSection} routerProps={props} />} />
-                        <Route path="/big-data" component={(props) => <BigData getUserInfo={this.getUserInfo} scrollSection={this.scrollSection} routerProps={props} />} />
+                        <Route exact path="/" component={(props) => <App getUserInfo={this.getUserInfo} updatePrevLocation={this.updatePrevLocation} scrollSection={this.scrollSection} routerProps={props} />} />
+                        <Route path="/algorithms" component={(props) => <Algorithms scrollSection={this.scrollSection} updatePrevLocation={this.updatePrevLocation} routerProps={props} />} />
+                        <Route path="/tracking" component={(props) => <Tracking getUserInfo={this.getUserInfo} updatePrevLocation={this.updatePrevLocation} scrollSection={this.scrollSection} routerProps={props} />} />
+                        <Route path="/big-data" component={(props) => <BigData getUserInfo={this.getUserInfo} updatePrevLocation={this.updatePrevLocation} scrollSection={this.scrollSection} routerProps={props} />} />
                         <Route path="/filter-bubble" component={FilterBubble} />
                         <Route component={NotFound} />
                     </AnimatedSwitch>

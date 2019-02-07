@@ -1,30 +1,30 @@
 import React from 'react'
 import AlgoIntro from '../components/AlgoPage/AlgoIntro'
 import MixElements from '../components/MixElements/MixElements'
+import Choices from '../components/Choices/Choices'
 import content from '../content/content'
 import Tube from '../components/TubeStraightLeft/Tube'
-import DragElementContainer from '../components/DragAndDrop/DragElementsContainer';
 
 class Algorithms extends React.Component {
     constructor() {
         super()
         this._blocks = []
     }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
-        const choices = content.data[7].choices
-        //console.log(choices)
         return(
             <section className="algorithms">
-                <Tube />
+                {/* <Tube /> */}
                 <AlgoIntro />
                 <MixElements
                     ref={(el) => el && this._blocks.push(el)}
                     blocks={content.data[1].step[4].blocks}
                 />
-                <section style={{width: "100%", height: "100vh", backgroundColor: "red"}}>
-                    { choices.map((choice, key) => <DragElementContainer element={choice} key={key} />) }
-                    {/* <DragElementContainer element={test} index={0} /> */}
-                </section>
+                <Choices push={this.props.routerProps.history.push} />
             </section>
         )
     }

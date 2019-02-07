@@ -1,0 +1,25 @@
+:local(.component) {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    p {
+        font-size: 24px;
+        font-family: 'CircularStd';
+        font-weight: bold;
+    }
+    a {
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+        background-color: #0000FF;
+        color: white;
+        font-family: 'CircularStd';
+        font-weight: bold;
+        padding: 15px 25px;
+        text-decoration: none;
+    }
+}

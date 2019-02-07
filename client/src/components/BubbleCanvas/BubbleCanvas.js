@@ -10,7 +10,7 @@ class BubbleCanvas extends React.Component {
     componentDidMount() {
         const canvas = this.canvas
         const c = canvas.getContext('2d',);
-        const colorProp = this.props.color 
+        const colorProp = this.props.color
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
@@ -30,13 +30,13 @@ class BubbleCanvas extends React.Component {
 
             init();
         });
-        function getDistance(x1, y1, x2, y2) {
-            let xDistance = x2 - x1;
-            let yDistance = y2 - y1;
+        // function getDistance(x1, y1, x2, y2) {
+        //     let xDistance = x2 - x1;
+        //     let yDistance = y2 - y1;
 
-            return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2)
-            )
-        };
+        //     return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2)
+        //     )
+        // };
 
         function randomIntFromRange(min, max) {
             return Math.floor(Math.random() * (max - min - 1) + min);
@@ -147,7 +147,7 @@ class BubbleCanvas extends React.Component {
                 const color = colorProp;
                 let radius, x, y
 
-                if (window.innerWidth < 640) {                  
+                if (window.innerWidth < 640) {
                      radius = Math.floor(Math.random() * 40);
                      x = randomIntFromRange(radius, canvas.width - radius);
                      y = randomIntFromRange(radius, canvas.height - radius);
@@ -156,8 +156,8 @@ class BubbleCanvas extends React.Component {
                     x = randomIntFromRange(radius, canvas.width - radius);
                     y = randomIntFromRange(radius, canvas.height - radius);
                 }else {
-                    
-                    radius = Math.floor(Math.random() * 100);
+
+                    radius = Math.floor(Math.random() * 50);
                     x = randomIntFromRange(radius, canvas.width - radius);
                     y = randomIntFromRange(radius, canvas.height - radius);
                 }
@@ -171,7 +171,7 @@ class BubbleCanvas extends React.Component {
                         }
                     }
                 }
-               
+
                 particles.push(new Particle(x, y, radius, color));
             };
             //console.log(particles);

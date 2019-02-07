@@ -2,14 +2,17 @@ import React from 'react'
 
 import Tube from '../components/OurBubble/OurBubble'
 import content from '../content/content'
-
 import BubbleCanvas from '../components/BubbleCanvas/BubbleCanvas'
 import Text from '../components/Text/Text'
-import MixElements from '../components/MixElements/MixElements'
-import ScrollSymbol from '../blocs/ScrollSymbol/ScrollSymbol';
+
 
 
 class FilterBubble extends React.Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         const data = content.data[8]
         const style = {
@@ -19,7 +22,9 @@ class FilterBubble extends React.Component {
 
         return(
             <section className="filterBubble">
-                {/* <Tube /> */}
+                {/* <div className="bubble">
+                    <Tube />
+                </div> */}
                 <Text
                     title={data.FilterBubble[0].title}
                     hasBlocks={false}
@@ -34,7 +39,6 @@ class FilterBubble extends React.Component {
                     paragraph={data.FilterBubble[2].text}
                     //backgroundColor={data.FilterBubble[1].backgroundColor}
                     blocks={data.FilterBubble[1].blocks}
-                    paragraph={data.FilterBubble[1].text}
                 />
                 <Text
                     paragraph={data.FilterBubble[2].text}
@@ -47,7 +51,7 @@ class FilterBubble extends React.Component {
                     txtColor={data.FilterBubble[0].txtColor}
                     className={data.FilterBubble[0].className}
                 />
-              <BubbleCanvas color="#fff" style={style}/>
+              <BubbleCanvas color="#333333" style={style}/>
             </section>
         )
     }

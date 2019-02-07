@@ -28,8 +28,8 @@ class Text extends React.Component {
     componentDidMount() {
         if(this.state.blocks && this.state.blocks.length > 0) { 
             this._blocks.map(block => {
-                let left = Math.random() * (400 - 20) + 20
-                let top = Math.random() * (440 - 20) + 20
+                let left = Math.random() * (200 - 20) + 20
+                let top = Math.random() * (140 - 20) + 20
                 ReactDOM.findDOMNode(block).style.left = `${left}px`
                 ReactDOM.findDOMNode(block).style.top = `${top}px`
                 TweenLite.to(ReactDOM.findDOMNode(block), 0.2,{ ease: Power4.ease, opacity: 0, scale: 0.5, transformOrigin: '50% 50%' })
