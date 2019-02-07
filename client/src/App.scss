@@ -2,8 +2,6 @@
     overflow-x: hidden;
 
     .formHome{
-        height: 100vh;
-
         .formContainer {
             width: 60%;
             z-index: 4;
@@ -18,4 +16,22 @@
             }
         }
     }
+    @media (max-width: 640px) {
+        .formHome{
+            .formContainer {
+                width: 85%;
+                z-index: 4;
+            }
+            div[role=button]{
+                overflow: initial !important;
+                margin-top: -16% !important;
+    
+                svg {
+                  width: 60% !important;
+                  margin-left: 35% !important
+                }
+            }
+        }
+    }
 }
+

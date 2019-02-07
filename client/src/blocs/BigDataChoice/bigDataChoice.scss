@@ -22,4 +22,15 @@
         padding: 15px 25px;
         text-decoration: none;
     }
+    @media (max-width: 640px) {
+        p {
+            font-size: 24px;
+            text-align: start;
+            margin-left: 15px;
+        }
+        a {
+            right: 120px;
+            bottom: 30px;
+        }
+    }
 }
