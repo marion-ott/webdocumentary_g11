@@ -22,9 +22,9 @@ class FilterBubble extends React.Component {
 
         return(
             <section className="filterBubble">
-                {/* <div className="bubble">
+                <div className="bubble">
                     <Tube />
-                </div> */}
+                </div>
                 <Text
                     title={data.FilterBubble[0].title}
                     hasBlocks={false}
