@@ -10,7 +10,7 @@ class BigDataChoice extends React.Component {
             <div className={css.component}>
                 <Particle />
                 <p>le big data ? c’est quoi ?</p>
-                <a href="/big-data">découvrir</a>
+                <a href="/big-data/#">découvrir</a>
             </div>
         );
     }

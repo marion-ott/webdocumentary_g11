@@ -12,7 +12,7 @@ class TrackingChoice extends React.Component {
                 <TrackingBackground />
                 <div className="content">
                     <p>En savoir plus sur le tracking</p>
-                    <a href="/tracking">découvrir</a>
+                    <a href="/tracking/#">découvrir</a>
                 </div>
             </div>
         );

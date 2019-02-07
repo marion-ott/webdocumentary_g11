@@ -10,17 +10,21 @@ class Algorithms extends React.Component {
         super()
         this._blocks = []
     }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         return(
             <section className="algorithms">
-                <Tube />
+                {/* <Tube /> */}
                 <AlgoIntro />
                 <MixElements
                     ref={(el) => el && this._blocks.push(el)}
                     blocks={content.data[1].step[4].blocks}
                 />
                 <Choices push={this.props.routerProps.history.push} />
-                
             </section>
         )
     }

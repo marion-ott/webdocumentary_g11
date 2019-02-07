@@ -1,6 +1,6 @@
 import React from 'react'
 
-//import Tube from '../components/OurBubble/OurBubble'
+import Tube from '../components/OurBubble/OurBubble'
 import content from '../content/content'
 import BubbleCanvas from '../components/BubbleCanvas/BubbleCanvas'
 import Text from '../components/Text/Text'
@@ -8,6 +8,11 @@ import Text from '../components/Text/Text'
 
 
 class FilterBubble extends React.Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         const data = content.data[8]
         const style = {
@@ -17,9 +22,9 @@ class FilterBubble extends React.Component {
 
         return(
             <section className="filterBubble">
-                <div className="bubble">
+                {/* <div className="bubble">
                     <Tube />
-                </div>
+                </div> */}
                 <Text
                     title={data.FilterBubble[0].title}
                     hasBlocks={false}

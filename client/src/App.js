@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.scss'
 import content from './content/content'
-import Tube from './components/TubeForm1/Tube'
+// import Tube from './components/TubeForm1/Tube'
 import Home from './components/Home/Home'
 import Text from './components/Text/Text'
 import Profile from './components/Profile/Profile'
@@ -20,7 +20,6 @@ class App extends Component {
     }
     this._blocks = []
   }
-
 
   getUserInfo = (data) => {
     let user = Object.assign({}, this.state.user)
@@ -57,7 +56,7 @@ class App extends Component {
     //console.log("scroll")    
     window.scrollBy({
       left: 0,
-      top: window.innerHeight,
+      top: "100vh",
       behavior: "smooth"
     })
     setTimeout(() => {
@@ -98,7 +97,7 @@ class App extends Component {
             scrollSection={this.props.scrollSection}
             autoTransition={true}
           />
-          <div className="formHome">
+          {/* <div className="formHome"> */}
             <Profile 
               ref={(el) => el && this._blocks.push(el)}
               layerColor="#0000FF"
@@ -107,22 +106,37 @@ class App extends Component {
               scrollSection={this.props.scrollSection}
               title="Dites-nous tout..."
             />
-            <Tube />
-          </div>
+           
+          {/* </div> */}
+          <Text
+            ref={(el) => el && this._blocks.push(el)}
+            title={content.data[1].step[1].title}
+            paragraph={content.data[1].step[1].text}
+            subtitle={content.data[1].step[1].subtitle}
+            cta={content.data[1].step[1].cta}
+            hasBlocks={true}
+            backgroundColor={content.data[1].step[1].backgroundColor} 
+            txtColor={content.data[1].step[1].txtColor} 
+            className={content.data[1].step[1].className} 
+            blocks={content.data[1].step[1].blocks}
+            scrollSection={this.props.scrollSection}
+            // redirect={this.props.routerProps.history.push}
+            // redirectTo="/algorithms"
+          />
           <Text
             ref={(el) => el && this._blocks.push(el)}
             title={content.data[1].step[2].title}
             paragraph={content.data[1].step[2].text}
             subtitle={content.data[1].step[2].subtitle}
             cta={content.data[1].step[2].cta}
-            hasBlocks={true}
+            hasBlocks={false}
             backgroundColor={content.data[1].step[2].backgroundColor} 
             txtColor={content.data[1].step[2].txtColor} 
             className={content.data[1].step[2].className} 
-            blocks={content.data[1].step[1].blocks}
+            blocks={content.data[1].step[2].blocks}
             scrollSection={this.props.scrollSection}
             redirect={this.props.routerProps.history.push}
-            redirectTo="/algorithms"
+            redirectTo="/algorithms/#"
           />
         </div>
       </div>
