@@ -115,6 +115,8 @@ class App extends Component {
             subtitle={content.data[1].step[1].subtitle}
             cta={content.data[1].step[1].cta}
             hasBlocks={true}
+            videoTitle={content.data[1].step[1].blocks[1].title}
+            videoSrc={content.data[1].step[1].blocks[1].src}
             backgroundColor={content.data[1].step[1].backgroundColor} 
             txtColor={content.data[1].step[1].txtColor} 
             className={content.data[1].step[1].className} 

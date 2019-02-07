@@ -5,10 +5,13 @@ class Title extends React.Component {
     render() {
         let str = this.props.title
         let splitStr = str.split(' ')
-        console.log(splitStr)
+        //console.log(splitStr)
         return(
             <div className={css.component}>
-                <h2 style={{color: this.props.txtColor}}>{this.props.title}</h2>
+                <span className="la">{splitStr[0]}</span>
+                <span className="bulle">{splitStr[1]}</span>
+                <span className="de">{splitStr[2]}</span>
+                <span className="filtres">{splitStr[3]}</span>
             </div>
         )
     }

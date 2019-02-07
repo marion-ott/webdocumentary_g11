@@ -1,6 +1,9 @@
 :local(.component) {
     width: auto;
     min-width: 50vw;
+    strong {
+        font-weight: bold;
+    }
     .paragraph {
         font-size: 24px;
     }

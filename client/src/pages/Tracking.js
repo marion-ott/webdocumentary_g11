@@ -5,9 +5,9 @@ import MixElements from '../components/MixElements/MixElements'
 import content from '../content/content'
 import Profile from '../components/Profile/Profile'
 import Choices from '../components/Choices/Choices'
-import Tube from '../components/TubeStraightLeft/Tube'
-import TubeSmall from '../components/TubeSmall/Tube'
-import TubeForm from '../components/TubeForm2/Tube'
+// import Tube from '../components/TubeStraightLeft/Tube'
+// import TubeSmall from '../components/TubeSmall/Tube'
+// import TubeForm from '../components/TubeForm2/Tube'
 
 class BigData extends React.Component {
     constructor(props) {
@@ -36,6 +36,7 @@ class BigData extends React.Component {
     }
 
     render() {
+        
         return(
             this.state.data && (
                 <section className="tracking">
@@ -59,12 +60,21 @@ class BigData extends React.Component {
                           <MixElements
                               blocks={content.data[1].step[3].blocks}
                               data={this.state.data}
-                              redirect={this.props.routerProps.history.push}
-                              redirectTo="/big-data"
-                              cta="Continuer"
+                              name={localStorage.getItem('firstName')}
+                            //   redirect={this.props.routerProps.history.push}
+                            //   redirectTo="/big-data"
+                            //   cta="Continuer"
+                          />
+                          <MixElements
+                              blocks={content.data[1].step[4].blocks}
+                              data={this.state.data}
+                              
+                            //   redirect={this.props.routerProps.history.push}
+                            //   redirectTo="/big-data"
+                            //   cta="Continuer"
                           />
                     {/* </div> */}
-                    <Choices push={this.props.routerProps.history.push} />
+                    <Choices history={this.props.routerProps.history} push={this.props.routerProps.history.push} />
                 </section>
             )
         )

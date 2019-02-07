@@ -33,7 +33,7 @@
                         {
                             "type": "video",
                             "title": "Oskar Morgenstern à propos de l'ordinateur en 1972",
-                            "src": "src"
+                            "src": "/assets/media/video/OskarMorgenstern.mp4"
                         }
                     ]
                 },
@@ -54,17 +54,42 @@
                         {
                             "type": "text",
                             "text": "Les réponses que vous nous avez donné nous ont aidé à définir un profil plus détaillé de vous, mais nous avion déjà une petite idée de qui vous êtes"
-                        },
-                        {
-                            "type": "text"
-                        }
+                        }         
                     ]
                 },
                 {
                     "blocks": [
                         {
-                            "type": "image",
-                            "src": ""
+                            "type": "video",
+                            "title": "How Online Trackers Track You, and What You Can Do About It",
+                            "src": "/assets/media/video/TEDxUniversityofTulsa.mp4"
+                        },
+                        {
+                            "type": "video",
+                            "title": "Tracking Cookies 101",
+                            "src": "/assets/media/video/TrackingCookies101.mp4"
+                        }          
+                    ]
+                },
+                {
+                    "blocks": [
+                        {
+                            "type": "video",
+                            "title": "Big data : données, données, donnez-moi !",
+                            "src": "/assets/media/video/bigData.mp4"
+                        },
+                        {
+                            "type": "video",
+                            "title": "Les enjeux du big data",
+                            "src": "/assets/media/video/bigData-enjeux.mp4"
+                        }          
+                    ]
+                },
+                {
+                    "blocks": [
+                        {
+                            "type": "gif",
+                            "src": "https://media.giphy.com/media/3o6Yg4GUVgIUg3bf7W/giphy.mp4"
                         },
                         {
                             "type": "text",
@@ -76,11 +101,13 @@
                         },
                         {
                             "type": "video",
-                            "src": ""
+                            "title": "How algorithms shape our world by Kevin Slavin",
+                            "src": "/assets/media/video/KevinSlavin.mp4"
                         },
                         {
-                            "type": "image",
-                            "src": ""
+                            "type": "video",
+                            "title": "The Secret Rules of Modern Living Algorithms",
+                            "src": "/assets/media/video/algorithms.mp4"
                         }
                     ]
                 }
@@ -612,7 +639,7 @@
             "FilterBubble": [
                  {
                     "title": true,
-                     "title": "la bulle de filtre",
+                     "title": "la bulle de filtres",
                      "backgroundColor": "#000",
                      "txtColor": "#fff",
                      "className": "FilterBubble_title",
@@ -625,29 +652,29 @@
                      "backgroundColor": "#000",
                      "txtColor": "#fff",
                      "className": "FilterBubblr_textBack",
-                     "type": "media",
-                     "blocks": [
-                         {
-                             "type": "text",
-                             "paragraph": "C’est de cette impression que le concept de “Filter Bubble”, qui peut être littéralement traduit par “Bulle de filtre”, a été théorisé en 2011 par Eli Pariser."
-                         },
-                         {
-                             "type": "text",
-                             "paragraph": "À travers son livre “The Filter Bubble: What the Internet Is Hiding from You”, et dans une conférence TED Talk, visionnée plus d’un million de fois sur Internet, il explique les fondements de cette idée, qui dit que chaque internaute accéderait à une version significativement différente du web. Ainsi, selon cette théorie, les contenus visibles par chaque internaute sont séléctionnés “discrètement” par des algorithmes, en s'appuyant sur différentes données collectées sur lui."
-                         },
-                         {
-                             "type": "video",
-                             "title": "The Secret Rules of Modern Living Algorithms ",
-                             "src": "src"
-                         }
-                     ]
+                     "type": "media"
                  },
                  {
                      "title": false,
                      "text": "Les bulles de filtre sont donc le résultat d’une recherche <u>personnalisée</u> dans laquelle des <u>algorithmes</u> vont définir un profil et déterminer de manière sélective les contenus qu’un utilisateur aimerait voir en fonction des <u>informations personnelles récoltées</u> sur ce dernier.",
                      "subtitle": false,
                      "backgroundColor": "#000",
-                     "txtColor": "#fff"
+                     "txtColor": "#fff",
+                     "blocks": [
+                        {
+                            "type": "text",
+                            "paragraph": "C’est de cette impression que le concept de “Filter Bubble”, qui peut être littéralement traduit par “Bulle de filtres”, a été théorisé en 2011 par Eli Pariser."
+                        },
+                        {
+                            "type": "text",
+                            "paragraph": "À travers son livre “The Filter Bubble: What the Internet Is Hiding from You”, et dans une conférence TED Talk, visionnée plus d’un million de fois sur Internet, il explique les fondements de cette idée, qui dit que chaque internaute accéderait à une version significativement différente du web. Ainsi, selon cette théorie, les contenus visibles par chaque internaute sont séléctionnés “discrètement” par des algorithmes, en s'appuyant sur différentes données collectées sur lui."
+                        },
+                        {
+                            "type": "video",
+                            "title": "The Secret Rules of Modern Living Algorithms ",
+                            "src": "src"
+                        }
+                    ]
                  },
                  {
                      "title": false,

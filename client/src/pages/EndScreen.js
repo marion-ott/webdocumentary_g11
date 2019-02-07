@@ -5,7 +5,7 @@ import Choices from '../components/Choices/Choices'
 import content from '../content/content'
 //import Tube from '../components/TubeStraightLeft/Tube'
 
-class Algorithms extends React.Component {
+class EndScreen extends React.Component {
     constructor() {
         super()
         this._blocks = []
@@ -18,17 +18,11 @@ class Algorithms extends React.Component {
     render() {
         
         return(
-            <section className="algorithms">
-                {/* <Tube /> */}
-                <AlgoIntro />
-                <MixElements
-                    ref={(el) => el && this._blocks.push(el)}
-                    blocks={content.data[1].step[4].blocks}
-                />
-                <Choices push={this.props.routerProps.history.push} />
+            <section className="ending">
+                
             </section>
         )
     }
 }
 
-export default Algorithms
+export default EndScreen

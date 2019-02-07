@@ -6,6 +6,7 @@ import Algorithms from './pages/Algorithms'
 import Tracking from './pages/Tracking'
 import BigData from './pages/BigData'
 import FilterBubble from './pages/FilterBubble'
+import EndScreen from './pages/EndScreen'
 import NotFound from './NotFound'
 
 
@@ -27,18 +28,22 @@ class Router extends React.Component {
             user.firstName = data.firstName
             user.age = data.age
             user.gender = data.gender
-            this.setState({
-              user
-            })
+            localStorage.setItem('firstName', user.firstName)
+            localStorage.setItem('age', user.age)
+            localStorage.setItem('gender', user.gender)
+            // this.setState({
+            //   user
+            // })
             break;
           case 2:
             user.firstName = user.firstName
             user.age = user.age
             user.gender = user.gender
             user.services = data.services
-            this.setState({
-              user
-            })
+            localStorage.setItem('services', user.services)
+            // this.setState({
+            //   user
+            // })
             break;
           case 3:
             user.firstName = user.firstName
@@ -46,9 +51,9 @@ class Router extends React.Component {
             user.gender = user.gender
             user.services = user.services
             user.images = data.images
-            this.setState({
-              user
-            })
+            // this.setState({
+            //   user
+            // })
             break;
           default:
             return(null)
@@ -66,7 +71,7 @@ class Router extends React.Component {
     }
 
     render() {
-
+        console.log(localStorage)
         return(
             <BrowserRouter>
                 <Switch>
@@ -81,6 +86,7 @@ class Router extends React.Component {
                         <Route path="/tracking" component={(props) => <Tracking getUserInfo={this.getUserInfo} updatePrevLocation={this.updatePrevLocation} scrollSection={this.scrollSection} routerProps={props} />} />
                         <Route path="/big-data" component={(props) => <BigData getUserInfo={this.getUserInfo} updatePrevLocation={this.updatePrevLocation} scrollSection={this.scrollSection} routerProps={props} />} />
                         <Route path="/filter-bubble" component={FilterBubble} />
+                        <Route path="/end" component={EndScreen} />
                         <Route component={NotFound} />
                     </AnimatedSwitch>
                 </Switch>

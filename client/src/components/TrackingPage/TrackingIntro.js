@@ -3,6 +3,7 @@ import css from './trackingPage.scss'
 import content from '../../content/content'
 import Camera from "./Camera";
 import TrackingBackground from "./TrackingBackground";
+import ScrollSymbol from '../../blocs/ScrollSymbol/ScrollSymbol';
 
 
 
@@ -44,6 +45,7 @@ class TrackingIntro extends React.Component {
                     </span>
                   </div>
                 </div>
+                <ScrollSymbol />
             </section>
         )
     }

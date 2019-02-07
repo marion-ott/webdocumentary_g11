@@ -4,7 +4,7 @@ import Subtitle from './Subtitle/Subtitle'
 
 const Paragraph = props => (
     <div id="paragraph" className={css.component}>
-        <p className={`paragraph ${props.className}`} style={{color: props.txtColor}} dangerouslySetInnerHTML={{__html: props.paragraph}}></p>
+        <p className={`paragraph ${props.className}`} style={{color: props.txtColor}} dangerouslySetInnerHTML={{__html: `${props.paragraph} <strong>${props.name ? props.name : ''}</strong>`}}></p>
         { props.subtitle ? <Subtitle subtitle={props.subtitle}/> : false }
     </div>
 )

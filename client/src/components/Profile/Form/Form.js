@@ -69,7 +69,7 @@ class Form extends React.Component {
         //const user = this.state
         //let user;
         //const test = Object.keys(this.state).filter(key => this.state[key] === '' || this.state[key] === null)
-        //console.log(this.state)
+        //console.log(this.state)        
         this.props.getUserInfo(this.state, this.props.formStep)
         this.props.scrollSection()
         //this.props.getUserInfo(user)
@@ -86,7 +86,7 @@ class Form extends React.Component {
         const cookies = content.data[2].cookies
         const images = content.data[6].formImages
         const buttonState = this.checkInputs()
-
+        console.log("render form")
         switch(step) {
             case 1:
                 return <UserInfo 

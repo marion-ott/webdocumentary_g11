@@ -1,8 +1,29 @@
 :local(.component) {
-    h2 {
+    span {
+        position: absolute;
         font-family: 'CircularStd';
         font-size: 120px;
         transform: rotate(-9deg);
         font-weight: bold;
+        color: white;
+    }
+    .la {
+        top: 100px;
+        left: 150px;
+    }
+    .bulle {
+        top: 200px;
+        left: 300px;
+        transform: rotate(-9deg);
+    }
+    .de {
+        top: 320px;
+        left: 450px;
+        transform: rotate(9deg);
+    }
+    .filtres {
+        top: 400px;
+        left: 650px;
+        transform: rotate(-19deg);
     }
 }

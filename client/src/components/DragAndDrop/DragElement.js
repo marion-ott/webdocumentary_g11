@@ -21,6 +21,7 @@ class DragElement extends React.Component {
     }
 
     render() {
+        
         return (
             <Draggable
                 handle=".handle"
@@ -38,13 +39,14 @@ class DragElement extends React.Component {
                             <div></div>
                             <div></div>
                         </div>
-                        { this.props.type === 'video' ? <p className="videoTitle"><span>Video :</span> Titre</p> : null }
+                        { this.props.type === 'video' ? <p className="videoTitle"><span>Video :</span>{this.props.title}</p> : null }
                     </div>
-                    { this.props.type === 'video' ? <Media mediaType={this.props.mediaType} />
-                        : this.props.type === 'text' ? <Paragraph paragraph={this.props.text} />
+                    { this.props.type === 'video' ? <Media mediaType={this.props.type} src={this.props.src} title={this.props.title} />
+                        : this.props.type === 'gif' ? <Media mediaType={this.props.type} src={this.props.src} />
+                        : this.props.type === 'text' ? <Paragraph paragraph={this.props.text} name={this.props.userName} />
                         : this.props.type === 'map' ? <MapContainer lat={this.props.lat && this.props.lat} lng={this.props.lng && this.props.lng} city={this.props.city && this.props.city} postalCode={this.props.postalCode && this.props.postalCode} temp={this.props.temp && this.props.temp}/>
-                        : this.props.type === 'choice' && this.props.redirect === '/big-data' ? <BigDataChoice redirect={this.props.redirect} text={this.props.text} />
-                        : this.props.type === 'choice' && this.props.redirect === '/tracking' ? <TrackingChoice redirect={this.props.redirect} text={this.props.text} />
+                        : this.props.type === 'choice' && this.props.redirect === '/big-data' ? <BigDataChoice redirect={this.props.redirect} text={this.props.text} path={this.props.path} />
+                        : this.props.type === 'choice' && this.props.redirect === '/tracking' ? <TrackingChoice redirect={this.props.redirect} text={this.props.text} path={this.props.path} />
                         : null
                     }
                     

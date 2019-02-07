@@ -5,7 +5,8 @@ import { TweenLite, Power4 } from "gsap/TweenMax"
 
 
 class ToFilterBubble extends React.Component {
-    redirect = () => {
+    redirect = (event) => {
+        event.preventDefault()
         const circle = ReactDOM.findDOMNode(this).querySelector('.blackCircle')
         const circle2 = ReactDOM.findDOMNode(this).querySelector('.blackCircle2')
         const text = ReactDOM.findDOMNode(this).querySelector('.text')
@@ -15,7 +16,7 @@ class ToFilterBubble extends React.Component {
         TweenLite.to(text, 0.5,{ ease: Power4.ease, opacity: 0})
         setTimeout(() => {
             this.props.push('/filter-bubble')
-        }, 2000)
+        }, 1000)
     }
     render() {
         return (
@@ -23,9 +24,9 @@ class ToFilterBubble extends React.Component {
                 <div className="blackCircle2"></div>
                 <div className="blackCircle">
                     <div className="text">
-                        <p>Maintenant que vous avez une meilleure compréhension des principes qui constituent son origine, vous êtes prêts à découvrir ce qu’est la “bulle de filtre”</p>
+                        <p>Maintenant que vous avez une meilleure compréhension des principes qui constituent son origine, vous êtes prêts à découvrir ce qu’est la “bulle de filtres”</p>
                         <div>
-                            <a onClick={this.redirect}>continuer</a>
+                            <a href="/" onClick={this.redirect}>continuer</a>
                         </div>
                     </div>
                 </div>

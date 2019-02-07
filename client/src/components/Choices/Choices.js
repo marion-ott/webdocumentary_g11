@@ -8,10 +8,11 @@ class Choices extends React.Component {
 
     render() {
         const choices = content.data[7].choices
+        
         return(
             <section className={css.component}>
-                { choices.map((choice, key) => <DragElementContainer element={choice} key={key} />) }
-                <ToFilterBubble push={this.props.push}/>
+                { choices.map((choice, key) => <DragElementContainer path={this.props.history && this.props.history.location.pathname} element={choice} key={key} />) }
+                <ToFilterBubble push={this.props.push} />
             </section>
         )
     }

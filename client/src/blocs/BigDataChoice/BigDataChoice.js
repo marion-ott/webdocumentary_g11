@@ -6,12 +6,17 @@ import Particle from '../../components/BigDataPage/ParticleComponent'
 class BigDataChoice extends React.Component {
 
     render() {
+       console.log(this.props.path)
         return (
-            <div className={css.component}>
-                <Particle />
-                <p>le big data ? c’est quoi ?</p>
-                <a href="/big-data/#">découvrir</a>
-            </div>
+            this.props.path === "/big-data" ? null
+            : this.props.path === "/big-data/" ? null 
+            : (
+                <div className={css.component}>
+                    <Particle />
+                    <p>le big data ? c’est quoi ?</p>
+                    <a href="/big-data/#">découvrir</a>
+                </div>
+            )
         );
     }
 }

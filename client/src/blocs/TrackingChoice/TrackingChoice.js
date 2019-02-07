@@ -6,15 +6,18 @@ import TrackingBackground from '../../components/TrackingPage/TrackingBackground
 class TrackingChoice extends React.Component {
 
     render() {
-        
         return (
-            <div className={css.component}>
-                <TrackingBackground />
-                <div className="content">
-                    <p>En savoir plus sur le tracking</p>
-                    <a href="/tracking/#">découvrir</a>
+            this.props.path === "/tracking" ? null
+            : this.props.path === "/tracking/" ? null 
+            : (
+                <div className={css.component}>
+                    <TrackingBackground />
+                    <div className="text">
+                        <p>En savoir plus sur le tracking</p>
+                        <a href="/tracking/#">découvrir</a>
+                    </div>
                 </div>
-            </div>
+            )
         );
     }
 }

@@ -62,7 +62,7 @@ class Text extends React.Component {
                     { title ? <Title title={title} txtColor={this.props.txtColor} /> : false }
                     { paragraph ? <Paragraph paragraph={paragraph} subtitle={subtitle} txtColor={this.props.txtColor} className={this.props.className} /> : false }
                 </div>
-                { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer color={this.props.color && this.props.color} key={key} index={key} element={block}  ref={el => el && this._blocks.push(el)}/>)) }
+                { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer source={this.props.videoSrc} videoTitle={this.props.videoTitle} color={this.props.color && this.props.color} key={key} index={key} element={block}  ref={el => el && this._blocks.push(el)}/>)) }
 
                 { cta && !this.state.hasBlocks ?
                     (

@@ -4,13 +4,17 @@ import css from './media.scss'
 
 class Media extends React.Component {
     render() {
+        console.log('media ', this.props.src)
         return(
             <div className={css.component}> 
-                
+                { this.props.mediaType === 'video' ? (
                 <Video
-                    title="Oskar Morgenstern à propos de l'ordinateur en 1972"
-                    source="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                    title={this.props.title}
+                    source={`${process.env.PUBLIC_URL} ${this.props.src}`}
                 />
+
+                ) : (<video src={`${process.env.PUBLIC_URL} ${this.props.src}`} autoPlay="autoplay" loop="loop" width="100%" height="100%"></video>) 
+                }
             </div>
         )
     }
