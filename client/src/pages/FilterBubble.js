@@ -4,6 +4,7 @@ import React from 'react'
 import content from '../content/content'
 import BubbleCanvas from '../components/BubbleCanvas/BubbleCanvas'
 import Text from '../components/Text/Text'
+import MixElements from '../components/MixElements/MixElements';
 
 
 
@@ -22,9 +23,9 @@ class FilterBubble extends React.Component {
 
         return(
             <section className="filterBubble">
-                <div className="bubble">
+                {/* <div className="bubble">
                     <Tube />
-                </div>
+                </div> */}
                 <Text
                     title={data.FilterBubble[0].title}
                     hasBlocks={false}
@@ -33,13 +34,21 @@ class FilterBubble extends React.Component {
                     scrollSection={this.scrollSection}
                 />
                 <Text
-                    color="black"
+                    paragraph={data.FilterBubble[1].text}
+                    //backgroundColor={data.FilterBubble[0].backgroundColor}
                     txtColor={data.FilterBubble[0].txtColor}
-                    hasBlocks={true}
-                    paragraph={data.FilterBubble[2].text}
-                    //backgroundColor={data.FilterBubble[1].backgroundColor}
-                    blocks={data.FilterBubble[2].blocks}
+                    className={data.FilterBubble[0].className}
                 />
+                <MixElements
+                    blocks={data.FilterBubble[2].blocks}
+                    color="black"
+                    //data={this.state.data}
+                    
+                //   redirect={this.props.routerProps.history.push}
+                //   redirectTo="/big-data"
+                //   cta="Continuer"
+                />
+
                 <Text
                     paragraph={data.FilterBubble[3].text}
                     //backgroundColor={data.FilterBubble[0].backgroundColor}
@@ -47,7 +56,12 @@ class FilterBubble extends React.Component {
                     className={data.FilterBubble[0].className}
                 />
                 <Text
-                    paragraph={data.FilterBubble[3].text}
+                    paragraph={data.FilterBubble[4].text}
+                    txtColor={data.FilterBubble[0].txtColor}
+                    className={data.FilterBubble[0].className}
+                />
+                <Text
+                    paragraph={data.FilterBubble[5].text}
                     txtColor={data.FilterBubble[0].txtColor}
                     className={data.FilterBubble[0].className}
                 />

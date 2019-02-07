@@ -58,6 +58,14 @@ class Tracking extends React.Component {
                     {/* <div className="straight">
                         <Tube /> */}
                           <MixElements
+                              blocks={content.data[1].step[7].blocks}
+                              data={this.state.data}
+                              //name={localStorage.getItem('firstName')}
+                            //   redirect={this.props.routerProps.history.push}
+                            //   redirectTo="/big-data"
+                            //   cta="Continuer"
+                          />
+                          <MixElements
                               blocks={content.data[1].step[3].blocks}
                               data={this.state.data}
                               name={localStorage.getItem('firstName')}
@@ -66,13 +74,14 @@ class Tracking extends React.Component {
                             //   cta="Continuer"
                           />
                           <MixElements
-                              blocks={content.data[1].step[4].blocks}
+                              blocks={content.data[1].step[8].blocks}
                               data={this.state.data}
                               
                             //   redirect={this.props.routerProps.history.push}
                             //   redirectTo="/big-data"
                             //   cta="Continuer"
                           />
+                          
                     {/* </div> */}
                     <Choices history={this.props.routerProps.history} push={this.props.routerProps.history.push} />
                 </section>

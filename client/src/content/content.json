@@ -74,14 +74,12 @@
                 {
                     "blocks": [
                         {
-                            "type": "video",
-                            "title": "Big data : données, données, donnez-moi !",
-                            "src": "/assets/media/video/bigData.mp4"
+                            "type": "text",
+                            "text": "Les big data désignent les gros volumes de données (structurées ou non) qui alimentent l’activité quotidienne d’une entreprise. Mais ce n’est pas la quantité des données qui compte, c’est ce que les entreprises en font. Il est possible d’analyser les big data pour en tirer des enseignements permettant de prendre de meilleures décisions et de lancer des initiatives stratégiques."
                         },
                         {
-                            "type": "video",
-                            "title": "Les enjeux du big data",
-                            "src": "/assets/media/video/bigData-enjeux.mp4"
+                            "type": "text",
+                            "text": "Ces bases de données gigantesques n’enregistrent pas seulement vos comportements sur le Web, mais également votre position géographique et vos données démographiques. En marketing Web, les “Big Data” sont considérés comme de véritables mines d’or. Mais pour en tirer profit, il faut faire appel à des algorithmes, c’est-à-dire à des opérations mathématiques qui automatisent des décisions de ciblage traditionnellement prises par des individus."
                         }          
                     ]
                 },
@@ -93,11 +91,11 @@
                         },
                         {
                             "type": "text",
-                            "text": "Les algorithmes sont partout. Ces petits bouts de formules mathématiques invisibles sont des éléments clés de nos vies au quotidien. "
+                            "text": "Les algorithmes sont partout. Ces petits bouts de formules mathématiques invisibles sont des éléments clés de nos vies au quotidien. Que ça soit pour faire de la cuisine ou pour sauver des vies, les algorithmes régissent le monde qui nous entoure."
                         },
                         {
                             "type": "text",
-                            "text": "Algorithme (nom masculin) : Ensemble de règles opératoires dont l'application permet de résoudre un problème énoncé au moyen d'un nombre fini d'opérations. Un algorithme peut être traduit, grâce à un langage de programmation, en un programme exécutable par un ordinateur."
+                            "text": "Algorithme (nom masculin) : Ensemble de règles opératoires dont l’application permet de résoudre un problème énoncé au moyen d’un nombre fini d’opérations. Un algorithme peut être traduit, grâce à un langage de programmation, en un programme exécutable par un ordinateur."
                         },
                         {
                             "type": "video",
@@ -108,6 +106,34 @@
                             "type": "video",
                             "title": "The Secret Rules of Modern Living Algorithms",
                             "src": "/assets/media/video/algorithms.mp4"
+                        }
+                    ]
+                },
+                {
+                    "blocks": [
+                        {
+                            "type": "text",
+                            "text": "Vous avez probablement déjà entendu parler des cookies sur le web, mais qu’est ce que c’est et à quoi ça sert ? Pour faire simple, c’est la méthode qu’utilisent les sites web pour vous identifier. Les cookies utilisent de petites données (chacune limitée à 4 Ko) placées dans une mémoire de stockage de votre navigateur. Lorsque vous visitez un site Web pour la première fois, un fichier cookie avec un identifiant utilisateur unique (pouvant être généré de manière aléatoire) est stocké sur votre appareil. C’est grâce à cette méthode que ces sites vont pouvoir obtenir des informations sur vous afin de vous proposer des contenus toujours plus personnalisés."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Pour bien vous faire comprendre l’ampleur que représentent les cookies, nous vous avons concocté une petite liste des cookies utilisés par les sites et services web que vous utilisez au quotidien :"
+                        }
+                    ]
+                },
+                {
+                    "blocks": [
+                        {
+                            "type": "text",
+                            "text": "Le tracking est la pratique par laquelle les sites Web identifient et collectent des informations sur les utilisateurs. Chaque fois que vous utilisez Internet, vous laissez une trace des sites Web que vous visitez, ainsi que de chaque élément sur lequel vous cliquez. Pour suivre ces informations, de nombreux sites Web sauvegardent une petite quantité de données grâce aux cookies, incorporent des objets invisibles ou même utilisent vos comptes utilisateur et votre configuration matérielle."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Du point de vue des propriétaires de sites Web et des trackers, le tracking fournit des fonctionnalités souhaitables, notamment la personnalisation, l’analyse de site et la publicité ciblée. Par exemple, sans trackers, un site Web d’e-commerce devra traiter chaque utilisateur comme un étranger et ne pourrait pas présenter de contenu personnalisé."
+                        },
+                        {
+                            "type": "text",
+                            "text": "La personnalisation d’Internet va de pair avec la collecte de données personnelles sur les usagers. En effet, les géants d’Internet accumulent des données personnelles sur chaque individu, car c’est à partir de ces données que les algorithmes vont être capables d’adapter les contenus d’Internet de manière pertinente pour chacun. Ces données personnelles sont collectées au fur et à mesure de la navigation sur Internet."
                         }
                     ]
                 }
@@ -656,25 +682,41 @@
                  },
                  {
                      "title": false,
-                     "text": "Les bulles de filtre sont donc le résultat d’une recherche <u>personnalisée</u> dans laquelle des <u>algorithmes</u> vont définir un profil et déterminer de manière sélective les contenus qu’un utilisateur aimerait voir en fonction des <u>informations personnelles récoltées</u> sur ce dernier.",
+                     "text": false,
                      "subtitle": false,
                      "backgroundColor": "#000",
                      "txtColor": "#fff",
+                     "className": "FilterBubblr_textBack",
+                     "type": "media",
                      "blocks": [
                         {
                             "type": "text",
-                            "paragraph": "C’est de cette impression que le concept de “Filter Bubble”, qui peut être littéralement traduit par “Bulle de filtres”, a été théorisé en 2011 par Eli Pariser."
+                            "paragraph": "À travers son livre “The Filter Bubble: What the Internet Is Hiding from You”, et dans une conférence TED Talk, visionnée plus d’un million de fois sur Internet, il explique les fondements de cette idée, qui dit que chaque internaute accéderait à une version significativement différente du web. Ainsi, selon cette théorie, les contenus visibles par chaque internaute sont séléctionnés “discrètement” par des algorithmes, en s’appuyant sur différentes données collectées sur lui."
                         },
                         {
                             "type": "text",
-                            "paragraph": "À travers son livre “The Filter Bubble: What the Internet Is Hiding from You”, et dans une conférence TED Talk, visionnée plus d’un million de fois sur Internet, il explique les fondements de cette idée, qui dit que chaque internaute accéderait à une version significativement différente du web. Ainsi, selon cette théorie, les contenus visibles par chaque internaute sont séléctionnés “discrètement” par des algorithmes, en s'appuyant sur différentes données collectées sur lui."
+                            "paragraph": "C’est de cette impression que le concept de “Filter Bubble”, qui peut être littéralement traduit par “Bulle de filtre”, a été théorisé en 2011 par Eli Pariser."
                         },
                         {
                             "type": "video",
-                            "title": "The Secret Rules of Modern Living Algorithms ",
-                            "src": "src"
+                            "title": "Beware online « filter bubbles » | Eli Pariser",
+                            "src": "/assets/media/video/BewareOnline.mp4"
                         }
                     ]
+                 },
+                 {
+                     "title": false,
+                     "text": "Les bulles de filtre sont donc le résultat d’une recherche <u>personnalisée</u> dans laquelle des <u>algorithmes</u> vont définir un profil et déterminer de manière sélective les contenus qu’un utilisateur aimerait voir en fonction des <u>informations personnelles récoltées</u> sur ce dernier.",
+                     "subtitle": false,
+                     "backgroundColor": "#000",
+                     "txtColor": "#fff"
+                 },
+                 {
+                     "title": false,
+                     "text": "En conséquence, les utilisateurs sont séparés des informations en désaccord avec leurs points de vue, ce qui les isole dans leurs propres bulles de filtre culturelles ou idéologiques.",
+                     "subtitle": false,
+                     "backgroundColor": "#000",
+                     "txtColor": "#fff"
                  },
                  {
                      "title": false,
