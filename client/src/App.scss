@@ -1,0 +1,19 @@
+.App {
+    overflow-x: hidden;
+
+    .formHome{
+        .formContainer {
+            width: 60%;
+            z-index: 4;
+        }
+        div[role=button]{
+            overflow: initial !important;
+            margin-top: -16% !important;
+
+            svg {
+              width: 60% !important;
+              margin-left: 35% !important
+            }
+        }
+    }
+}

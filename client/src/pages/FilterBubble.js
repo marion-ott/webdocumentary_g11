@@ -1,8 +1,13 @@
 import React from 'react'
-import BubbleCanvas from '../components/BubbleCanvas/BubbleCanvas'
+
+import Tube from '../components/OurBubble/OurBubble'
 import content from '../content/content'
+
+import BubbleCanvas from '../components/BubbleCanvas/BubbleCanvas'
 import Text from '../components/Text/Text'
 import MixElements from '../components/MixElements/MixElements'
+
+
 
 
 class FilterBubble extends React.Component {
@@ -15,7 +20,8 @@ class FilterBubble extends React.Component {
         }
 
         return(
-            <section>
+            <section className="filterBubble">
+                {/* <Tube /> */}
                 <Text
                     title={data.FilterBubble[0].title}
                     txtColor={data.FilterBubble[0].txtColor}
@@ -42,7 +48,7 @@ class FilterBubble extends React.Component {
                     txtColor={data.FilterBubble[0].txtColor}
                     className={data.FilterBubble[0].className}
                 />
-                <BubbleCanvas color="#333333" style={style}/>
+              <BubbleCanvas color="#fff" style={style}/>
             </section>
         )
     }

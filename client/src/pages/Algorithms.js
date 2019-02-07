@@ -2,6 +2,7 @@ import React from 'react'
 import AlgoIntro from '../components/AlgoPage/AlgoIntro'
 import MixElements from '../components/MixElements/MixElements'
 import content from '../content/content'
+import Tube from '../components/TubeStraightLeft/Tube'
 
 class Algorithms extends React.Component {
     constructor() {
@@ -11,7 +12,8 @@ class Algorithms extends React.Component {
     render() {
         //const data = content.data[5].bigData
         return(
-            <section>
+            <section className="algorithms">
+                <Tube />
                 <AlgoIntro />
                 <MixElements
                     ref={(el) => el && this._blocks.push(el)}
