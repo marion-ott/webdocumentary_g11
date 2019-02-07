@@ -5,6 +5,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    #algoBackground{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        min-width: 100%;
+        min-height: 100%;
+        background: url(algo_bg_video.mp4) no-repeat;
+        background-size: cover;
+    }
     .title {
         font-size: 120px;
         font-family: "CircularStd";
@@ -13,15 +24,15 @@
     }
     // MOBILE
     @media (max-width: 640px) {
-            position: relative;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            .title {
-                font-size: 55px;
-                text-align: center;
-            }
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .title {
+            font-size: 55px;
+            text-align: center;
         }
+    }
 }
