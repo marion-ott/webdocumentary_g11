@@ -7,10 +7,9 @@ class BubbleCanvas extends React.Component {
             canvasSize: { canvasWidth: 8, canvasHeight: 600 }
         })
     }
-
     componentDidMount() {
         const canvas = this.canvas
-        const c = canvas.getContext('2d');
+        const c = canvas.getContext('2d',);
         const colorProp = this.props.color 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -19,13 +18,6 @@ class BubbleCanvas extends React.Component {
             x: 10,
             y: 10
         };
-
-        // const colors = [
-        //     '#2185C5',
-        //     '#7ECEFD',
-        //     '#FFF6E5',
-        //     '#FF7F66'
-        // ];
 
         window.addEventListener('mousemove', function (event) {
             mouse.x = event.clientX;
@@ -38,26 +30,17 @@ class BubbleCanvas extends React.Component {
 
             init();
         });
+        function getDistance(x1, y1, x2, y2) {
+            let xDistance = x2 - x1;
+            let yDistance = y2 - y1;
 
-
-        // function getDistance(x1, y1, x2, y2) {
-        //     let xDistance = x2 - x1;
-        //     let yDistance = y2 - y1;
-
-        //     return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2)
-        //     )
-        // };
+            return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2)
+            )
+        };
 
         function randomIntFromRange(min, max) {
             return Math.floor(Math.random() * (max - min - 1) + min);
         }
-
-        // function randomColor(colors) {
-        //     return colors[Math.floor(Math.random() * colors.length)];
-        // }
-
-        // Event Listeners
-
 
         function distance(x1, y1, x2, y2) {
             const xDist = x2 - x1;
@@ -109,8 +92,8 @@ class BubbleCanvas extends React.Component {
             this.x = x;
             this.y = y;
             this.velocity = {
-                x: (Math.random() - 0.5) * 4,
-                y: (Math.random() - 0.5) * 4
+                x: (Math.random() - 0.5) * 8,
+                y: (Math.random() - 0.5) * 8
             }
             this.radius = radius;
             this.color = color;
@@ -131,7 +114,7 @@ class BubbleCanvas extends React.Component {
                 if (this.y - this.radius <= 0 || this.y + this.radius >= window.innerHeight) {
                     this.velocity.y = -this.velocity.y;
                 }
-                // if (distance(mouse.x, mouse.y, this.x, this.y) < 30) {
+                // if (distance(mouse.x, mouse.y, this.x, this.y) < 100) {
                 //     this.opacity += 1;
                 // } else if (this.opacity > 0) {
                 //     this.opacity -= 1;
@@ -155,32 +138,40 @@ class BubbleCanvas extends React.Component {
                 c.closePath();
             };
         }
-
-
         // Implementation
         let particles;
         // particles = [];
         function init() {
             particles = [];
-
             for (let i = 0; i < 20; i++) {
-                const radius = Math.floor(Math.random() * (50 - 10) + 10);
-                let x = randomIntFromRange(radius, canvas.width - radius);
-                let y = randomIntFromRange(radius, canvas.height - radius);
-                //let y = Math.random () * innerHeight;
-                const color = colorProp
+                const color = colorProp;
+                let radius, x, y
+
+                if (window.innerWidth < 640) {                  
+                     radius = Math.floor(Math.random() * 40);
+                     x = randomIntFromRange(radius, canvas.width - radius);
+                     y = randomIntFromRange(radius, canvas.height - radius);
+                }else if(window.innerWidth < 840){
+                    radius = Math.floor(Math.random() * 50);
+                    x = randomIntFromRange(radius, canvas.width - radius);
+                    y = randomIntFromRange(radius, canvas.height - radius);
+                }else {
+                    
+                    radius = Math.floor(Math.random() * 100);
+                    x = randomIntFromRange(radius, canvas.width - radius);
+                    y = randomIntFromRange(radius, canvas.height - radius);
+                }
 
                 if (i !== 0) {
                     for (let j = 0; j < particles.length; j++) {
                         if (distance(x, y, particles[j].x, particles[j].y) - radius * 2 < 0) {
                             x = randomIntFromRange(radius, canvas.width - radius);
                             y = randomIntFromRange(radius, canvas.height - radius);
-                            j = -1;
+                            j = 1;
                         }
                     }
                 }
-
-
+               
                 particles.push(new Particle(x, y, radius, color));
             };
             //console.log(particles);

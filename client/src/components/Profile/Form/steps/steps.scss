@@ -249,5 +249,42 @@ label {
         }
     }
 }
+// MOBILE
+@media (max-width: 640px) {
+    .cookies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 45px;
+        width: 80%;
+        margin: 0 auto;
+        p {
+            margin: 16px -20px;
+        }
+        .choiceAmount {
+            font-weight: normal;
+            margin-top: 28px;
+        }
+        .checkboxContainer {
+            width: 50px;
+            height: 50px;
+            margin: 13px;
+            .checkmark {
+                width: 50px;
+                height: 50px;
+            }
+        }
+       
+    }
+    
+}
 
-
+@media (max-width: 380px) {
+    .cookies {
+        padding-bottom: 71px;
+        .checkboxContainer {
+            margin: 8px;
+        }
+    }
+    }
+    
