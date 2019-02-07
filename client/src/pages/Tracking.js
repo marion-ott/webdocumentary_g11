@@ -9,7 +9,7 @@ import Choices from '../components/Choices/Choices'
 // import TubeSmall from '../components/TubeSmall/Tube'
 // import TubeForm from '../components/TubeForm2/Tube'
 
-class BigData extends React.Component {
+class Tracking extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -81,4 +81,4 @@ class BigData extends React.Component {
     }
 }
 
-export default BigData
+export default Tracking

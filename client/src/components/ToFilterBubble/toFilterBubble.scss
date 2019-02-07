@@ -52,4 +52,20 @@
             }
         }
     }
+    @media (max-width: 640px) {
+        .blackCircle2 {
+            height: 52vh;
+            width: 93vw;
+        }
+        .blackCircle {
+            height: 52vh;
+            width: 93vw;
+            .text {
+                p {
+                    line-height: normal;
+                    font-size: 19px;
+                }
+      }
+    }
+  }
 }
