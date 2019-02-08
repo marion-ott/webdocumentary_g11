@@ -828,6 +828,62 @@
                     "text": "Vous pouvez décider de l’accepter, de vivre avec, et même de vous épanouir au sein de celle-ci. Mais vous avez aussi le choix de percer cette bulle, et de découvrir des moyens de voir au delà de ce cadre arbitrairement créé par vous-même, bien aidé par les algorithmes."
                 }
             ]
+        },
+        {
+            "profils": [
+                {
+                    "services": [
+                        "Netflix",
+                        "Google",
+                        "Twitter",
+                        "Le Monde",
+                        "Wikipedia",
+                        "Reddit"
+                    ],
+                    "text": "Nous avons donc déduit que vous étiez globalement une personne en quête de l’information. Vous utilisez Internet afin de vous tenir au courant de l’actualité et découvrir de nouvelle choses.",
+                    "blocks": [
+                        {
+                            "type": "text",
+                            "paragraph": "En tant qu’être humain, nous avons tendance à socialiser avec des personnes qui partagent les mêmes idées et des opinions similaires. Cela créé donc cet effet de chambre d’écho, qui s’est progressivement renforcé par l’amélioration constante des algorithmes de recommandation."
+                        },
+                        {
+                            "type": "text",
+                            "paragraph": "Sauf rares exceptions, vous avez toujours choisi de consulter des médias conformes à votre point de vue, et lu des journaux ou des magazines reflétant d’une certaine manière ce qui vous intéresse et ce que vous voulez être. Mais à l’âge des médias régit par les algorithmes, il est presque impossible de savoir qui l’algorithme pense que nous sommes et, par conséquent, nous ne savons pas comment il décide quoi nous montrer ou non."
+                        },
+                        {
+                            "type": "text",
+                            "paragraph": "Dans le domaine de l’information et des médias, ce phénomène de bulle de filtre peut avoir pour effet de vous empêcher de voir au delà de vos propres convictions et de vous opposer à des points de vue différents. Ainsi, vous avez probablement déjà été sous le choc de constater que des groupes plus larges que vous l’imaginiez puisse avoir une opinion différente de la votre, tel que dans le domaine politique par exemple."
+                        },
+                        {
+                            "type": "video",
+                            "title": "Filter Bubbles and Fake News",
+                            "src": "/assets/media/video/filterBubble.mp4"
+                        }
+                    ]
+                },
+                {
+                    "services": [
+                        "Spotify",
+                        "YouTube",
+                        "Netflix",
+                        "Facebook",
+                        "Instagram",
+                        "Twitch"
+                    ],
+                    "text": "Nous avons donc déduit que vous étiez globalement une personne en quête de divertissement. Vous utilisez Internet afin de vous divertir, et vous êtes avide consommateur de contenu multimédia."
+                },
+                {
+                    "services": [
+                        "Amazon",
+                        "Asos",
+                        "Pinterest",
+                        "Leboncoin",
+                        "Ebay",
+                        "Paypal"
+                    ],
+                    "text": "Nous avons donc déduit que vous étiez globalement une personne consommatrice. Vous utilisez Internet pour effectuer vos achats en ligne, vous êtes par conséquent souvent exposé à de la publicité."
+                }
+            ]
         }
     ]
 }

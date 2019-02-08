@@ -32,8 +32,10 @@ class EndScreen extends React.Component {
                     paragraph={data[9].conclusion[2].text}
                     txtColor="white"
                     backgroundColor="black"
+                    btns={true}
                     // // className={data.FilterBubble[0].className}
                 />
+                
             </section>
         )
     }

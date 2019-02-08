@@ -8,6 +8,7 @@ import ScrollSymbol from '../../blocs/ScrollSymbol/ScrollSymbol'
 import ReactDOM from 'react-dom'
 import { TweenLite, Power4 } from "gsap"
 import MoreSymbol from '../../blocs/MoreSymbol.js/MoreSymbol';
+import { p } from 'gsap/RoundPropsPlugin';
 
 class Text extends React.Component {
     constructor(props) {
@@ -52,12 +53,28 @@ class Text extends React.Component {
         })
     }
 
+
+    ultimateChoice = (event) => {
+        event.preventDefault()
+        console.log(event.target.id, this)
+        TweenLite.to(ReactDOM.findDOMNode(this).querySelector('div'), 0.8,{ ease: Power4.ease, opacity: 0 })
+        Array.from(ReactDOM.findDOMNode(this).querySelectorAll('a')).map(item => {
+            TweenLite.to(item, 0.8,{ ease: Power4.ease, opacity: 0 })
+        })
+    }
+
     render() {
         
         const { title, paragraph, subtitle, cta } = this.props
-
+        console.log(this.props.info);
+        
         return(
             <div className={css.component} style={{backgroundColor: this.props.backgroundColor}}>
+            { this.props.info && (
+                        <p style={{color: "white", textAlign: "center", marginBottom: "15px"}}>
+                            Vous avez sélectionné {this.props.info[0]}, {this.props.info[1]} et {this.props.info[2]}.
+                        </p>
+                    )}
                 <div className="txtContent">
                     { title ? <Title title={title} txtColor={this.props.txtColor} /> : false }
                     { paragraph ? <Paragraph paragraph={paragraph} subtitle={subtitle} txtColor={this.props.txtColor} className={this.props.className} /> : false }
@@ -68,8 +85,17 @@ class Text extends React.Component {
                     (
                         <Cta text="Continuer" scrollSection={!this.props.redirect && this.scrollSection} redirect={this.props.redirect} redirectTo={this.props.redirectTo} />
                     )
-                    : !this.state.hasBlocks ? <ScrollSymbol scrollSection={this.props.scrollSection} /> 
+                    : !this.state.hasBlocks && !this.props.btns ? <ScrollSymbol scrollSection={this.props.scrollSection} /> 
                     : this.props.hasBlocks ? <MoreSymbol renderBlocks={this.renderDraggableBlocks} /> : null}
+                {
+                    this.props.btns && (
+                        <div className="btnsContainer">
+                            <a id="explode" onClick={this.ultimateChoice} href="/">Exploser votre bulle</a><a onClick={this.ultimateChoice} id="keep" href="/">Conserver votre bulle</a>
+                        </div>
+                    )
+
+                }
+                    
             </div>
         )
     }

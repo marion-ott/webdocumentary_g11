@@ -4,7 +4,6 @@ import css from './media.scss'
 
 class Media extends React.Component {
     render() {
-        console.log('media ', this.props.src)
         return(
             <div className={css.component}> 
                 { this.props.mediaType === 'video' ? (
