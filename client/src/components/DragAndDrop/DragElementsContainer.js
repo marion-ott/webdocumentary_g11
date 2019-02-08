@@ -32,7 +32,7 @@ class DragElementsContainer extends React.Component {
             case 'video':
                 return(<DragElement color={this.props.color} changeIndex={this.changeIndex} key={index} index={index} type={type} title={this.props.element.title} src={this.props.element.src} />)
             case 'text':
-                return(<DragElement userName={this.props.userName && this.props.userName} color={this.props.color} changeIndex={this.changeIndex} key={index} index={index} type={type} text={this.props.element.paragraph ? this.props.element.paragraph : this.props.element.text} />)
+                return(<DragElement cookies={this.props.cookies && this.props.cookies} userName={this.props.userName && this.props.userName} color={this.props.color} changeIndex={this.changeIndex} key={index} index={index} type={type} text={this.props.element.paragraph ? this.props.element.paragraph : this.props.element.text} />)
             case 'choice':
                 return(<DragElement changeIndex={this.changeIndex} key={index} index={index} type={type} text={this.props.element.text} redirect={this.props.element.redirect} path={this.props.path} />)
             case 'map':
@@ -42,7 +42,6 @@ class DragElementsContainer extends React.Component {
     }
 
     render() { 
-        //console.log(this.props);
         
         return(
             <div className={`${css.component} draggableItem`}>

@@ -86,7 +86,6 @@ class Form extends React.Component {
         const cookies = content.data[2].cookies
         const images = content.data[6].formImages
         const buttonState = this.checkInputs()
-        console.log("render form")
         switch(step) {
             case 1:
                 return <UserInfo 
@@ -97,6 +96,7 @@ class Form extends React.Component {
                         />
             case 2:
                 return <ServicesDetails 
+                            getCookieInfo={this.props.getCookieInfo}
                             updateServices={this.updateServices}
                             cookies={cookies}
                             choiceAmount={this.state.choiceAmount}

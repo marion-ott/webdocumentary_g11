@@ -65,7 +65,6 @@ class App extends Component {
   }
 
   animateLayer = (id) => {
-    console.log(this._blocks[id]);
     
     const layer = ReactDOM.findDOMNode(this._blocks[id]).querySelector('.layer')
     if(layer) {

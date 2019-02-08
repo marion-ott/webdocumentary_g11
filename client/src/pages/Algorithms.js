@@ -25,7 +25,7 @@ class Algorithms extends React.Component {
                     ref={(el) => el && this._blocks.push(el)}
                     blocks={content.data[1].step[4].blocks}
                 />
-                <Choices push={this.props.routerProps.history.push} />
+                <Choices push={this.props.routerProps.history.push} history={this.props.routerProps.history} />
             </section>
         )
     }

@@ -1,6 +1,4 @@
 import React from 'react'
-
-//import Tube from '../components/OurBubble/OurBubble'
 import content from '../content/content'
 import BubbleCanvas from '../components/BubbleCanvas/BubbleCanvas'
 import Text from '../components/Text/Text'
@@ -51,7 +49,6 @@ class FilterBubble extends React.Component {
 
                 <Text
                     paragraph={data.FilterBubble[3].text}
-                    //backgroundColor={data.FilterBubble[0].backgroundColor}
                     txtColor={data.FilterBubble[0].txtColor}
                     className={data.FilterBubble[0].className}
                 />

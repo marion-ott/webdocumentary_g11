@@ -55,7 +55,7 @@ class Text extends React.Component {
     render() {
         
         const { title, paragraph, subtitle, cta } = this.props
-        //console.log(this.props.hasBlocks)
+
         return(
             <div className={css.component} style={{backgroundColor: this.props.backgroundColor}}>
                 <div className="txtContent">

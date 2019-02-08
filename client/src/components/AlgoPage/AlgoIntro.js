@@ -11,7 +11,7 @@ class AlgoIntro extends React.Component {
         return(
             <section className={css.component}>
 
-                <video autoPlay loop id="algoBackground" muted plays-inline>
+                <video autoPlay loop id="algoBackground" muted >
                     <source src={videoSrc} type="video/mp4" />
                 </video>
 

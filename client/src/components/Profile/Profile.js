@@ -27,7 +27,6 @@ class Profile extends React.Component {
     }
 
     render() {
-        console.log("render profile")
         return(
             <div className={css.component}>
                 {/* {this.props.layerColor && (<div className="layer" style={{backgroundColor: this.props.layerColor}}></div>)} */}
@@ -36,7 +35,7 @@ class Profile extends React.Component {
                         <h3>{this.props.title}</h3>
                     </div>
                     <div className="form">
-                        <Form getUserInfo={this.props.getUserInfo} formStep={this.props.formStep} scrollSection={this.scrollSection} />
+                        <Form getCookieInfo={this.props.getCookieInfo} getUserInfo={this.props.getUserInfo} formStep={this.props.formStep} scrollSection={this.scrollSection} />
                     </div>
                 </div>
             </div>
