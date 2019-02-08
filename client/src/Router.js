@@ -36,9 +36,9 @@ class Router extends React.Component {
             // })
             break;
           case 2:
-            user.firstName = user.firstName
-            user.age = user.age
-            user.gender = user.gender
+            // user.firstName = user.firstName
+            // user.age = user.age
+            // user.gender = user.gender
             user.services = data.services
             localStorage.setItem('services', user.services)
             // this.setState({
@@ -46,10 +46,10 @@ class Router extends React.Component {
             // })
             break;
           case 3:
-            user.firstName = user.firstName
-            user.age = user.age
-            user.gender = user.gender
-            user.services = user.services
+            // user.firstName = user.firstName
+            // user.age = user.age
+            // user.gender = user.gender
+            // user.services = user.services
             user.images = data.images
             // this.setState({
             //   user

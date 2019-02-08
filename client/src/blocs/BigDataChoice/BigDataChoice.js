@@ -6,7 +6,6 @@ import Particle from '../../components/BigDataPage/ParticleComponent'
 class BigDataChoice extends React.Component {
 
     render() {
-       console.log(this.props.path)
         return (
             this.props.path === "/big-data" ? null
             : this.props.path === "/big-data/" ? null 

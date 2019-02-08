@@ -25,7 +25,7 @@ class MixElements extends React.Component {
     render() {
         return(
             <div className={css.component} style={{backgroundColor: this.props.backgroundColor}}>
-                { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer key={key} index={key} element={block} color={this.props.color && this.props.color} data={this.props.data} userName={this.props.name} ref={el => el && this._blocks.push(el)} />)) }
+                { this.state.blocks && this.state.blocks.map((block, key) => (<DragElementsContainer key={key} index={key} cookies={this.props.cookies && this.props.cookies} element={block} color={this.props.color && this.props.color} data={this.props.data} userName={this.props.name} ref={el => el && this._blocks.push(el)} />)) }
                 { this.props.cta ?
                     (
                         <Cta text="Continuer" scrollSection={!this.props.redirect && this.scrollSection} redirect={this.props.redirect} redirectTo={this.props.redirectTo} />

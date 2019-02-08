@@ -1,10 +1,10 @@
 {
     "data": [
         {
-           "home": {
-               "title": "Dans la bulle",
-               "start": "Démarrer l'expérience"
-           }
+            "home": {
+                "title": "Dans la bulle",
+                "start": "Démarrer l'expérience"
+            }
         },
         {
             "step": [
@@ -41,7 +41,7 @@
                     "title": false,
                     "text": "Sur internet, votre monde n’est donc pas exactement le même que celui de votre voisin. La grande majorité du contenu que vous allez y trouver a été préalablement <u>calculé</u>, dans le but annoncé de rendre votre univers numérique le plus pertinent possible. ",
                     "subtitle": false,
-                    "cta": "Découvrir les algorithmes",
+                    "cta": "découvrir les algorithmes",
                     "backgroundColor": "#FFFFFF",
                     "txtColor": "#000000",
                     "className": "underlineBlue"
@@ -54,7 +54,7 @@
                         {
                             "type": "text",
                             "text": "Les réponses que vous nous avez donné nous ont aidé à définir un profil plus détaillé de vous, mais nous avion déjà une petite idée de qui vous êtes"
-                        }         
+                        }
                     ]
                 },
                 {
@@ -68,21 +68,19 @@
                             "type": "video",
                             "title": "Tracking Cookies 101",
                             "src": "/assets/media/video/TrackingCookies101.mp4"
-                        }          
+                        }
                     ]
                 },
                 {
                     "blocks": [
                         {
-                            "type": "video",
-                            "title": "Big data : données, données, donnez-moi !",
-                            "src": "/assets/media/video/bigData.mp4"
+                            "type": "text",
+                            "text": "Les big data désignent les gros volumes de données (structurées ou non) qui alimentent l’activité quotidienne d’une entreprise. Mais ce n’est pas la quantité des données qui compte, c’est ce que les entreprises en font. Il est possible d’analyser les big data pour en tirer des enseignements permettant de prendre de meilleures décisions et de lancer des initiatives stratégiques."
                         },
                         {
-                            "type": "video",
-                            "title": "Les enjeux du big data",
-                            "src": "/assets/media/video/bigData-enjeux.mp4"
-                        }          
+                            "type": "text",
+                            "text": "Ces bases de données gigantesques n’enregistrent pas seulement vos comportements sur le Web, mais également votre position géographique et vos données démographiques. En marketing Web, les “Big Data” sont considérés comme de véritables mines d’or. Mais pour en tirer profit, il faut faire appel à des algorithmes, c’est-à-dire à des opérations mathématiques qui automatisent des décisions de ciblage traditionnellement prises par des individus."
+                        }
                     ]
                 },
                 {
@@ -93,11 +91,11 @@
                         },
                         {
                             "type": "text",
-                            "text": "Les algorithmes sont partout. Ces petits bouts de formules mathématiques invisibles sont des éléments clés de nos vies au quotidien. "
+                            "text": "Les algorithmes sont partout. Ces petits bouts de formules mathématiques invisibles sont des éléments clés de nos vies au quotidien. Que ça soit pour faire de la cuisine ou pour sauver des vies, les algorithmes régissent le monde qui nous entoure."
                         },
                         {
                             "type": "text",
-                            "text": "Algorithme (nom masculin) : Ensemble de règles opératoires dont l'application permet de résoudre un problème énoncé au moyen d'un nombre fini d'opérations. Un algorithme peut être traduit, grâce à un langage de programmation, en un programme exécutable par un ordinateur."
+                            "text": "Algorithme (nom masculin) : Ensemble de règles opératoires dont l’application permet de résoudre un problème énoncé au moyen d’un nombre fini d’opérations. Un algorithme peut être traduit, grâce à un langage de programmation, en un programme exécutable par un ordinateur."
                         },
                         {
                             "type": "video",
@@ -110,12 +108,39 @@
                             "src": "/assets/media/video/algorithms.mp4"
                         }
                     ]
+                },
+                {
+                    "blocks": [
+                        {
+                            "type": "text",
+                            "text": "Vous avez probablement déjà entendu parler des cookies sur le web, mais qu’est ce que c’est et à quoi ça sert ? Pour faire simple, c’est la méthode qu’utilisent les sites web pour vous identifier. Les cookies utilisent de petites données (chacune limitée à 4 Ko) placées dans une mémoire de stockage de votre navigateur. Lorsque vous visitez un site Web pour la première fois, un fichier cookie avec un identifiant utilisateur unique (pouvant être généré de manière aléatoire) est stocké sur votre appareil. C’est grâce à cette méthode que ces sites vont pouvoir obtenir des informations sur vous afin de vous proposer des contenus toujours plus personnalisés."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Pour bien vous faire comprendre l’ampleur que représentent les cookies, nous vous avons concocté une petite liste des cookies utilisés par les sites et services web que vous utilisez au quotidien :"
+                        }
+                    ]
+                },
+                {
+                    "blocks": [
+                        {
+                            "type": "text",
+                            "text": "Le tracking est la pratique par laquelle les sites Web identifient et collectent des informations sur les utilisateurs. Chaque fois que vous utilisez Internet, vous laissez une trace des sites Web que vous visitez, ainsi que de chaque élément sur lequel vous cliquez. Pour suivre ces informations, de nombreux sites Web sauvegardent une petite quantité de données grâce aux cookies, incorporent des objets invisibles ou même utilisent vos comptes utilisateur et votre configuration matérielle."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Du point de vue des propriétaires de sites Web et des trackers, le tracking fournit des fonctionnalités souhaitables, notamment la personnalisation, l’analyse de site et la publicité ciblée. Par exemple, sans trackers, un site Web d’e-commerce devra traiter chaque utilisateur comme un étranger et ne pourrait pas présenter de contenu personnalisé."
+                        },
+                        {
+                            "type": "text",
+                            "text": "La personnalisation d’Internet va de pair avec la collecte de données personnelles sur les usagers. En effet, les géants d’Internet accumulent des données personnelles sur chaque individu, car c’est à partir de ces données que les algorithmes vont être capables d’adapter les contenus d’Internet de manière pertinente pour chacun. Ces données personnelles sont collectées au fur et à mesure de la navigation sur Internet."
+                        }
+                    ]
                 }
             ]
         },
         {
-            "cookies":
-            [
+            "cookies": [
                 {
                     "name": "LinkedIn",
                     "src": "/assets/media/img/logos/linkedin-logo.svg",
@@ -139,6 +164,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 2265
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 321,
+                            "total": 3793
                         }
                     ]
                 },
@@ -165,6 +195,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 20708
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 1568,
+                            "total": 24764
                         }
                     ]
                 },
@@ -191,6 +226,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 53
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 34,
+                            "total": 139
                         }
                     ]
                 },
@@ -217,6 +257,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 156096
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 167,
+                            "total": 250023
                         }
                     ]
                 },
@@ -243,6 +288,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 36
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 2,
+                            "total": 54
                         }
                     ]
                 },
@@ -269,6 +319,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 4097
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 174,
+                            "total": 18108
                         }
                     ]
                 },
@@ -295,6 +350,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 244
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 34,
+                            "total": 1846
                         }
                     ]
                 },
@@ -321,6 +381,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 393
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 196,
+                            "total": 926
                         }
                     ]
                 },
@@ -347,6 +412,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 13
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 10,
+                            "total": 35
                         }
                     ]
                 },
@@ -373,6 +443,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 301
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 21,
+                            "total": 633
                         }
                     ]
                 },
@@ -399,6 +474,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 79
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 27,
+                            "total": 401
                         }
                     ]
                 },
@@ -425,6 +505,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 5
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 1,
+                            "total": 8
                         }
                     ]
                 },
@@ -451,6 +536,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 319
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 47,
+                            "total": 1257
                         }
                     ]
                 },
@@ -477,6 +567,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 187
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 48,
+                            "total": 305
                         }
                     ]
                 },
@@ -503,6 +598,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 361
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 2,
+                            "total": 666
                         }
                     ]
                 },
@@ -529,6 +629,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 1463
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 38,
+                            "total": 4254
                         }
                     ]
                 },
@@ -555,6 +660,11 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 441
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 37,
+                            "total": 738
                         }
                     ]
                 },
@@ -581,109 +691,199 @@
                         {
                             "title": "Unknown Cookies",
                             "amount": 1152
+                        },
+                        {
+                            "text": "nécessaires, fonctionnels ou de performance",
+                            "amount": 15,
+                            "total": 1230
                         }
                     ]
                 }
             ]
         },
         {
-           "bigData": {
-               "title": "big",
-               "title2": "data"
-           }
+            "bigData": {
+                "title": "big",
+                "title2": "data"
+            }
         },
         {
-           "tracking": {
-               "title": "cliquez, vous êtes tracké"
-           }
+            "tracking": {
+                "title": "cliquez, vous êtes tracké"
+            }
         },
         {
             "algo": {
                 "title": "tout est calculé"
             }
-         },
-         {
-             "formImages": [
-                 [
-                     "https://media.giphy.com/media/RmLghTZWcwT3G/giphy.mp4",
-                     "https://media.giphy.com/media/blSTtZehjAZ8I/giphy.mp4",
-                     "https://media.giphy.com/media/l3q2t2KAyvxy9xBe0/giphy.mp4"
-                 ],
-                 [
-                     "https://media.giphy.com/media/l0MYDoN32puQXNmx2/giphy.mp4",
-                     "https://media.giphy.com/media/3o7TKSx0g7RqRniGFG/giphy.mp4",
-                     "https://media.giphy.com/media/11vsrRFqhjOcKI/giphy.mp4"
-                 ],
-                 [
-                     "https://media.giphy.com/media/3o6ZthWzyoIzSknltu/giphy.mp4",
-                     "https://media.giphy.com/media/JF7GvrdV0oHD2/giphy.mp4",
-                     "https://media.giphy.com/media/26ufhOydy5WbYG2c0/giphy.mp4"
-                 ]
-             ]
-         },
-         {
+        },
+        {
+            "formImages": [
+                [
+                    "https://media.giphy.com/media/RmLghTZWcwT3G/giphy.mp4",
+                    "https://media.giphy.com/media/blSTtZehjAZ8I/giphy.mp4",
+                    "https://media.giphy.com/media/l3q2t2KAyvxy9xBe0/giphy.mp4"
+                ],
+                [
+                    "https://media.giphy.com/media/l0MYDoN32puQXNmx2/giphy.mp4",
+                    "https://media.giphy.com/media/3o7TKSx0g7RqRniGFG/giphy.mp4",
+                    "https://media.giphy.com/media/11vsrRFqhjOcKI/giphy.mp4"
+                ],
+                [
+                    "https://media.giphy.com/media/3o6ZthWzyoIzSknltu/giphy.mp4",
+                    "https://media.giphy.com/media/JF7GvrdV0oHD2/giphy.mp4",
+                    "https://media.giphy.com/media/26ufhOydy5WbYG2c0/giphy.mp4"
+                ]
+            ]
+        },
+        {
             "choices": [
                 {
-                "type": "choice",
-                "text": "big data",
-                "redirect": "/big-data"
-               },
-               {
-                   "type": "choice",
-                   "text": "tracking",
-                   "redirect": "/tracking"
-               }
-           ]
+                    "type": "choice",
+                    "text": "big data",
+                    "redirect": "/big-data"
+                },
+                {
+                    "type": "choice",
+                    "text": "tracking",
+                    "redirect": "/tracking"
+                }
+            ]
         },
-         {
+        {
             "FilterBubble": [
-                 {
+                {
                     "title": true,
-                     "title": "la bulle de filtres",
-                     "backgroundColor": "#000",
-                     "txtColor": "#fff",
-                     "className": "FilterBubble_title",
-                     "type": "text"
-                 },
-                 {
-                     "title": false,
-                     "text": "Sur le web, vous avez sûrement déjà eu l’impression que le contenu qui vous est proposé a été conçu pour vous plaire, que l’information qui vous est diffusée a été filtrée.",
-                     "subtitle": false,
-                     "backgroundColor": "#000",
-                     "txtColor": "#fff",
-                     "className": "FilterBubblr_textBack",
-                     "type": "media"
-                 },
-                 {
-                     "title": false,
-                     "text": "Les bulles de filtre sont donc le résultat d’une recherche <u>personnalisée</u> dans laquelle des <u>algorithmes</u> vont définir un profil et déterminer de manière sélective les contenus qu’un utilisateur aimerait voir en fonction des <u>informations personnelles récoltées</u> sur ce dernier.",
-                     "subtitle": false,
-                     "backgroundColor": "#000",
-                     "txtColor": "#fff",
-                     "blocks": [
+                    "title": "la bulle de filtres",
+                    "backgroundColor": "#000",
+                    "txtColor": "#fff",
+                    "className": "FilterBubble_title",
+                    "type": "text"
+                },
+                {
+                    "title": false,
+                    "text": "Sur le web, vous avez sûrement déjà eu l’impression que le contenu qui vous est proposé a été conçu pour vous plaire, que l’information qui vous est diffusée a été filtrée.",
+                    "subtitle": false,
+                    "backgroundColor": "#000",
+                    "txtColor": "#fff",
+                    "className": "FilterBubblr_textBack",
+                    "type": "media"
+                },
+                {
+                    "title": false,
+                    "text": false,
+                    "subtitle": false,
+                    "backgroundColor": "#000",
+                    "txtColor": "#fff",
+                    "className": "FilterBubblr_textBack",
+                    "type": "media",
+                    "blocks": [
                         {
                             "type": "text",
-                            "paragraph": "C’est de cette impression que le concept de “Filter Bubble”, qui peut être littéralement traduit par “Bulle de filtres”, a été théorisé en 2011 par Eli Pariser."
+                            "paragraph": "À travers son livre “The Filter Bubble: What the Internet Is Hiding from You”, et dans une conférence TED Talk, visionnée plus d’un million de fois sur Internet, il explique les fondements de cette idée, qui dit que chaque internaute accéderait à une version significativement différente du web. Ainsi, selon cette théorie, les contenus visibles par chaque internaute sont séléctionnés “discrètement” par des algorithmes, en s’appuyant sur différentes données collectées sur lui."
                         },
                         {
                             "type": "text",
-                            "paragraph": "À travers son livre “The Filter Bubble: What the Internet Is Hiding from You”, et dans une conférence TED Talk, visionnée plus d’un million de fois sur Internet, il explique les fondements de cette idée, qui dit que chaque internaute accéderait à une version significativement différente du web. Ainsi, selon cette théorie, les contenus visibles par chaque internaute sont séléctionnés “discrètement” par des algorithmes, en s'appuyant sur différentes données collectées sur lui."
+                            "paragraph": "C’est de cette impression que le concept de “Filter Bubble”, qui peut être littéralement traduit par “Bulle de filtre”, a été théorisé en 2011 par Eli Pariser."
                         },
                         {
                             "type": "video",
-                            "title": "The Secret Rules of Modern Living Algorithms ",
-                            "src": "src"
+                            "title": "Beware online « filter bubbles » | Eli Pariser",
+                            "src": "/assets/media/video/BewareOnline.mp4"
                         }
                     ]
-                 },
-                 {
-                     "title": false,
-                     "text": "En nous appuyant sur les données que nous avons récolté tout au long de l’expérience, et à l’aide de nos propres algorithmes, nous sommes parvenus à définir votre profil type d’utilisateur du web.",
-                     "subtitle": false,
-                     "backgroundColor": "#000",
-                     "txtColor": "#fff"
-                 }
-              ]
-          }
+                },
+                {
+                    "title": false,
+                    "text": "Les bulles de filtre sont donc le résultat d’une recherche <u>personnalisée</u> dans laquelle des <u>algorithmes</u> vont définir un profil et déterminer de manière sélective les contenus qu’un utilisateur aimerait voir en fonction des <u>informations personnelles récoltées</u> sur ce dernier.",
+                    "subtitle": false,
+                    "backgroundColor": "#000",
+                    "txtColor": "#fff"
+                },
+                {
+                    "title": false,
+                    "text": "En conséquence, les utilisateurs sont séparés des informations en désaccord avec leurs points de vue, ce qui les isole dans leurs propres bulles de filtre culturelles ou idéologiques.",
+                    "subtitle": false,
+                    "backgroundColor": "#000",
+                    "txtColor": "#fff"
+                },
+                {
+                    "title": false,
+                    "text": "En nous appuyant sur les données que nous avons récolté tout au long de l’expérience, et à l’aide de nos propres algorithmes, nous sommes parvenus à définir votre profil type d’utilisateur du web.",
+                    "subtitle": false,
+                    "backgroundColor": "#000",
+                    "txtColor": "#fff"
+                }
+            ]
+        },
+        {
+            "conclusion": [
+                {
+                    "text": "Votre expérience /dans la bulle/ est terminée. Nous vous remercions d’y avoir contribué par votre participation, et nous espérons que vous saisissez maintenant les enjeux et les conséquences que peuvent avoir votre présence sur le web, et même au delà."
+                },
+                {
+                    "text": "La bulle de filtre reste un concept abstrait et libre à l’interprétation de chacun. Souvent matérialisée par sa représentation sur le web, ses frontières dépassent ce paradigme, et si vous êtes attentifs, vous pourrez observer sa présence qui vous entoure dans votre vie quotidienne."
+                },
+                {
+                    "text": "Vous pouvez décider de l’accepter, de vivre avec, et même de vous épanouir au sein de celle-ci. Mais vous avez aussi le choix de percer cette bulle, et de découvrir des moyens de voir au delà de ce cadre arbitrairement créé par vous-même, bien aidé par les algorithmes."
+                }
+            ]
+        },
+        {
+            "profils": [
+                {
+                    "services": [
+                        "Netflix",
+                        "Google",
+                        "Twitter",
+                        "Le Monde",
+                        "Wikipedia",
+                        "Reddit"
+                    ],
+                    "text": "Nous avons donc déduit que vous étiez globalement une personne en quête de l’information. Vous utilisez Internet afin de vous tenir au courant de l’actualité et découvrir de nouvelle choses.",
+                    "blocks": [
+                        {
+                            "type": "text",
+                            "paragraph": "En tant qu’être humain, nous avons tendance à socialiser avec des personnes qui partagent les mêmes idées et des opinions similaires. Cela créé donc cet effet de chambre d’écho, qui s’est progressivement renforcé par l’amélioration constante des algorithmes de recommandation."
+                        },
+                        {
+                            "type": "text",
+                            "paragraph": "Sauf rares exceptions, vous avez toujours choisi de consulter des médias conformes à votre point de vue, et lu des journaux ou des magazines reflétant d’une certaine manière ce qui vous intéresse et ce que vous voulez être. Mais à l’âge des médias régit par les algorithmes, il est presque impossible de savoir qui l’algorithme pense que nous sommes et, par conséquent, nous ne savons pas comment il décide quoi nous montrer ou non."
+                        },
+                        {
+                            "type": "text",
+                            "paragraph": "Dans le domaine de l’information et des médias, ce phénomène de bulle de filtre peut avoir pour effet de vous empêcher de voir au delà de vos propres convictions et de vous opposer à des points de vue différents. Ainsi, vous avez probablement déjà été sous le choc de constater que des groupes plus larges que vous l’imaginiez puisse avoir une opinion différente de la votre, tel que dans le domaine politique par exemple."
+                        },
+                        {
+                            "type": "video",
+                            "title": "Filter Bubbles and Fake News",
+                            "src": "/assets/media/video/filterBubble.mp4"
+                        }
+                    ]
+                },
+                {
+                    "services": [
+                        "Spotify",
+                        "YouTube",
+                        "Netflix",
+                        "Facebook",
+                        "Instagram",
+                        "Twitch"
+                    ],
+                    "text": "Nous avons donc déduit que vous étiez globalement une personne en quête de divertissement. Vous utilisez Internet afin de vous divertir, et vous êtes avide consommateur de contenu multimédia."
+                },
+                {
+                    "services": [
+                        "Amazon",
+                        "Asos",
+                        "Pinterest",
+                        "Leboncoin",
+                        "Ebay",
+                        "Paypal"
+                    ],
+                    "text": "Nous avons donc déduit que vous étiez globalement une personne consommatrice. Vous utilisez Internet pour effectuer vos achats en ligne, vous êtes par conséquent souvent exposé à de la publicité."
+                }
+            ]
+        }
     ]
 }

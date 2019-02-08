@@ -27,4 +27,23 @@
             cursor: pointer;
         }
     }
+    .btnsContainer {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto 0 auto;
+        a {
+            color: white;
+            background-color: #0000FF;
+            text-decoration: none;
+            padding: 10px 20px;
+
+            &:hover {
+                background-color: #0000BF;
+            }
+        }
+    }
+    .handle {
+        background-color: black;
+    }
 }

@@ -35,8 +35,13 @@ class Tracking extends React.Component {
         window.scrollTo(0, 0)
     }
 
+    getCookieInfo = (array) => {
+        this.setState({
+            cookies: array
+        })
+    }
+
     render() {
-        
         return(
             this.state.data && (
                 <section className="tracking">
@@ -52,11 +57,21 @@ class Tracking extends React.Component {
                             formStep={2}
                             backgroundColor="#FFFFFF"
                             scrollSection={this.props.scrollSection}
+                            getCookieInfo={this.getCookieInfo}
                         />
                       {/* <TubeForm />
                     </div> */}
                     {/* <div className="straight">
                         <Tube /> */}
+                          <MixElements
+                              blocks={content.data[1].step[7].blocks}
+                              data={this.state.data}
+                              cookies={this.state.cookies && this.state.cookies}
+                              //name={localStorage.getItem('firstName')}
+                            //   redirect={this.props.routerProps.history.push}
+                            //   redirectTo="/big-data"
+                            //   cta="Continuer"
+                          />
                           <MixElements
                               blocks={content.data[1].step[3].blocks}
                               data={this.state.data}
@@ -66,13 +81,14 @@ class Tracking extends React.Component {
                             //   cta="Continuer"
                           />
                           <MixElements
-                              blocks={content.data[1].step[4].blocks}
+                              blocks={content.data[1].step[8].blocks}
                               data={this.state.data}
                               
                             //   redirect={this.props.routerProps.history.push}
                             //   redirectTo="/big-data"
                             //   cta="Continuer"
                           />
+                          
                     {/* </div> */}
                     <Choices history={this.props.routerProps.history} push={this.props.routerProps.history.push} />
                 </section>

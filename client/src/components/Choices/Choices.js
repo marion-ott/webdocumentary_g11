@@ -12,7 +12,10 @@ class Choices extends React.Component {
         return(
             <section className={css.component}>
                 { choices.map((choice, key) => <DragElementContainer path={this.props.history && this.props.history.location.pathname} element={choice} key={key} />) }
-                <ToFilterBubble push={this.props.push} />
+                { this.props.history.location.pathname === '/algorithms/' ? null 
+                    : this.props.history.location.pathname === '/algorithms' ? null 
+                    : <ToFilterBubble push={this.props.push} />
+                }
             </section>
         )
     }

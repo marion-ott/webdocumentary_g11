@@ -1,9 +1,6 @@
 import React from 'react'
-import AlgoIntro from '../components/AlgoPage/AlgoIntro'
-import MixElements from '../components/MixElements/MixElements'
-import Choices from '../components/Choices/Choices'
+import Text from '../components/Text/Text'
 import content from '../content/content'
-//import Tube from '../components/TubeStraightLeft/Tube'
 
 class EndScreen extends React.Component {
     constructor() {
@@ -16,9 +13,28 @@ class EndScreen extends React.Component {
     }
 
     render() {
-        
+        const data = content.data
         return(
             <section className="ending">
+                <Text
+                    paragraph={data[9].conclusion[0].text}
+                    txtColor="white"
+                    backgroundColor="black"
+                    // // className={data.FilterBubble[0].className}
+                />
+                <Text
+                    paragraph={data[9].conclusion[1].text}
+                    txtColor="white"
+                    backgroundColor="black"
+                    // // className={data.FilterBubble[0].className}
+                />
+                <Text
+                    paragraph={data[9].conclusion[2].text}
+                    txtColor="white"
+                    backgroundColor="black"
+                    btns={true}
+                    // // className={data.FilterBubble[0].className}
+                />
                 
             </section>
         )

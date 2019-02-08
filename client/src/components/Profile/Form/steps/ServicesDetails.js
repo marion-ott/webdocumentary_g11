@@ -12,6 +12,8 @@ class ServicesDetails extends React.Component {
     getCheckedInput = () => {
         let checkedServices = []
         checkedServices = this._checkboxes.filter(checkbox => checkbox.checked).map(checkbox => checkbox.name)
+        //console.log(checkedServices);
+        
         this.setState({
             choiceAmount: checkedServices.length,
             checkedServices: checkedServices
@@ -19,6 +21,7 @@ class ServicesDetails extends React.Component {
     }
 
     validateChoices = () => {
+        this.props.getCookieInfo(this.state.checkedServices)
         this.props.updateServices(this.state.checkedServices)
     }
 
