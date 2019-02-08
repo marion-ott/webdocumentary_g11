@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom'
 import { TweenLite, Power4 } from "gsap/TweenMax"
 
 class DragElement extends React.Component {
-    
+
     componentDidMount() {
         const blockItem = ReactDOM.findDOMNode(this)
         let left = Math.random() * (120 - 20) + 20
@@ -21,7 +21,7 @@ class DragElement extends React.Component {
     }
 
     render() {
-        
+
         return (
             <Draggable
                 handle=".handle"
@@ -39,7 +39,7 @@ class DragElement extends React.Component {
                             <div></div>
                             <div></div>
                         </div>
-                        { this.props.type === 'video' ? <p className="videoTitle"><span>Video :</span>{this.props.title}</p> : null }
+                        { this.props.type === 'video' ? <p className="videoTitle"><span>Video : </span>{this.props.title}</p> : null }
                     </div>
                     { this.props.type === 'video' ? <Media mediaType={this.props.type} src={this.props.src} title={this.props.title} />
                         : this.props.type === 'gif' ? <Media mediaType={this.props.type} src={this.props.src} />
@@ -49,7 +49,7 @@ class DragElement extends React.Component {
                         : this.props.type === 'choice' && this.props.redirect === '/tracking' ? <TrackingChoice redirect={this.props.redirect} text={this.props.text} path={this.props.path} />
                         : null
                     }
-                    
+
                 </div>
             </Draggable>
         );
