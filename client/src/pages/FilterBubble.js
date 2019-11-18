@@ -3,7 +3,7 @@ import content from '../content/content'
 import BubbleCanvas from '../components/BubbleCanvas/BubbleCanvas'
 import Text from '../components/Text/Text'
 import MixElements from '../components/MixElements/MixElements';
-
+import Tube from '../components/OurBubble/OurBubble'
 
 
 class FilterBubble extends React.Component {
@@ -23,9 +23,9 @@ class FilterBubble extends React.Component {
         
         return(
             <section className="filterBubble">
-                {/* <div className="bubble">
+                <div className="bubble">
                     <Tube />
-                </div> */}
+                </div>
                 <Text
                     title={data.FilterBubble[0].title}
                     hasBlocks={false}

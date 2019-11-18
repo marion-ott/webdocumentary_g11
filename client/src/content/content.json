@@ -53,7 +53,7 @@
                         },
                         {
                             "type": "text",
-                            "text": "Les réponses que vous nous avez donné nous ont aidé à définir un profil plus détaillé de vous, mais nous avion déjà une petite idée de qui vous êtes"
+                            "text": "Les réponses que vous nous avez donné nous ont aidé à définir un profil plus détaillé de vous, mais nous avions déjà une petite idée de qui vous êtes"
                         }
                     ]
                 },
@@ -96,11 +96,6 @@
                         {
                             "type": "text",
                             "text": "Algorithme (nom masculin) : Ensemble de règles opératoires dont l’application permet de résoudre un problème énoncé au moyen d’un nombre fini d’opérations. Un algorithme peut être traduit, grâce à un langage de programmation, en un programme exécutable par un ordinateur."
-                        },
-                        {
-                            "type": "video",
-                            "title": "How algorithms shape our world by Kevin Slavin",
-                            "src": "/assets/media/video/KevinSlavin.mp4"
                         },
                         {
                             "type": "video",
@@ -819,7 +814,7 @@
         {
             "conclusion": [
                 {
-                    "text": "Votre expérience /dans la bulle/ est terminée. Nous vous remercions d’y avoir contribué par votre participation, et nous espérons que vous saisissez maintenant les enjeux et les conséquences que peuvent avoir votre présence sur le web, et même au delà."
+                    "text": "Votre expérience <u>dans la bulle</u> est terminée. Nous vous remercions d’y avoir contribué par votre participation, et nous espérons que vous saisissez maintenant les enjeux et les conséquences que peuvent avoir votre présence sur le web, et même au delà."
                 },
                 {
                     "text": "La bulle de filtre reste un concept abstrait et libre à l’interprétation de chacun. Souvent matérialisée par sa représentation sur le web, ses frontières dépassent ce paradigme, et si vous êtes attentifs, vous pourrez observer sa présence qui vous entoure dans votre vie quotidienne."

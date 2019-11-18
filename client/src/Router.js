@@ -71,7 +71,6 @@ class Router extends React.Component {
     }
 
     render() {
-        console.log(localStorage)
         return(
             <BrowserRouter>
                 <Switch>

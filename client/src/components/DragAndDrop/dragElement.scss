@@ -17,6 +17,8 @@
                 border-bottom: solid 2px white;
                 .videoTitle {
                     color: white;
+                    font-family: 'CirculatStd';
+                    font-weight: bold;
                 }
                 .dots {
                     div {
@@ -44,7 +46,8 @@
                 }
             }
             .videoTitle {
-                font-family: 'RobotoMono';
+                font-family: 'CircularStd';
+                font-weight: bold;
                 font-size: 14px;
                 span {
                     font-weight: bold;

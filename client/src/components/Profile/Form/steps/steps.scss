@@ -14,6 +14,8 @@ $inputBorder: solid 2px black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'CircularStd';
+    font-weight: bold;
     input {
         border: $inputBorder;
         width: 100%;
